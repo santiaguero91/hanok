@@ -8,7 +8,8 @@ export const typoh6 = {
 export const typoh6bold = {
     fontFamily: "Montserrat",
     fontWeight: "bold",
-
+    cursor: "pointer",
+    color:"black"
   };
 export const typoh5 = {
     fontFamily: "Montserrat",

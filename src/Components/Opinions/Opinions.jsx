@@ -4,7 +4,7 @@ import { typoh3bold,typoh6 } from "../../utils/Fonts";
 
 const Opinions = () => {
   return (
-    <MainDiv>
+    <MainDiv id='Opiniones'>
       <Typography
         variant="h3"
         style={typoh3bold}

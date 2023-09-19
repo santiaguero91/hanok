@@ -12,7 +12,7 @@ import { typoh3bold } from "../../utils/Fonts";
 
 const Workshops = () => {
   return (
-    <MainDiv>
+    <MainDiv id='Workshops'>
       <ColumnDiv>
       <Typography variant="h3" style={typoh3bold}>
         Talleres

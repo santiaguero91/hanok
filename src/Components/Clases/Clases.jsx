@@ -5,7 +5,7 @@ import { typoh3bold, typoh5 } from "../../utils/Fonts";
 
 const Clases = () => {
   return (
-    <MainDiv>
+    <MainDiv id='Clases'>
       <Typography variant="h3" style={typoh3bold}>
         Clases
       </Typography>

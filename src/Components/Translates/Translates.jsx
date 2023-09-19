@@ -10,7 +10,7 @@ import { typoh3bold, typoh6 } from "../../utils/Fonts";
 
 const Translates = () => {
   return (
-    <MainDiv>
+    <MainDiv id="Translates">
       <TitleDiv>
         <Typography variant="h3"
          style={typoh3bold}
