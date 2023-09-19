@@ -9,12 +9,16 @@ const Sections = () => {
   return (
     <MainDiv>
         <Section 
+        title="Clases Online"
         img={Clases}
+        
         />
-        <Section 
+        <Section
+        title="Talleres"
         img={ReadingWorkshop}
         />
-        <Section 
+        <Section
+        title="Traducciones"
         img={Translations}
         />
     </MainDiv> 

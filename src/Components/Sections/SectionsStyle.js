@@ -17,7 +17,7 @@ export const SectionsBtn = styled(Button)`
   color: black;
   transition: 1s;
   border-radius: 10px;
-  margin: 5% auto;
+  margin: 3% auto;
   width: 10vw;
 
   :hover {

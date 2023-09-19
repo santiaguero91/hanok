@@ -13,3 +13,7 @@ export const typoh6bold = {
 export const typoh5 = {
     fontFamily: "Montserrat",
   };
+export const typoh5bold = {
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
+  };
