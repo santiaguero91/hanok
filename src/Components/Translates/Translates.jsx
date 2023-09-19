@@ -18,7 +18,7 @@ const Translates = () => {
         </LeftDiv>
         <img
           width="600px"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYLMRxXJ9u5Ctf4laSimISuSK_ttRHs4r0K41lEqPbA&s"
+          src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366"
         />
       </RowDiv>
     </MainDiv>
