@@ -1,4 +1,4 @@
-import {MainSection,Header,NavBar,Slider,Sections,Translates,Workshops} from "../Components/index";
+import {MainSection,Header,NavBar,Slider,Sections,Translates,Workshops,Clases} from "../Components/index";
 import { MainDiv } from "./MainStyle";
 
 const Main = () => {
