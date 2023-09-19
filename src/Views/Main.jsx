@@ -11,6 +11,7 @@ const Main = () => {
       <Sections />
       <Translates />
       <Workshops />
+      <Clases />
     </MainDiv>
   );
 };

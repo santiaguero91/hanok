@@ -5,5 +5,7 @@ import Slider from "./Slider/Slider";
 import Sections from "./Sections/Sections";
 import Translates from "./Translates/Translates";
 import Workshops from "./Workshops/Workshops";
+import Clases from "./Clases/Clases";
 
-export { MainSection, Header, NavBar, Sections, Slider, Translates,Workshops };
+export { MainSection, Header, NavBar, Sections, Slider,
+     Translates,Workshops,Clases };
