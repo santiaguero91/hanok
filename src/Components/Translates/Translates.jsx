@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { LeftDiv, MainDiv, RowDiv, TitleDiv } from "./TranslatesStyles";
+import { LeftDiv, MainDiv, RowDiv, TitleDiv, TranslateBtn } from "./TranslatesStyles";
 
 const Translates = () => {
   return (
@@ -14,7 +14,7 @@ const Translates = () => {
             en demostraciones de tipografías o de borradores de diseño para
             probar el diseño ...
           </Typography>
-          <button>Me interesa</button>
+          <TranslateBtn>Contactar</TranslateBtn>
         </LeftDiv>
         <img
           width="600px"

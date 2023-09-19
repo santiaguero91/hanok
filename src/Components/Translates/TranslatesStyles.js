@@ -33,9 +33,25 @@ export const LeftDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  padding: 0.5% 0 0.5% 0;
+  padding: 2% 0 0.5% 0;
   margin: 0 10%;
-  background-color: paleturquoise;
+`;
+
+export const TranslateBtn = styled(Button)`
+  background-color: rgba(156,137,184);
+  color: black;
+  transition: 1s;
+  border-radius: 10px;
+  margin: 9% auto 2% auto;
+  width: 10vw;
+
+  :hover {
+    background-color: rgba(199, 199, 199);
+  }
+  :focus {
+    outline: none;
+    border: none;
+  }
 `;
 
 
