@@ -1,9 +1,5 @@
-import Header from "../Components/Header/Header";
-import NavBar from "../Components/NavBar/NavBar";
-import MainSection from "../Components/MainSection/MainSection";
-import Slider from "../Components/Slider/Slider";
+import {MainSection,Header,NavBar,Slider,Sections,Translates} from "../Components/index";
 import { MainDiv } from "./MainStyle";
-import Sections from "../Components/Sections/Sections";
 
 const Main = () => {
   return (
@@ -13,6 +9,7 @@ const Main = () => {
       <Slider/>
       <MainSection/>
       <Sections />
+      <Translates />
     </MainDiv>
   );
 };

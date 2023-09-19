@@ -10,4 +10,9 @@ export const MainDiv = styled(Box)`
   color: black;
   align-items: center;
   padding: 0.5% 0 0.5% 0;
+
+img{
+  border-radius: 15px;
+}
+
 `;

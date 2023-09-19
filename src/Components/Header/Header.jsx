@@ -1,5 +1,7 @@
 import { DivIcons, DivImg, MainDiv } from "./HeaderStyle";
 import hanokHouse from "../../assets/hanockHouse.jpeg"
+
+
 const Header = () => {
 
   return (
