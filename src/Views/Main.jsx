@@ -6,7 +6,6 @@ const Main = () => {
     <MainDiv>
       <Header/>
       <NavBar/>
-      <Slider/>
       <MainSection/>
       <Sections />
       <Translates />
