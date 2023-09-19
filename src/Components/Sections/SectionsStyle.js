@@ -11,3 +11,20 @@ export const MainDiv = styled(Box)`
   align-items: center;
   padding: 0.5% 0 0.5% 0;
 `;
+
+export const SectionsBtn = styled(Button)`
+  background-color: rgba(156,137,184);
+  color: black;
+  transition: 1s;
+  border-radius: 10px;
+  margin: 5% auto;
+  width: 10vw;
+
+  :hover {
+    background-color: rgba(199, 199, 199);
+  }
+  :focus {
+    outline: none;
+    border: none;
+  }
+`;
