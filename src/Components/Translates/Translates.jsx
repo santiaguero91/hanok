@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { LeftDiv, MainDiv, RowDiv, TitleDiv, TranslateBtn } from "./TranslatesStyles";
 
+
 const Translates = () => {
   return (
     <MainDiv>
