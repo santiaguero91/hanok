@@ -22,13 +22,26 @@ export const RowDiv = styled(Box)`
 
   background-color: ${Colors.blanchedalmond};
 `;
+export const ColumnDiv = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 10%;
+  padding: 1% 0 0 0;
+
+  background-color: ${Colors.blanchedalmond};
+`;
 
 export const TextDiv = styled(Box)`
-margin: 1.5% 10%;
+margin: 1.5% 5%;
 flex-direction: column;
 `;
 export const ImgDiv = styled(Box)`
-margin: 1.5% 10% ;
+margin: 1.5% 0% ;
+img{
+  border-radius: 15px;
+}
 `;
 
 export const WorkshopBtn = styled(Button)`
