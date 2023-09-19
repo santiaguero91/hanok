@@ -6,6 +6,7 @@ import Sections from "./Sections/Sections";
 import Translates from "./Translates/Translates";
 import Workshops from "./Workshops/Workshops";
 import Clases from "./Clases/Clases";
+import Opinions from "./Opinions/Opinions";
 
 export { MainSection, Header, NavBar, Sections, Slider,
-     Translates,Workshops,Clases };
+     Translates,Workshops,Clases,Opinions };
