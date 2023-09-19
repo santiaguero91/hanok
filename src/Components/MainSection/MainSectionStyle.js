@@ -5,10 +5,16 @@ export const MainDiv = styled(Box)`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: rgba(191, 191, 191);
-  color: black;
+  justify-content: space-between;
+  background-color: rgba(112, 121, 85);
   align-items: center;
-  padding: 0.5% 0 0.5% 0;
 `;
 
+export const TextDiv = styled(Box)`
+ margin: 5%;
+ padding: 1%;
+`;
+
+export const ImgDiv = styled(Box)`
+ margin: 5%;
+`;

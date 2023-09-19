@@ -11,4 +11,3 @@ export const MainDiv = styled(Box)`
   align-items: center;
   padding: 0.5% 0 0.5% 0;
 `;
-
