@@ -34,6 +34,8 @@ const Main = () => {
       setInSight("Translates");
     } else if (sectionOpinionInView) {
       setInSight("Opinion");
+    } else if (!sectionWorkshopInView && !sectionClasesInView &&!sectionTranslatesInView &&!sectionOpinionInView ) {
+      setInSight("");
     }
   }, [sectionWorkshopInView, sectionClasesInView, sectionTranslatesInView, sectionOpinionInView]);
 
@@ -44,9 +46,9 @@ const Main = () => {
       <NavBar inSight={inSight}/>
       <MainSection />
       <Sections />
-      <Translates sectionTranslates={sectionTranslates}/>
-      <Workshops sectionWorkshop={sectionWorkshop} />
       <Clases sectionClases={sectionClases}/>
+      <Workshops sectionWorkshop={sectionWorkshop} />
+      <Translates sectionTranslates={sectionTranslates}/>
       <Opinions sectionOpinion={sectionOpinion}/>
     </MainDiv>
   );
