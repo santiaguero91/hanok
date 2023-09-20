@@ -13,3 +13,16 @@ export const MainDiv = styled(Box)`
   background-attachment: fixed;
 `
 
+
+export const FixBox = styled(Box)`
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  top: 50px;
+  flex-direction: column;
+  background-color: rgba(89,89,89); 
+
+  
+`
+
+

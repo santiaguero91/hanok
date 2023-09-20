@@ -1,15 +1,22 @@
+import { useInView } from "react-intersection-observer";
 import {MainSection,Header,NavBar,Slider,Sections,Translates,Workshops,Clases,Opinions} from "../Components/index";
-import { MainDiv } from "./MainStyle";
+import { FixBox, MainDiv } from "./MainStyle";
+import { useState } from "react";
 
 const Main = () => {
+
+  const [section1Ref, section1InView] = useInView({ threshold: 0.5 });
+
+
   return (
     <MainDiv>
-      <Header/>
+      <FixBox > {section1InView ? "Hola" : "Nada"}</FixBox>
+      <Header />
       <NavBar/>
       <MainSection/>
       <Sections />
       <Translates />
-      <Workshops />
+      <Workshops section1Ref={section1Ref}/>
       <Clases />
       <Opinions />
     </MainDiv>

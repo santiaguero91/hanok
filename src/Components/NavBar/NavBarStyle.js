@@ -8,9 +8,11 @@ export const MainDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(191, 191, 191);
+  background-color: rgba(191, 191, 191,0.9);
   color: black;
   align-items: center;
   padding: 1% 0 1% 0;
+
+  z-index: 5;
 `;
 
