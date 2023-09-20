@@ -3,7 +3,7 @@ import { MainDiv, TextDiv } from "./SectionStyle";
 import { SectionsBtn } from "../SectionsStyle";
 import { typoh5bold } from "../../../utils/Fonts";
 import { Link } from "react-scroll";
-
+import { motion } from "framer-motion";
 
 const Section = ({img, title,link}) => {
 
@@ -14,7 +14,14 @@ const Section = ({img, title,link}) => {
         <Typography variant="h5" style={typoh5bold} >{title}</Typography>
         </TextDiv>
         <Link to={link} spy={true} smooth={true} offset={-50} duration={1000}>
-        <SectionsBtn>Saber mas</SectionsBtn>
+        <SectionsBtn
+        component={motion.div}
+        whileHover={{
+          scale:1.1,
+          transition: { duration: 0.3 }
+        }}
+        whileTap={{ scale: 0.9 }}        
+        >Saber mas</SectionsBtn>
         </Link>
 
     </MainDiv> 

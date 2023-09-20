@@ -19,7 +19,6 @@ export const SectionsBtn = styled(Button)`
   border-radius: 10px;
   margin: 3% auto;
   width: 10vw;
-
   :hover {
     background-color: rgba(199, 199, 199);
   }
