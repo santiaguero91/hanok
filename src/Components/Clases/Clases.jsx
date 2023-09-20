@@ -3,9 +3,9 @@ import onlineClases from "../../assets/OnlineClases.jpg";
 import { ClasesBtn, MainDiv, RowDiv, TextDiv } from "./ClasesStyle";
 import { typoh3bold, typoh5 } from "../../utils/Fonts";
 
-const Clases = () => {
+const Clases = ({sectionClases}) => {
   return (
-    <MainDiv id="Clases">
+    <MainDiv id="Clases" ref={sectionClases}>
       <Typography variant="h3" style={typoh3bold}>
         Clases
       </Typography>

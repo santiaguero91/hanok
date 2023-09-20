@@ -1,15 +1,15 @@
 import { Typography } from "@mui/material";
 import { MainDiv } from "./NavBarStyle";
-import { typoh6bold } from "../../utils/Fonts";
+import { navBarBlack,navBarRed } from "../../utils/Fonts";
 import { Link } from "react-scroll";
 import { motion, useInView } from "framer-motion";
 
-const NavBar = () => {
+const NavBar = ({inSight}) => {
 
   return (
     <MainDiv>
       <Link to="Clases" spy={true} smooth={true} offset={-50} duration={1000}>
-        <Typography style={typoh6bold} variant="h6"
+        <Typography style={inSight==="Clases" ? navBarBlack: navBarRed} variant="h6"
         component={motion.div}
         whileHover={{
           scale:1.1,
@@ -21,17 +21,17 @@ const NavBar = () => {
         </Typography>
       </Link>
       <Link to="Translates" spy={true} smooth={true} offset={-50} duration={1000}>
-        <Typography style={typoh6bold} variant="h6">
+        <Typography style={inSight==="Translates" ? navBarBlack: navBarRed} variant="h6">
           Traducciones
         </Typography>
       </Link>
       <Link to="Workshops" spy={true} smooth={true} offset={-50} duration={1000}>
-        <Typography style={typoh6bold} variant="h6">
+        <Typography style={inSight==="Workshop" ? navBarBlack: navBarRed} variant="h6">
           Actividades
         </Typography>
       </Link>
       <Link to="Opiniones" spy={true} smooth={true} offset={50} duration={1000}>
-        <Typography style={typoh6bold} variant="h6">
+        <Typography style={inSight==="Opinion" ? navBarBlack: navBarRed} variant="h6">
           Contacto
         </Typography>
       </Link>

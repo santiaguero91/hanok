@@ -2,9 +2,9 @@ import { Typography } from "@mui/material";
 import { MainDiv, RowDiv } from "./OpinionsStyle";
 import { typoh3bold,typoh6 } from "../../utils/Fonts";
 
-const Opinions = () => {
+const Opinions = ({sectionOpinion}) => {
   return (
-    <MainDiv id='Opiniones'>
+    <MainDiv id='Opiniones' ref={sectionOpinion}>
       <Typography
         variant="h3"
         style={typoh3bold}

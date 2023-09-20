@@ -11,6 +11,18 @@ export const typoh6bold = {
     cursor: "pointer",
     color:"black"
   };
+export const navBarBlack = {
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
+    cursor: "pointer",
+    color:"black"
+  };
+export const navBarRed = {
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
+    cursor: "pointer",
+    color:"red"
+  };
 export const typoh5 = {
     fontFamily: "Montserrat",
   };

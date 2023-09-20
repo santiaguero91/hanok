@@ -1,24 +1,53 @@
 import { useInView } from "react-intersection-observer";
-import {MainSection,Header,NavBar,Slider,Sections,Translates,Workshops,Clases,Opinions} from "../Components/index";
+import {
+  MainSection,
+  Header,
+  NavBar,
+  Slider,
+  Sections,
+  Translates,
+  Workshops,
+  Clases,
+  Opinions,
+} from "../Components/index";
 import { FixBox, MainDiv } from "./MainStyle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Main = () => {
+  const [inSight, setInSight] = useState("");
 
-  const [section1Ref, section1InView] = useInView({ threshold: 0.5 });
+  const [sectionWorkshop, sectionWorkshopInView] = useInView({
+    threshold: 0.5,
+  });
+  const [sectionClases, sectionClasesInView] = useInView({ threshold: 0.5 });
+  const [sectionTranslates, sectionTranslatesInView] = useInView({
+    threshold: 0.5,
+  });
+  const [sectionOpinion, sectionOpinionInView] = useInView({ threshold: 0.5 });
 
+  useEffect(() => {
+    if (sectionWorkshopInView) {
+      setInSight("Workshop");
+    } else if (sectionClasesInView) {
+      setInSight("Clases");
+    } else if (sectionTranslatesInView) {
+      setInSight("Translates");
+    } else if (sectionOpinionInView) {
+      setInSight("Opinion");
+    }
+  }, [sectionWorkshopInView, sectionClasesInView, sectionTranslatesInView, sectionOpinionInView]);
 
   return (
     <MainDiv>
-      <FixBox > {section1InView ? "Hola" : "Nada"}</FixBox>
+      {/* <FixBox>{inSight}</FixBox> */}
       <Header />
-      <NavBar/>
-      <MainSection/>
+      <NavBar inSight={inSight}/>
+      <MainSection />
       <Sections />
-      <Translates />
-      <Workshops section1Ref={section1Ref}/>
-      <Clases />
-      <Opinions />
+      <Translates sectionTranslates={sectionTranslates}/>
+      <Workshops sectionWorkshop={sectionWorkshop} />
+      <Clases sectionClases={sectionClases}/>
+      <Opinions sectionOpinion={sectionOpinion}/>
     </MainDiv>
   );
 };

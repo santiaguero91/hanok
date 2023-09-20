@@ -4,10 +4,10 @@ import ReadingWorkshop from "../../assets/ReadingWorkshop.jpg"
 import Translations from "../../assets/Translations.jpg"
 import Section from "./Section/Section";
 
-const Sections = () => {
+const Sections = ({sectionClases}) => {
 
   return (
-    <MainDiv>
+    <MainDiv ref={sectionClases}>
         <Section 
         title="Clases Online"
         img={Clases}

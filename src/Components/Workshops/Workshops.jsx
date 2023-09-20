@@ -9,10 +9,10 @@ import {
 } from "./WorkshopsStyle";
 import ReadingWorkshop from "../../assets/ReadingWorkshop.jpg";
 import { typoh3bold } from "../../utils/Fonts";
-const Workshops = ({ section1Ref }) => {
+const Workshops = ({ sectionWorkshop }) => {
 
   return (
-    <MainDiv id="Workshops" ref={section1Ref} >
+    <MainDiv id="Workshops" ref={sectionWorkshop} >
       <ColumnDiv>
         <Typography variant="h3" style={typoh3bold}>
           Talleres

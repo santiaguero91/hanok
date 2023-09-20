@@ -9,9 +9,9 @@ import {
 import { typoh3bold, typoh6 } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 
-const Translates = () => {
+const Translates = ({sectionTranslates}) => {
   return (
-    <MainDiv id="Translates">
+    <MainDiv id="Translates"  ref={sectionTranslates} >
       <TitleDiv>
         <Typography variant="h3" style={typoh3bold}>
           Traducciones
