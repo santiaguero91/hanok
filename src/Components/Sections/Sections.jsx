@@ -11,15 +11,17 @@ const Sections = () => {
         <Section 
         title="Clases Online"
         img={Clases}
-        
+        link="Clases"
         />
         <Section
         title="Talleres"
         img={ReadingWorkshop}
+        link="Workshops"
         />
         <Section
         title="Traducciones"
         img={Translations}
+        link="Translates"
         />
     </MainDiv> 
   );

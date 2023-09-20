@@ -2,9 +2,10 @@ import { Typography } from "@mui/material";
 import { MainDiv, TextDiv } from "./SectionStyle";
 import { SectionsBtn } from "../SectionsStyle";
 import { typoh5bold } from "../../../utils/Fonts";
+import { Link } from "react-scroll";
 
 
-const Section = ({img, title}) => {
+const Section = ({img, title,link}) => {
 
   return (
     <MainDiv>
@@ -12,7 +13,10 @@ const Section = ({img, title}) => {
         <TextDiv>
         <Typography variant="h5" style={typoh5bold} >{title}</Typography>
         </TextDiv>
-        <SectionsBtn>Me interesa</SectionsBtn>
+        <Link to={link} spy={true} smooth={true} offset={-50} duration={1000}>
+        <SectionsBtn>Saber mas</SectionsBtn>
+        </Link>
+
     </MainDiv> 
   );
 };

@@ -5,7 +5,7 @@ import { typoh3bold, typoh5 } from "../../utils/Fonts";
 
 const Clases = () => {
   return (
-    <MainDiv id='Clases'>
+    <MainDiv id="Clases">
       <Typography variant="h3" style={typoh3bold}>
         Clases
       </Typography>
@@ -13,9 +13,8 @@ const Clases = () => {
         <img width={"400px"} height={"350px"} src={onlineClases} />
         <TextDiv>
           <Typography variant="h5" style={typoh5}>
-            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico
-            en demostraciones de tipografías o de borradores de diseño para
-            probar el diseño visual antes de insertar el texto final
+            GlobalExam. Es la primera página web de enseñanza de idiomas 100%
+            online y propone sin duda uno de los mejores cursos de inglés. ...
           </Typography>
           <ClasesBtn>Anotarme</ClasesBtn>
         </TextDiv>

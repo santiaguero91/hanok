@@ -12,18 +12,16 @@ const Translates = () => {
   return (
     <MainDiv id="Translates">
       <TitleDiv>
-        <Typography variant="h3"
-         style={typoh3bold}
-        >Traducciones</Typography>
+        <Typography variant="h3" style={typoh3bold}>
+          Traducciones
+        </Typography>
       </TitleDiv>
       <RowDiv>
         <LeftDiv>
-          <Typography variant="h6"
-          style={typoh6}
-          >
-            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico
-            en demostraciones de tipografías o de borradores de diseño para
-            probar el diseño ...
+          <Typography variant="h6" style={typoh6}>
+            El equipo de traducciones.com quiere
+            ser tu mejor aliado para afrontar con éxito los nuevos retos que
+            afrontamos en este cambiante entorno internacional.
           </Typography>
           <TranslateBtn>Mas Info</TranslateBtn>
         </LeftDiv>

@@ -1,18 +1,16 @@
 import { Typography } from "@mui/material";
 import { ImgDiv, MainDiv, TextDiv } from "./MainSectionStyle";
 import hanokHouse from "../../assets/hanockHouse.jpeg";
-import { typoh5} from "../../utils/Fonts";
+import { typoh5 } from "../../utils/Fonts";
 
 const MainSection = () => {
   return (
     <MainDiv>
       <TextDiv>
-        <Typography variant="h4"
-         style={typoh5}
-        >
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en
-          demostraciones de tipografías o de borradores de diseño para probar el
-          diseño visual antes de insertar el texto final.
+        <Typography variant="h4" style={typoh5}>
+          Leeds organiza y dicta cursos y seminarios de perfeccionamiento con el
+          fin de interiorizar y capacitar , tanto a sus profesores como
+          profesores de todo el país, respecto de las novedades metodológicas.
         </Typography>
       </TextDiv>
       <ImgDiv>
