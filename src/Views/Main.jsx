@@ -12,6 +12,7 @@ import {
 } from "../Components/index";
 import { FixBox, MainDiv } from "./MainStyle";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Main = () => {
   const [inSight, setInSight] = useState("");
@@ -34,22 +35,37 @@ const Main = () => {
       setInSight("Translates");
     } else if (sectionOpinionInView) {
       setInSight("Opinion");
-    } else if (!sectionWorkshopInView && !sectionClasesInView &&!sectionTranslatesInView &&!sectionOpinionInView ) {
+    } else if (
+      !sectionWorkshopInView &&
+      !sectionClasesInView &&
+      !sectionTranslatesInView &&
+      !sectionOpinionInView
+    ) {
       setInSight("");
     }
-  }, [sectionWorkshopInView, sectionClasesInView, sectionTranslatesInView, sectionOpinionInView]);
+  }, [
+    sectionWorkshopInView,
+    sectionClasesInView,
+    sectionTranslatesInView,
+    sectionOpinionInView,
+  ]);
 
   return (
-    <MainDiv>
+    <MainDiv
+      component={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.8 } }}
+      exit={{ opacity: 0, transition: { duration: 0.8 } }}
+    >
       {/* <FixBox>{inSight}</FixBox> */}
       <Header />
-      <NavBar inSight={inSight}/>
+      <NavBar inSight={inSight} />
       <MainSection />
       <Sections />
-      <Clases sectionClases={sectionClases}/>
+      <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
-      <Translates sectionTranslates={sectionTranslates}/>
-      <Opinions sectionOpinion={sectionOpinion}/>
+      <Translates sectionTranslates={sectionTranslates} />
+      <Opinions sectionOpinion={sectionOpinion} />
     </MainDiv>
   );
 };

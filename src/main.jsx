@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AnimatePresence mode="wait" initial={false}>
+    <AnimatePresence mode="wait" initial={true}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

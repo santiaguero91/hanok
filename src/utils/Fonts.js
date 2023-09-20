@@ -21,7 +21,7 @@ export const navBarRed = {
     fontFamily: "Montserrat",
     fontWeight: "bold",
     cursor: "pointer",
-    color:"red"
+    color:"rgb(112,121,85)"
   };
 export const typoh5 = {
     fontFamily: "Montserrat",
