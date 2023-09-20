@@ -1,14 +1,18 @@
 import styled from "@emotion/styled";
 import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(191, 191, 191);
+  background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  padding: 0.5% 0 0.5% 0;
+  margin:  0 auto 0 auto;
+  padding-bottom: 2%;
+  border-radius: 25px;
+
 `;
 
 export const TitleDiv = styled(Box)`
@@ -23,8 +27,12 @@ export const RowDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 3% 10%;
-
+  border-radius: 10px;
   background-color: blanchedalmond;
+
+  img{
+    border-radius: 0 10px 10px 0;
+  }
 `;
 
 export const LeftDiv = styled(Box)`
