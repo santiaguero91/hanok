@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 
 export const MainDiv = styled(Box)`
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0px;
   display: flex;

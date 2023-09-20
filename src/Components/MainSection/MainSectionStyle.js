@@ -9,6 +9,7 @@ export const MainDiv = styled(Box)`
   justify-content: space-between;
   background-color: rgba(112, 121, 85);
   align-items: center;
+  margin:  0 0 3% 0;
 `;
 
 export const TextDiv = styled(Box)`

@@ -9,7 +9,6 @@ export const MainDiv = styled(Box)`
   background-color: rgba(191, 191, 191);
   color: black;
   align-items: center;
-  padding: 0.5% 0 0.5% 0;
 `;
 
 export const SectionsBtn = styled(Button)`

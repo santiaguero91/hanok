@@ -9,8 +9,7 @@ export const MainDiv = styled(Box)`
   background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  margin: 3% 0;
-  padding: 3% 0 0 0;
+  margin:  3% 0 3% 0;
 `;
 
 export const RowDiv = styled(Box)`

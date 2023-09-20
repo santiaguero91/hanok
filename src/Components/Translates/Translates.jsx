@@ -9,6 +9,13 @@ import {
 import { typoh3bold, typoh6 } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 
+
+const handleClick = () => {
+  window.scrollTo({
+    top: 0,
+  });
+};
+
 const Translates = ({sectionTranslates}) => {
   return (
     <MainDiv id="Translates"  ref={sectionTranslates} >
@@ -24,7 +31,7 @@ const Translates = ({sectionTranslates}) => {
             ser tu mejor aliado para afrontar con éxito los nuevos retos que
             afrontamos en este cambiante entorno internacional.
           </Typography>
-          <NavLink to="/traducciones">
+          <NavLink to="/traducciones" onClick={handleClick}>
 
           <TranslateBtn>Mas Info</TranslateBtn>
           </NavLink>
