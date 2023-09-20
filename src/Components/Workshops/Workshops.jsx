@@ -27,7 +27,7 @@ const Workshops = () => {
               como talleres de plastilina, vitral y dibujo. · Para promover el
               desarrollo de ...
             </Typography>
-            <WorkshopBtn>Saber Mas</WorkshopBtn>
+              <WorkshopBtn>Saber Mas</WorkshopBtn>
           </TextDiv>
         </RowDiv>
       </ColumnDiv>
