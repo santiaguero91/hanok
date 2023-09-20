@@ -9,9 +9,9 @@ const Section = ({img, title,link}) => {
 
   return (
     <MainDiv>
-        <img width="400px" height="350px" src={img}/>
+        <img width="350px" height="350px" src={img}/>
         <TextDiv>
-        <Typography variant="h5" style={typoh5bold} >{title}</Typography>
+        <Typography variant="h5" style={typoh5bold}>{title}</Typography>
         </TextDiv>
         <Link to={link} spy={true} smooth={true} offset={-50} duration={1000}>
         <SectionsBtn

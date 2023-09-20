@@ -1,15 +1,15 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Box} from "@mui/material";
 
 
 export const MainDiv = styled(Box)`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgba(112, 121, 85);
-  align-items: center;
   margin:  0 0 3% 0;
+
 `;
 
 export const TextDiv = styled(Box)`

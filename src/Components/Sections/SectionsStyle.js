@@ -7,17 +7,17 @@ export const MainDiv = styled(Box)`
   flex-direction: row;
   justify-content: space-around;
   background-color: rgba(191, 191, 191);
+  background-color: rgba(98, 98, 98);
   color: black;
-  align-items: center;
+
 `;
 
 export const SectionsBtn = styled(Button)`
-  background-color: rgba(156,137,184);
+  background-color: rgba(156, 137, 184);
   color: black;
   transition: 1s;
   border-radius: 10px;
   margin: 3% auto;
-  width: 10vw;
   :hover {
     background-color: rgba(199, 199, 199);
   }
