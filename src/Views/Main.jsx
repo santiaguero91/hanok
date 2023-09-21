@@ -3,14 +3,14 @@ import {
   MainSection,
   Header,
   NavBar,
-  Slider,
   Sections,
   Translates,
   Workshops,
   Clases,
   Opinions,
+  Footer
 } from "../Components/index";
-import { FixBox, MainDiv } from "./MainStyle";
+import { MainDiv } from "./MainStyle";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -66,6 +66,7 @@ const Main = () => {
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
       <Opinions sectionOpinion={sectionOpinion} />
+      <Footer />
     </MainDiv>
   );
 };
