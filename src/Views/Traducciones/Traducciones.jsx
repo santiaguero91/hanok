@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Main from "../../Components/Traducciones/Main/Main";
 import Proyectos from "../../Components/Traducciones/Proyectos/Proyectos";
 import { MainDiv } from "../MainStyle";
+import { Footer, Header } from "../../Components";
 
 const Traducciones = () => {
   return (
@@ -10,9 +11,12 @@ const Traducciones = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.8 } }}
       exit={{ opacity: 0, transition: { duration: 0.2 } }}
-      >
+    >
+      <Header />
+
       <Main />
       <Proyectos />
+      <Footer />
     </MainDiv>
   );
 };

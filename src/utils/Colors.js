@@ -1,7 +1,7 @@
 export const Colors = {
   greyBackground: "rgba(155,190,199,1)",
   greenBackground: "rgb(112,121,85)",
-  lightGreyBackground: "rgba(191,191,191,0.8)",
+  lightGreyBackground: "rgba(191,191,191,0.5)",
   lightGreenBackground: "rgb(112,121,85)",
   blanchedalmond: "rgb(255,235,205)",
 

@@ -26,7 +26,7 @@ export const NavBarBtn = styled(Button)`
   transition: 1s;
   border-radius: 10px;
   margin: 0 auto 0 auto;
-  width: 10vw;
+  width: 15vw;
   :hover {
     background-color: rgba(199, 199, 199);
   }

@@ -1,9 +1,9 @@
-import styled from "@emotion/styled";
+                                           import styled from "@emotion/styled";
 import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   background-color: ${Colors.lightGreyBackground};
@@ -11,7 +11,6 @@ export const MainDiv = styled(Box)`
   align-items: center;
   margin: 3% auto;
   border-radius: 25px;
-
 `;
 
 export const RowDiv = styled(Box)`
@@ -20,7 +19,7 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 10%;
+  margin: 3% 7%;
 
   background-color: ${Colors.blanchedalmond};
 `;
@@ -37,18 +36,18 @@ export const ColumnDiv = styled(Box)`
 `;
 
 export const TextDiv = styled(Box)`
-margin: 1.5% 5%;
-flex-direction: column;
+  margin: 1.5% 5%;
+  flex-direction: column;
 `;
 export const ImgDiv = styled(Box)`
-margin: 1.5% 0% ;
-img{
-  border-radius: 15px;
-}
+  margin: 1.5% 0%;
+  img {
+    border-radius: 15px;
+  }
 `;
 
 export const WorkshopBtn = styled(Button)`
-  background-color: rgba(156,137,184);
+  background-color: rgba(156, 137, 184);
   color: black;
   transition: 1s;
   border-radius: 10px;
