@@ -9,7 +9,6 @@ export const MainDiv = styled(Box)`
   justify-content: space-around;
   background-color: rgba(112, 121, 85);
   margin:  0 0 3% 0;
-
 `;
 
 export const TextDiv = styled(Box)`
@@ -20,3 +19,4 @@ export const TextDiv = styled(Box)`
 export const ImgDiv = styled(Box)`
  margin: 5%;
 `;
+
