@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
 import { Typography } from "@mui/material";
-import { navBarBlack, typoh5 } from "../../../utils/Fonts";
+import { navBarBlack, typoh5, typoh5bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -26,12 +26,7 @@ const ClasesBtn = ({ inSight }) => {
           {isHovered ? (
             <클래스 />
           ) : (
-            <Typography
-              variant="subtitle1"
-              style={inSight === "Clases" ? navBarBlack : navBarBlack}
-            >
-              Clases
-            </Typography>
+            <Clases/>
           )}
         </motion.div>
       </NavBarBtn>
@@ -40,6 +35,8 @@ const ClasesBtn = ({ inSight }) => {
 };
 
 const text = "클래스";
+const tradText = "Clases"
+
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -55,6 +52,25 @@ const 클래스 = () => {
             animate="visible"
             variants={wordVariants}
             transition={{ delay: index * 0.2 }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </Typography>
+    </TypeDiv>
+  );
+};
+const Clases = () => {
+  return (
+    <TypeDiv>
+      <Typography variant="h2" style={typoh5bold}>
+        {tradText.split("").map((word, index) => (
+          <motion.span
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={wordVariants}
+            transition={{ delay: index * 0.1 }}
           >
             {word}{" "}
           </motion.span>

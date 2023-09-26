@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
 import { Typography } from "@mui/material";
-import { navBarBlack, typoh5 } from "../../../utils/Fonts";
+import { navBarBlack, typoh5, typoh5bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -19,9 +19,7 @@ const OpinionesBtn = ({ inSight }) => {
         >
           {isHovered ? (
             <의견 />
-          ) : (
-            <Typography variant="subtitle1" style={inSight === "Opinion" ? navBarBlack : navBarBlack}>Opiniones</Typography>
-          )}
+          ) : <Opiniones/>}
         </motion.div>
       </NavBarBtn>
     </Link>
@@ -29,6 +27,8 @@ const OpinionesBtn = ({ inSight }) => {
 };
 
 const text = "의견";
+const tradText = "Opiniones";
+
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -52,5 +52,23 @@ const 의견 = () => {
     </TypeDiv>
   );
 };
-
+const Opiniones = () => {
+  return (
+    <TypeDiv>
+      <Typography variant="h2" style={typoh5bold}>
+        {tradText.split("").map((word, index) => (
+          <motion.span
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={wordVariants}
+            transition={{ delay: index * 0.1 }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </Typography>
+    </TypeDiv>
+  );
+};
 export default OpinionesBtn;

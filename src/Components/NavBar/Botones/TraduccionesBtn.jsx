@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
 import { Typography } from "@mui/material";
-import { navBarBlack, typoh5 } from "../../../utils/Fonts";
+import { navBarBlack, typoh5, typoh5bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -32,12 +32,7 @@ const TraduccionesBtn = ({ inSight }) => {
           {isHovered ? (
             <번역 />
           ) : (
-            <Typography
-              variant="subtitle1"
-              style={inSight === "Translates" ? navBarBlack : navBarBlack}
-            >
-              Traducciones
-            </Typography>
+            <Traducciones/>
           )}
         </motion.div>
       </NavBarBtn>
@@ -46,6 +41,8 @@ const TraduccionesBtn = ({ inSight }) => {
 };
 
 const text = "번역";
+const tradText = "Traducciones";
+
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -70,4 +67,23 @@ const 번역 = () => {
   );
 };
 
+const Traducciones = () => {
+  return (
+    <TypeDiv>
+      <Typography variant="h2" style={typoh5bold}>
+        {tradText.split("").map((word, index) => (
+          <motion.span
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={wordVariants}
+            transition={{ delay: index * 0.1 }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </Typography>
+    </TypeDiv>
+  );
+};
 export default TraduccionesBtn;

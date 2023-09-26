@@ -29,4 +29,5 @@ export const typoh5 = {
 export const typoh5bold = {
     fontFamily: "Montserrat",
     fontWeight: "bold",
+    fontSize: "20px"
   };
