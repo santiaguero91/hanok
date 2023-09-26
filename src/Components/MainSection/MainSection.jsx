@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { ImgDiv, MainDiv, TextDiv } from "./MainSectionStyle";
+import { ImgDiv, MainDiv, TextDiv,TypeDiv } from "./MainSectionStyle";
 import hanokHouse from "../../assets/hanockHouse.jpeg";
 import { typoh5 } from "../../utils/Fonts";
 import { motion } from "framer-motion";
@@ -44,6 +44,7 @@ const wordVariants = {
 // Animation to appear each word at a time.
 const Animation = () => {
   return (
+    <TypeDiv>
     <Typography variant="h4" style={typoh5}>
       {tradText.split(" ").map((word, index) => (
         <motion.span
@@ -57,11 +58,13 @@ const Animation = () => {
         </motion.span>
       ))}
     </Typography>
+    </TypeDiv>
   );
 };
 
 const 한옥은 = () => {
   return (
+    <TypeDiv>
     <Typography variant="h4" style={typoh5}>
       {text.split(" ").map((word, index) => (
         <motion.span
@@ -75,6 +78,7 @@ const 한옥은 = () => {
         </motion.span>
       ))}
     </Typography>
+    </TypeDiv>
   );
 };
 
