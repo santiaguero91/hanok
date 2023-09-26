@@ -41,7 +41,9 @@ const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 };
-// Animation to appear each word at a time.
+
+
+// Animations to appear each word at a time.
 const Animation = () => {
   return (
     <TypeDiv>

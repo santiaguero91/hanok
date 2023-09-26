@@ -29,7 +29,14 @@ export const NavBarBtn = styled(Button)`
   margin: 0 auto 0 auto;
   width: 15vw;
   :hover {
-    background-color: rgba(199, 199, 199);
+    background-color: transparent;
   }
+`;
 
+export const TypeDiv = styled(Box)`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:  0 0 0 0;
 `;
