@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import {
+  ColumnDiv,
   LeftDiv,
   MainDiv,
   RowDiv,
@@ -19,6 +20,7 @@ const handleClick = () => {
 const Translates = ({sectionTranslates}) => {
   return (
     <MainDiv id="Translates"  ref={sectionTranslates} >
+      <ColumnDiv>
       <TitleDiv>
         <Typography variant="h3" style={typoh3bold}>
           Traducciones
@@ -42,6 +44,7 @@ const Translates = ({sectionTranslates}) => {
           src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366"
         />
       </RowDiv>
+      </ColumnDiv>
     </MainDiv>
   );
 };

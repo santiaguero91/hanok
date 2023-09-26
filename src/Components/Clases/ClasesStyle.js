@@ -13,7 +13,17 @@ export const MainDiv = styled(Box)`
   border-radius: 25px;
   padding-top: 2%;
 `;
+export const ColumnDiv = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 10%;
+  padding: 1% 0 0 0;
+  border-radius: 25px;
 
+  background-color: ${Colors.blanchedalmond};
+`;
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;

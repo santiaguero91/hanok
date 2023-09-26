@@ -1,10 +1,11 @@
 import { Typography } from "@mui/material";
-import { MainDiv, RowDiv } from "./OpinionsStyle";
+import { ColumnDiv, MainDiv, RowDiv } from "./OpinionsStyle";
 import { typoh3bold,typoh6 } from "../../utils/Fonts";
 
 const Opinions = ({sectionOpinion}) => {
   return (
     <MainDiv id='Opiniones' ref={sectionOpinion}>
+      <ColumnDiv>
       <Typography
         variant="h3"
         style={typoh3bold}
@@ -23,6 +24,7 @@ const Opinions = ({sectionOpinion}) => {
           diseño visual antes de insertar el texto final
         </Typography>
       </RowDiv>
+      </ColumnDiv>
     </MainDiv>
   );
 };

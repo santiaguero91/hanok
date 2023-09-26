@@ -32,9 +32,4 @@ export const NavBarBtn = styled(Button)`
     background-color: rgba(199, 199, 199);
   }
 
-  /*
-  :focus {
-    outline: none;
-    border: none;
-  } */
 `;
