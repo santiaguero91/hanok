@@ -14,7 +14,7 @@ const Header = () => {
       <MainDiv>
         <DivImg>
           <NavLink to="/" onClick={handleClick}>
-            <img src={hanokHouse} width="100px" />
+            <img src={hanokHouse} width="65px" />
           </NavLink>
         </DivImg>
         <DivIcons>
