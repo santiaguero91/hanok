@@ -4,5 +4,13 @@
   padding: 0;
   text-align: center;
   /* overflow-x: scroll  */
+}
 
+
+@font-face {
+  font-family: yakarta;
+  src: url(../public/PlusJakartaSans-Italic-VariableFont_wght.ttf)
+}
+.yakarta{
+  font-family: yakarta;
 }
