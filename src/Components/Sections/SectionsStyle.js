@@ -9,7 +9,7 @@ export const MainDiv = styled(Box)`
   background-color: rgba(191, 191, 191);
   background-color: rgba(98, 98, 98);
   color: black;
-
+  margin-bottom: 20%;
 `;
 
 export const SectionsBtn = styled(Button)`

@@ -10,7 +10,7 @@ const Opinions = ({sectionOpinion}) => {
         variant="h3"
         style={typoh3bold}
       >
-        Lo que opinion mis alumnos
+        Lo que opinan mis alumnos
       </Typography>
 
       <RowDiv>

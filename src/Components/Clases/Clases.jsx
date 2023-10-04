@@ -14,8 +14,7 @@ const Clases = ({ sectionClases }) => {
           <img width={"400px"} height={"350px"} src={onlineClases} />
           <TextDiv>
             <Typography variant="h5" style={typoh5}>
-              GlobalExam. Es la primera página web de enseñanza de idiomas 100%
-              online y propone sin duda uno de los mejores cursos de inglés. ...
+              Disfuta las mejores clases online personalizadas con grupos acorde al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typography>
             <ClasesBtn>Anotarme</ClasesBtn>
           </TextDiv>

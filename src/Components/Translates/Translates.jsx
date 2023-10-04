@@ -29,7 +29,7 @@ const Translates = ({sectionTranslates}) => {
       <RowDiv>
         <LeftDiv>
           <Typography variant="h6" style={typoh6}>
-            El equipo de traducciones.com quiere
+            El equipo de Hanok desea
             ser tu mejor aliado para afrontar con éxito los nuevos retos que
             afrontamos en este cambiante entorno internacional.
           </Typography>

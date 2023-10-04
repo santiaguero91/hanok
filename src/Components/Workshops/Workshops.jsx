@@ -8,7 +8,7 @@ import {
   WorkshopBtn,
 } from "./WorkshopsStyle";
 import ReadingWorkshop from "../../assets/ReadingWorkshop.jpg";
-import { typoh3bold } from "../../utils/Fonts";
+import { typoh3bold, typoh5 } from "../../utils/Fonts";
 const Workshops = ({ sectionWorkshop }) => {
 
   return (
@@ -22,7 +22,7 @@ const Workshops = ({ sectionWorkshop }) => {
             <img width="300px" height="300px" src={ReadingWorkshop} />
           </ImgDiv>
           <TextDiv>
-            <Typography variant="h5">
+            <Typography variant="h5" style={typoh5}>
             Un fin de semana al mes los miembros del club nos encontramos en algún café de Buenos Aires en este maravilloso encuentro donde cada uno puede traer un libro para  presentar y recomendar. ¡¡Todos están invitados !!             </Typography>
               <WorkshopBtn>Saber Mas</WorkshopBtn>
           </TextDiv>
