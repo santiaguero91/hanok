@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import onlineClases from "../../assets/OnlineClases.jpg";
 import { ClasesBtn, ColumnDiv, MainDiv, RowDiv, TextDiv } from "./ClasesStyle";
 import { typoh3bold, typoh5 } from "../../utils/Fonts";
+import TimeTable from "./TimeTable/TimeTable";
 
 const Clases = ({ sectionClases }) => {
   return (
@@ -16,13 +17,11 @@ const Clases = ({ sectionClases }) => {
             <Typography variant="h5" style={typoh5}>
               Disfuta las mejores clases online personalizadas con grupos acorde al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typography>
-            <ClasesBtn>Anotarme</ClasesBtn>
+            <ClasesBtn>Averiguar horarios</ClasesBtn>
           </TextDiv>
         </RowDiv>
 
-        <div>
-          <h1>TimeTables</h1>
-        </div>
+          <TimeTable />
       </ColumnDiv>
     </MainDiv>
   );
