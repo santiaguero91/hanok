@@ -3,7 +3,7 @@ import { Box} from "@mui/material";
 
 
 export const MainDiv = styled(Box)`
-max-width: 100vw;
+  max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: row;

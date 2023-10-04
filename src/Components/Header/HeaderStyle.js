@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Box} from "@mui/material";
 
 export const MainDiv = styled(Box)`
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
