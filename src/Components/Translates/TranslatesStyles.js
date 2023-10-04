@@ -12,7 +12,7 @@ max-width: 100vw;
   align-items: center;
   margin:  0 auto 0 auto;
   //padding-bottom: 2%;
-  border-radius: 25px;
+  // border-radius: 25px;
 
 `;
 export const ColumnDiv = styled(Box)`
@@ -22,7 +22,7 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   //margin: 3% 10%;
   //padding: 1% 0 0 0;
-  border-radius: 25px;
+  //border-radius: 25px;
 
   background-color: ${Colors.blanchedalmond};
 `;

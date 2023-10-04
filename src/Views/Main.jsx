@@ -8,21 +8,19 @@ import {
   Workshops,
   Clases,
   Opinions,
-  Footer
+  Footer,
 } from "../Components/index";
 import { MainDiv } from "./MainStyle";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import TempleDay from "../assets/TempleDay.jpg"
-import seoulNightView from "../assets/seoulNightView.jpg"
+import TempleDay from "../assets/TempleDay.jpg";
+import seoulNightView from "../assets/seoulNightView.jpg";
 
 const Main = () => {
-  let background1 =TempleDay;
-   let background2 = seoulNightView;
+  let background1 = TempleDay;
+  let background2 = seoulNightView;
   const [inSight, setInSight] = useState("");
   const [background, setBackground] = useState(background1);
-
-
 
   const [sectionWorkshop, sectionWorkshopInView] = useInView({
     threshold: 0.5,
@@ -56,7 +54,6 @@ const Main = () => {
     sectionOpinionInView,
   ]);
 
-
   useEffect(() => {
     if (inSight === "Translates" || inSight === "Opinion") {
       setBackground(background2);
@@ -77,7 +74,7 @@ const Main = () => {
       {/* <FixBox>{inSight}</FixBox> */}
       <Header />
       <NavBar inSight={inSight} />
-      <MainSection />
+      {/* <MainSection /> */}
       <Sections />
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />

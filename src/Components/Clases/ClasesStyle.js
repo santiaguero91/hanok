@@ -3,7 +3,7 @@ import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   background-color: ${Colors.lightGreyBackground};
@@ -20,7 +20,7 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   // margin: 3% 10%;
   //padding: 1% 0 0 0;
-  border-radius: 25px;
+  // border-radius: 25px;
   background-color: ${Colors.blanchedalmond};
 `;
 export const RowDiv = styled(Box)`

@@ -11,7 +11,7 @@ max-width: 100vw;
   color: black;
   align-items: center;
   margin: 3% auto;
-  border-radius: 25px;
+  //border-radius: 25px;
 `;
 
 export const RowDiv = styled(Box)`
@@ -31,7 +31,7 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   //margin: 3% 10%;
   //padding: 1% 0 0 0;
-  border-radius: 25px;
+   //border-radius: 25px;
 
   background-color: ${Colors.blanchedalmond};
 `;
