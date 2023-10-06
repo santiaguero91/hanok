@@ -7,7 +7,7 @@ export const MainDiv = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(98, 98, 98);
+  background-color: rgba(112, 121, 85);
   color: black;
   margin-bottom: 30%; 
 `;
@@ -20,7 +20,7 @@ export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(98, 98, 98);
+  background-color: rgba(112, 121, 85);
   color: black;
 `;
 

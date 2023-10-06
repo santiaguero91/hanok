@@ -6,7 +6,7 @@ export const MainDiv = styled(Box)`
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  background-color: ${Colors.blanchedalmond};
+  background-color: rgba(112, 121, 85);
   color: black;
   align-items: center;
   margin:  3% auto 0 auto;
@@ -18,7 +18,7 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: ${Colors.blanchedalmond};
+  background-color: rgba(112, 121, 85);
   padding-top: 3%;
   padding: 3%;
 
@@ -32,7 +32,7 @@ export const RowDiv = styled(Box)`
   margin: 5% 15% 0% 15%;
   border-radius: 10px;
 
-  background-color: ${Colors.blanchedalmond};
+  background-color: rgba(112, 121, 85);
 
   img{
     border-radius: 10px;

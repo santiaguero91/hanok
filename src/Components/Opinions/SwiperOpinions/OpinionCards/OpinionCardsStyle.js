@@ -11,6 +11,7 @@ export const MainDiv = styled(Box)`
   align-items: center;
   background-color: rgba(112, 121, 85);
   margin: 0 0 0 0;
+
 `;
 
 export const RowDiv = styled(Box)`
@@ -21,9 +22,8 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 10%;
   border-radius: 10px;
-  background-color: ${Colors.almostWhiteBackground};
+  background-color: rgba(112, 121, 85);
   gap: 5%;
-
   img {
     border-radius: 999px;
     border: 2px solid black;

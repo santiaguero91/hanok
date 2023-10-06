@@ -7,7 +7,7 @@ max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: ${Colors.lightGreyBackground};
+  background-color: rgba(112, 121, 85);
   color: black;
   align-items: center;
   margin: 0 auto 5% auto;
@@ -22,7 +22,7 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 15%;
 
-  background-color: ${Colors.almostWhiteBackground};
+  background-color: rgba(112, 121, 85);
 `;
 export const ColumnDiv = styled(Box)`
   padding: 3% 0;
@@ -35,7 +35,7 @@ export const ColumnDiv = styled(Box)`
   //padding: 1% 0 0 0;
    //border-radius: 25px;
                             
-   background-color: ${Colors.almostWhiteBackground};
+   background-color: rgba(112, 121, 85);
 `;
 
 export const TextDiv = styled(Box)`
