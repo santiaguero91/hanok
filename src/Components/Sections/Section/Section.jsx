@@ -13,7 +13,7 @@ const Section = ({img, title,link}) => {
       whileHover={{ filter: "blur(2px)" }}
       style={{
         cursor: "pointer",
-        filter: "blur(0px)", // Set the initial blur value to 0 pixels
+        filter: "blur(0px)", 
       }}
     >
         <img width="350px" height="350px" src={img}/>

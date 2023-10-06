@@ -1,45 +1,18 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
-import { Colors } from "../../utils/Colors";
+import { Box } from "@mui/material";
+import { Colors } from "../../../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  max-width: 100vw;
+  max-width: 100dvw;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  background-color: ${Colors.almostWhiteBackground};
-  color: black;
-  align-items: center;
-  margin: 0 auto;
-  .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-`;
-export const ColumnDiv = styled(Box)`
-padding-top: 3%;
-padding-bottom: 3%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
-  background-color: ${Colors.almostWhiteBackground};
+  background-color: rgba(112, 121, 85);
+  margin: 0 0 0 0;
 `;
+
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
@@ -50,12 +23,14 @@ export const RowDiv = styled(Box)`
   border-radius: 10px;
   background-color: ${Colors.almostWhiteBackground};
   gap: 5%;
+
   img {
     border-radius: 999px;
     border: 2px solid black;
     margin: auto;
     animation: anim2 30s ease-in-out infinite;
     transition: 1s;
+    scale: 0.5;
 
     @keyframes anim2 {
       0%,

@@ -10,7 +10,7 @@ const Clases = ({ sectionClases }) => {
 
   const [refanim, inView] = useInView({
     triggerOnce: true, 
-    threshold: 0.3,
+    threshold: 0.2,
   });
 
   return (
@@ -20,7 +20,7 @@ const Clases = ({ sectionClases }) => {
       ref={refanim}
       initial={{ opacity: 0 , y: 150}}
       animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 150 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.5 }}
       
       >
         <Typography variant="h3" style={typoh3bold}>

@@ -5,12 +5,25 @@ export const MainDiv = styled(Box)`
   max-width: 100dvw;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   background-color: rgba(98, 98, 98);
   color: black;
   margin-bottom: 30%; 
 `;
+export const TypoDiv = styled(Box)`
+margin-top: 3%;
+`;
+export const RowDiv = styled(Box)`
+  max-width: 100dvw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(98, 98, 98);
+  color: black;
+`;
+
 
 export const SectionsBtn = styled(Button)`
   background-color: rgba(156, 137, 184);

@@ -12,11 +12,11 @@ import { typoh3bold, typoh5 } from "../../../utils/Fonts";
 
 const TimeTable = () => {
   const rows = [
-    { dia: "Lunes", hora: "19:30" },
+    { dia: "Lunes", hora: "11:00" },
     { dia: "Martes", hora: "19:00" },
-    { dia: "Miercoles", hora: "20:00" },
+    { dia: "Miercoles", hora: "9:00" },
     { dia: "Jueves", hora: "20:00" },
-    { dia: "Viernes", hora: "19:00" },
+    { dia: "Viernes", hora: "11:00" },
   ];
 
   return (
@@ -46,6 +46,7 @@ const TimeTable = () => {
           ))}
         </TableBody>
       </StyledTable>
+      <div>Los horarios son aproximados </div>
     </StyledTableContainer>
   );
 };
