@@ -11,18 +11,15 @@ export const MainDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 0 auto;
-  // border-radius: 25px;
-  //padding-bottom: 2%;
 `;
 export const ColumnDiv = styled(Box)`
+padding-top: 3%;
+padding-bottom: 3%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  //margin: 3% 10%;
-  //padding: 1% 0 0 0;
-  // border-radius: 25px;
   background-color: ${Colors.almostWhiteBackground};
 `;
 export const RowDiv = styled(Box)`

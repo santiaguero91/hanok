@@ -9,7 +9,7 @@ export const MainDiv = styled(Box)`
   justify-content: space-around;
   background-color: rgba(98, 98, 98);
   color: black;
-  margin-bottom: 20%;
+  margin-bottom: 30%; 
 `;
 
 export const SectionsBtn = styled(Button)`
