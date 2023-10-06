@@ -6,10 +6,10 @@ export const MainDiv = styled(Box)`
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  background-color: ${Colors.lightGreyBackground};
+  background-color: ${Colors.blanchedalmond};
   color: black;
   align-items: center;
-  margin:  3% auto 3% auto;
+  margin:  3% auto 0 auto;
   border-radius: 25px;
   // padding-top: 2%;
 `;

@@ -10,11 +10,13 @@ max-width: 100vw;
   background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  margin: 3% auto;
+  margin: 0 auto 3% auto;
   //border-radius: 25px;
+
 `;
 
 export const RowDiv = styled(Box)`
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -22,9 +24,11 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 7%;
 
-  background-color: ${Colors.blanchedalmond};
+  background-color: ${Colors.almostWhiteBackground};
 `;
 export const ColumnDiv = styled(Box)`
+  padding: 3% 0;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -32,8 +36,8 @@ export const ColumnDiv = styled(Box)`
   //margin: 3% 10%;
   //padding: 1% 0 0 0;
    //border-radius: 25px;
-
-  background-color: ${Colors.blanchedalmond};
+                            
+   background-color: ${Colors.almostWhiteBackground};
 `;
 
 export const TextDiv = styled(Box)`

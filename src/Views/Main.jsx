@@ -55,7 +55,7 @@ const Main = () => {
   ]);
 
   useEffect(() => {
-    if (inSight === "Translates" || inSight === "Opinion") {
+    if (inSight === "Workshop" || inSight === "Opinion") {
       setBackground(background2);
     } else {
       setBackground(background1);
@@ -74,7 +74,7 @@ const Main = () => {
       {/* <FixBox>{inSight}</FixBox> */}
       <Header />
       <NavBar inSight={inSight} />
-      {/* <MainSection /> */}
+       <MainSection /> 
       <Sections />
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
