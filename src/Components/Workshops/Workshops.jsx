@@ -24,7 +24,7 @@ const Workshops = ({ sectionWorkshop }) => {
           <TextDiv>
             <Typography variant="h5" style={typoh5}>
             Un fin de semana al mes los miembros del club nos encontramos en algún café de Buenos Aires en este maravilloso encuentro donde cada uno puede traer un libro para  presentar y recomendar. ¡¡Todos están invitados !!             </Typography>
-              <WorkshopBtn>Saber Mas</WorkshopBtn>
+              {/* <WorkshopBtn>Saber Mas</WorkshopBtn> */}
           </TextDiv>
         </RowDiv>
       </ColumnDiv>

@@ -15,13 +15,12 @@ const Opinions = ({sectionOpinion}) => {
 
       <RowDiv>
         <img
-          width={"500px"}
-          src="https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/EDUCMS/tz7n-7vqceaq86dprdnzag.jpg"
+          width={"250px"}
+          height={"250px"}
+          src="https://media.istockphoto.com/id/846730696/photo/portrait-teenager.jpg?b=1&s=612x612&w=0&k=20&c=F6F54Is5POZluWmrrJZS5x4NyTJ8JlJTpmddAain-so="
         />
         <Typography variant="h6" style={typoh6}>
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en
-          demostraciones de tipografías o de borradores de diseño para probar el
-          diseño visual antes de insertar el texto final
+          Es una gran profesora, se nota lo mucho que sabe y siempre da las clases con el mejor la mejor onda.
         </Typography>
       </RowDiv>
       </ColumnDiv>

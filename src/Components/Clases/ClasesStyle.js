@@ -18,10 +18,10 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  // margin: 3% 10%;
-  //padding: 1% 0 0 0;
-  // border-radius: 25px;
   background-color: ${Colors.blanchedalmond};
+  padding-top: 3%;
+  padding: 3%;
+
 `;
 export const RowDiv = styled(Box)`
   display: flex;
@@ -29,13 +29,13 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 10% 0% 10%;
+  margin: 5% 15% 0% 15%;
   border-radius: 10px;
 
   background-color: ${Colors.blanchedalmond};
 
   img{
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
   }
 `;
 

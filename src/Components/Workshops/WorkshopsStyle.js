@@ -20,7 +20,7 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 7%;
+  margin: 3% 15%;
 
   background-color: ${Colors.almostWhiteBackground};
 `;

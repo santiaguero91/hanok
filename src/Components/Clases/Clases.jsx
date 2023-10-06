@@ -32,7 +32,7 @@ const Clases = ({ sectionClases }) => {
             <Typography variant="h5" style={typoh5}>
               Disfuta las mejores clases online personalizadas con grupos acorde al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typography>
-            <ClasesBtn>Averiguar horarios</ClasesBtn>
+            {/* <ClasesBtn>Averiguar horarios</ClasesBtn> */}
           </TextDiv>
         </RowDiv>
 
