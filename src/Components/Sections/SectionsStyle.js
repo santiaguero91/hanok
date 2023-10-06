@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   max-width: 100dvw;
@@ -7,11 +7,9 @@ export const MainDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(191, 191, 191);
   background-color: rgba(98, 98, 98);
   color: black;
   margin-bottom: 20%;
-
 `;
 
 export const SectionsBtn = styled(Button)`

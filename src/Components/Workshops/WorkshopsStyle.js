@@ -10,13 +10,11 @@ max-width: 100vw;
   background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  margin: 0 auto 3% auto;
-  //border-radius: 25px;
+  margin: 0 auto 5% auto;
 
 `;
 
 export const RowDiv = styled(Box)`
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;

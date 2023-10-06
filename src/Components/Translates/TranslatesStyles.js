@@ -10,7 +10,7 @@ max-width: 100vw;
   background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  margin:  0 auto 0 auto;
+  margin:  25% auto 0 auto;
   //padding-bottom: 2%;
   // border-radius: 25px;
 

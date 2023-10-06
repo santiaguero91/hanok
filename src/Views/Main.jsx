@@ -55,9 +55,10 @@ const Main = () => {
   ]);
 
   useEffect(() => {
-    if (inSight === "Workshop" || inSight === "Opinion") {
+    if (inSight === "Workshop") {
       setBackground(background2);
-    } else {
+    } 
+    if ( inSight === "Clases") {
       setBackground(background1);
     }
   }, [inSight]);

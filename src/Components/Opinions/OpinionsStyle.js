@@ -10,7 +10,7 @@ max-width: 100vw;
   background-color: ${Colors.lightGreyBackground};
   color: black;
   align-items: center;
-  margin: 3% auto;
+  margin: 0 auto;
   // border-radius: 25px;
   //padding-bottom: 2%;
 `;

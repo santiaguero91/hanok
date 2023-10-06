@@ -9,7 +9,15 @@ const Section = ({img, title,link}) => {
 
   return (
     <MainDiv>
+      <motion.div
+      whileHover={{ filter: "blur(2px)" }}
+      style={{
+        cursor: "pointer",
+        filter: "blur(0px)", // Set the initial blur value to 0 pixels
+      }}
+    >
         <img width="350px" height="350px" src={img}/>
+        </motion.div>
         <TextDiv>
         <Typography variant="h5" style={typoh5bold}>{title}</Typography>
         </TextDiv>
