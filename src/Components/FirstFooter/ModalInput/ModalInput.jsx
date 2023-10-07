@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { TextField, FormControl, Button } from "@mui/material";
+import { TextField, FormControl, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { MainDiv } from "./ModalInputStyle";
+import { MainDiv, StyldTextField } from "./ModalInputStyle";
+import { typoh3bold } from "../../../utils/Fonts";
 
 const ModalInput = () => {
   const [email, setEmail] = useState("");
@@ -35,8 +36,10 @@ const ModalInput = () => {
 
   return (
     <MainDiv>
-      <form autoComplete="off" onSubmit={handleSubmit}>
-        <h2>Form</h2>
+      <form autoComplete="off">
+        <Typography variant="h5" style={typoh3bold}>
+          Form
+        </Typography>
         <TextField
           label="Email"
           onChange={(e) => setEmail(e.target.value)}
@@ -61,7 +64,7 @@ const ModalInput = () => {
           fullWidth
           sx={{ mb: 3 }}
         />
-        <TextField
+        <StyldTextField
           label="Agregar Descripción"
           id="inputname"
           type="text"
@@ -73,17 +76,25 @@ const ModalInput = () => {
           multiline
           rows={8}
           // placeholder={input.link}
-/*           InputProps={{
+          /*           InputProps={{
             style: { color: "black" },
           }}
           InputLabelProps={{
             style: { color: "black" },
           }} */
-        ></TextField>
-        <Button variant="outlined" color="secondary" type="submit">
-          Send
-        </Button>
+        ></StyldTextField>
       </form>
+      <Typography variant="subtitle1" style={typoh3bold}>
+        Los siguientes datos seran enviados a : hanockclub@gmail.com
+      </Typography>
+      <Button
+        variant="outlined"
+        color="secondary"
+        type="submit"
+        onClick={handleSubmit}
+      >
+        Send
+      </Button>
     </MainDiv>
   );
 };
