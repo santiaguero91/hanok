@@ -6,16 +6,16 @@ export const MainDiv = styled(Box)`
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  background-color: rgba(112, 121, 85);
+  background-color: transparent;
   color: black;
   align-items: center;
   margin: 0 auto 0 auto;
-  padding: 2% 0;
+  padding: 10% 0;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;
   flex-direction: column;
-  background-color: rgba(112, 121, 85);
+  background-color: transparent;
   align-items: center;
   margin: 0 auto 0 auto;
 `;

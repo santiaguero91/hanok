@@ -19,8 +19,9 @@ import jejuisland from "../assets/jejuisland.jpg";
 import FirstFooter from "../Components/FirstFooter/FirstFooter";
 
 const Main = () => {
-  let background1 = jejuisland;
+  //let background1 = jejuisland;
   let background2 = seoulNightView;
+  let background1 = seoulNightView;
   const [inSight, setInSight] = useState("");
   const [background, setBackground] = useState(background2);
 
