@@ -9,6 +9,8 @@ import {
 } from "./TranslatesStyles";
 import { typoh3bold, typoh6 } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 
 const handleClick = () => {
@@ -18,9 +20,21 @@ const handleClick = () => {
 };
 
 const Translates = ({sectionTranslates}) => {
+
+  const [refanim, inView] = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,
+  });
+
   return (
     <MainDiv id="Translates"  ref={sectionTranslates} >
-      <ColumnDiv>
+      <ColumnDiv
+      component={motion.div}
+      ref={refanim}
+      initial={{ opacity: 0 , y: 100, x: -150}}
+      animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 100, x : inView ? 0 : -150 }}
+      transition={{ duration: 1.5 }}
+      >
       <TitleDiv>
         <Typography variant="h3" style={typoh3bold}>
           Traducciones

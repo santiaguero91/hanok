@@ -10,10 +10,7 @@ max-width: 100vw;
   background-color: rgba(112, 121, 85);
   color: black;
   align-items: center;
-  margin:  25% auto 0 auto;
-  //padding-bottom: 2%;
-  // border-radius: 25px;
-
+  margin:  0 auto 0 auto;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;

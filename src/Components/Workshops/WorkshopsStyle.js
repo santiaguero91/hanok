@@ -10,7 +10,7 @@ max-width: 100vw;
   background-color: rgba(112, 121, 85);
   color: black;
   align-items: center;
-  margin: 0 auto 5% auto;
+  margin: 0 auto 0 auto;
 
 `;
 
