@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Modal, Typography } from "@mui/material";
 import {
   ContactRowDiv,
   ContactMeDiv,
@@ -10,7 +10,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import { typoFooter } from "../../utils/Fonts";
 import { useState } from "react";
-import Modal from "react-modal";
 import ModalInput from "./ModalInput/ModalInput";
 
 const customStyles = {
@@ -32,7 +31,7 @@ const FirstFooter = () => {
     setIsOpen(true);
   }
 
-  function closeModal() {
+  function handleClose() {
     setIsOpen(false);
   }
 
@@ -40,9 +39,10 @@ const FirstFooter = () => {
     <MainDiv>
       {/* Modal  */}
       <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
+        open={modalIsOpen}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
         <ModalInput />
       </Modal>
