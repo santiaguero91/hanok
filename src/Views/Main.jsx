@@ -20,7 +20,7 @@ const Main = () => {
   let background1 = TempleDay;
   let background2 = seoulNightView;
   const [inSight, setInSight] = useState("");
-  const [background, setBackground] = useState(background1);
+  const [background, setBackground] = useState(background2);
 
   const [sectionWorkshop, sectionWorkshopInView] = useInView({
     threshold: 0.5,
@@ -56,10 +56,10 @@ const Main = () => {
 
   useEffect(() => {
     if (inSight === "Workshop") {
-      setBackground(background2);
+      setBackground(background1);
     } 
     if ( inSight === "Clases") {
-      setBackground(background1);
+      setBackground(background2);
     }
   }, [inSight]);
 

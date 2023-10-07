@@ -9,8 +9,19 @@ export const MainDiv = styled(Box)`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(112, 121, 85);
+  background-color: transparent;
   margin:  0 0 0 0;
+`;
+
+export const RowDiv = styled(Box)`
+  max-width: 100dvw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  margin:  5% 5% ;
 `;
 
 export const TypeDiv = styled(Box)`
@@ -18,7 +29,7 @@ export const TypeDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(112, 121, 85);
+  background-color: transparent;
   margin:  0 0 0 0;
 `;
 

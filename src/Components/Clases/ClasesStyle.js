@@ -9,9 +9,7 @@ export const MainDiv = styled(Box)`
   background-color: rgba(112, 121, 85);
   color: black;
   align-items: center;
-  margin:  3% auto 0 auto;
-  border-radius: 25px;
-  // padding-top: 2%;
+  margin:  0 auto 0 auto;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;

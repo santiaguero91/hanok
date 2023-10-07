@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { ImgDiv, MainDiv, TextDiv,TypeDiv } from "./MainSectionStyle";
+import { ImgDiv, MainDiv, RowDiv, TextDiv,TypeDiv } from "./MainSectionStyle";
 import hanokHouse from "../../assets/hanockHouse.jpeg";
 import { typoh5 } from "../../utils/Fonts";
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ const MainSection = () => {
 
   return (
     <MainDiv>
+      <RowDiv>
       <motion.div
       initial="initial"
       animate={isHovered ? 'hover' : 'initial'}
@@ -28,8 +29,9 @@ const MainSection = () => {
       </motion.div>
       <ImgDiv
       >
-        <img width="400px" src={hanokHouse} />
+        <img width="300px" src={hanokHouse} />
       </ImgDiv>
+      </RowDiv>
     </MainDiv>
   );
 };

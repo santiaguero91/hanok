@@ -9,7 +9,7 @@ export const MainDiv = styled(Box)`
   justify-content: space-around;
   background-color: rgba(112, 121, 85);
   color: black;
-  margin-bottom: 30%; 
+  // margin-bottom: 30%; 
 `;
 export const TypoDiv = styled(Box)`
 margin-top: 3%;

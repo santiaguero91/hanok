@@ -10,7 +10,7 @@ const Clases = ({ sectionClases }) => {
 
   const [refanim, inView] = useInView({
     triggerOnce: true, 
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   return (
@@ -18,10 +18,9 @@ const Clases = ({ sectionClases }) => {
       <ColumnDiv
       component={motion.div}
       ref={refanim}
-      initial={{ opacity: 0 , y: 150}}
-      animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 150 }}
+      initial={{ opacity: 0 , y: 100}}
+      animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 100 }}
       transition={{ duration: 1.5 }}
-      
       >
         <Typography variant="h3" style={typoh3bold}>
           Clases
