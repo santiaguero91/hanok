@@ -12,7 +12,7 @@ const OpinionCardTwo = () => {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggeV5CJ1UgQA5cGAe2RIl6ike7JMAvtevGg&usqp=CAU"
         />
         <Typography variant="h6" style={typoh6}>
-          "Es una gran profesora, se nota lo mucho que sabe y siempre da las clases con la mejor de las mejor onda."
+          "Excelente calidad en la enseñanza que brinda a través de un seguimiento exhaustivo y personalizado."
         </Typography>
       </RowDiv> 
   );

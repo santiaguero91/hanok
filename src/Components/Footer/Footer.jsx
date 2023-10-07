@@ -5,9 +5,7 @@ const Footer = () => {
 
   return (
     <MainDiv>
-        <h3>Copyright © 2023 Santiago Agüero.</h3>
-
-
+        <h6>Created by Santiago Agüero 2023.</h6>
     </MainDiv> 
   );
 };

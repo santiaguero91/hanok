@@ -15,9 +15,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TempleDay from "../assets/TempleDay.jpg";
 import seoulNightView from "../assets/seoulNightView.jpg";
+import jejuisland from "../assets/jejuisland.jpg";
+import FirstFooter from "../Components/FirstFooter/FirstFooter";
 
 const Main = () => {
-  let background1 = TempleDay;
+  let background1 = jejuisland;
   let background2 = seoulNightView;
   const [inSight, setInSight] = useState("");
   const [background, setBackground] = useState(background2);
@@ -76,11 +78,12 @@ const Main = () => {
       <Header />
       <NavBar inSight={inSight} />
        <MainSection /> 
-      <Sections />
+      {/* <Sections /> */}
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
       <Opinions sectionOpinion={sectionOpinion} />
+      <FirstFooter />
       <Footer />
     </MainDiv>
   );
