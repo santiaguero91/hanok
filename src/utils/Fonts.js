@@ -34,3 +34,9 @@ export const typoh5bold = {
     fontWeight: "bold",
     fontSize: "20px"
   };
+export const typoFooter = {
+    fontFamily: 'Plus Jakarta Sans Variable',
+    fontWeight: "bold",
+    fontSize: "20px",
+    color:"white"
+  };

@@ -1,4 +1,5 @@
 import { Opinions } from "../../Components";
+import FirstFooter from "../../Components/FirstFooter/FirstFooter";
 
 const Test = () => {
 
@@ -6,7 +7,7 @@ const Test = () => {
       return (
         <div>
 
-      <Opinions/>
+      <FirstFooter/>
           
         </div>
       );
