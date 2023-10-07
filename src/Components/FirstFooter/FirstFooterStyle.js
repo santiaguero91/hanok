@@ -6,7 +6,7 @@ export const MainDiv = styled(Box)`
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color: rgba(89,89,89,0.15);
   color: black;
   align-items: center;
   margin: 0 auto 0 auto;

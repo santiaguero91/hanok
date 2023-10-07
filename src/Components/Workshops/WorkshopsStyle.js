@@ -1,9 +1,9 @@
-                                           import styled from "@emotion/styled";
+import styled from "@emotion/styled";
 import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-max-width: 100vw;
+  max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -11,7 +11,6 @@ max-width: 100vw;
   color: black;
   align-items: center;
   margin: 0 auto 0 auto;
-
 `;
 
 export const RowDiv = styled(Box)`
@@ -33,9 +32,9 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   //margin: 3% 10%;
   //padding: 1% 0 0 0;
-   //border-radius: 25px;
-                            
-   background-color: rgba(112, 121, 85);
+  //border-radius: 25px;
+
+  background-color: rgba(112, 121, 85);
 `;
 
 export const TextDiv = styled(Box)`
