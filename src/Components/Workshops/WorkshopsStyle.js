@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
@@ -42,6 +42,7 @@ export const TextDiv = styled(Box)`
   flex-direction: column;
 `;
 export const ImgDiv = styled(Box)`
+width: 50%;
   margin: 1.5% 0%;
   img {
     border-radius: 15px;

@@ -3,8 +3,9 @@ import { Box } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   max-width: 100vw;
-  width: 450px;
-  height: 450px;
+  width: 35vw;
+  /* width: 450px;
+  height: 450px; */
   display: flex;
   flex-direction: row;
   background-color: rgba(255, 255, 255);

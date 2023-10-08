@@ -18,13 +18,12 @@ const WsSwipper = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper"
       >
         <SwiperSlide >
-          <img width="450px" height="450px" src={ReadingWorkshop} />
+          <img src={ReadingWorkshop} />
         </SwiperSlide>
-        <SwiperSlide><img width="450px" height="450px" src={"https://booksandbao.com/wp-content/uploads/2020/12/Untitled-design-1.jpg"} /></SwiperSlide>
-        <SwiperSlide><img width="450px" height="450px" src={"https://s.wsj.net/public/resources/images/PJ-BX158_SLOWRE_GR_20140915163519.jpg"} /></SwiperSlide>
+        <SwiperSlide><img  src={"https://booksandbao.com/wp-content/uploads/2020/12/Untitled-design-1.jpg"} /></SwiperSlide>
+        <SwiperSlide><img  src={"https://s.wsj.net/public/resources/images/PJ-BX158_SLOWRE_GR_20140915163519.jpg"} /></SwiperSlide>
       </Swiper>
     </MainDiv>
   );
