@@ -9,7 +9,7 @@ export const MainDiv = styled(Box)`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   margin: 0 0 0 0;
 
 `;
@@ -22,7 +22,7 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 10%;
   border-radius: 10px;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   gap: 5%;
   img {
     border-radius: 999px;

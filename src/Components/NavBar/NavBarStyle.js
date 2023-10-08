@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 export const MainDiv = styled(Box)`
 max-width: 100dvw;
@@ -26,7 +26,7 @@ export const NavBarBtn = styled(Button)`
   background-color: transparent;
   color: black;
   transition: 1s;
-  border-radius: 10px;
+  border-radius: 0;
   margin: 0 auto 0 auto;
   width: 20vw;
   :hover {

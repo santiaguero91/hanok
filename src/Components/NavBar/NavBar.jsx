@@ -7,7 +7,7 @@ import OpinionesBtn from "./Botones/OpinionesBtn";
 const NavBar = ({ inSight }) => {
   return (
     <MainDiv> 
-       <ClasesBtn inSight={inSight} />
+      <ClasesBtn inSight={inSight} />
       <ActividadesBtn inSight={inSight} />
       <TraduccionesBtn inSight={inSight} />
       <OpinionesBtn inSight={inSight} />

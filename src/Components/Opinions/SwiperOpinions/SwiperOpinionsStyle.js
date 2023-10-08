@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 import { Box} from "@mui/material";
+import { Colors } from "../../../utils/Colors";
 
 export const MainDiv = styled(Box)`
   max-width: 100vw;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
   margin: 0 auto;
@@ -19,7 +20,7 @@ export const MainDiv = styled(Box)`
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   display: flex;
   justify-content: center;
   align-items: center;

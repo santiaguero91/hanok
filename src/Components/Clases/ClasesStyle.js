@@ -6,7 +6,7 @@ export const MainDiv = styled(Box)`
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
   margin:  0 auto 0 auto;
@@ -16,7 +16,7 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   padding-top: 3%;
   padding: 3%;
 
@@ -29,9 +29,7 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 5% 15% 0% 15%;
   border-radius: 10px;
-
-  background-color: rgba(112, 121, 85);
-
+  background-color: ${Colors.sectionsBackground};
   img{
     border-radius: 10px;
   }

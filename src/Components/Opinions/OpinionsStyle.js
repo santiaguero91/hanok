@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
+import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
   max-width: 100vw;
@@ -35,8 +36,7 @@ padding-bottom: 3%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
 `;
 export const RowDiv = styled(Box)`
   display: flex;

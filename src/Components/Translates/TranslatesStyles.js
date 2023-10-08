@@ -7,7 +7,7 @@ max-width: 100vw;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
   margin:  0 auto 0 auto;
@@ -21,7 +21,7 @@ export const ColumnDiv = styled(Box)`
   //padding: 1% 0 0 0;
   //border-radius: 25px;
 
-  background-color: rgba(112, 121, 85);
+  background-color: ${Colors.sectionsBackground};
 `;
 export const TitleDiv = styled(Box)`
   margin: 3% auto 0 auto;

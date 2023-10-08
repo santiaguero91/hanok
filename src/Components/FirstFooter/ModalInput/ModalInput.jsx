@@ -6,31 +6,31 @@ import { typoh3bold } from "../../../utils/Fonts";
 
 const ModalInput = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [emailError, setEmailError] = useState(false);
-  const [passwordError, setPasswordError] = useState(false);
+  const [nameError, setNameError] = useState(false);
   const [descriptionError, setDescriptionError] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     setEmailError(false);
-    setPasswordError(false);
+    setNameError(false);
     setDescriptionError(false);
 
     if (email == "") {
       setEmailError(true);
     }
-    if (password == "") {
-      setPasswordError(true);
+    if (name == "") {
+      setNameError(true);
     }
     if (description == "") {
       setPasswordError(true);
     }
 
-    if (email && password && description) {
-      console.log(email, password, description);
+    if (email && name && description) {
+      console.log(email, name, description);
     }
   };
 
@@ -41,7 +41,7 @@ const ModalInput = () => {
           Form
         </Typography>
         <TextField
-          label="Email"
+          label="Your Email"
           onChange={(e) => setEmail(e.target.value)}
           required
           variant="outlined"
@@ -53,28 +53,32 @@ const ModalInput = () => {
           error={emailError}
         />
         <TextField
-          label="Password"
-          onChange={(e) => setPassword(e.target.value)}
+          label="Your Name"
+          onChange={(e) => setName(e.target.value)}
           required
           variant="outlined"
           color="secondary"
-          type="password"
-          value={password}
-          error={passwordError}
+          type="text"
+          value={name}
+          error={nameError}
           fullWidth
           sx={{ mb: 3 }}
         />
         <StyldTextField
-          label="Agregar Descripción"
+          label="Message"
           id="inputname"
           type="text"
+          required
+          variant="outlined"
+          color="secondary"
           value={description}
           error={descriptionError}
           name="description"
           onChange={(e) => setDescription(e.target.value)}
-          title="description"
           multiline
+          fullWidth
           rows={8}
+          sx={{ mb: 3 }}
           // placeholder={input.link}
           /*           InputProps={{
             style: { color: "black" },
