@@ -7,8 +7,7 @@ export const MainDiv = styled(Box)`
   flex-direction: column;
   color: black;
   align-items: center;
-  margin: 0 auto;
-
+  background-color: ${Colors.sectionsBackground};
   .swiper {
     width: 100%;
     padding-top: 50px;
