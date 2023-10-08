@@ -3,6 +3,7 @@ import { TextField, FormControl, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { MainDiv, StyldTextField } from "./ModalInputStyle";
 import { typoh3bold } from "../../../utils/Fonts";
+import { motion } from "framer-motion";
 
 const ModalInput = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +36,13 @@ const ModalInput = () => {
   };
 
   return (
-    <MainDiv>
+    <MainDiv
+    component={motion.div}
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y:-50, transition: { duration: 0.2 } }}
+    transition={{ duration: 1 }}
+    >
       <form autoComplete="off">
         <Typography variant="h5" style={typoh3bold}>
           Form
