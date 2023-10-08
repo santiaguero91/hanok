@@ -3,8 +3,7 @@ import { Box } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  max-width: 100vw;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
   color: black;

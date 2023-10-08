@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { Box} from "@mui/material";
 
 export const MainDiv = styled(Box)`
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;

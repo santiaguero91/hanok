@@ -3,19 +3,16 @@ import {
   MainSection,
   Header,
   NavBar,
-  Sections,
   Translates,
   Workshops,
   Clases,
   Opinions,
   Footer,
 } from "../Components/index";
-import { MainDiv } from "./MainStyle";
+import { FixBox, MainDiv } from "./MainStyle";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import TempleDay from "../assets/TempleDay.jpg";
 import seoulNightView from "../assets/seoulNightView.jpg";
-import jejuisland from "../assets/jejuisland.jpg";
 import FirstFooter from "../Components/FirstFooter/FirstFooter";
 
 const Main = () => {
@@ -60,8 +57,8 @@ const Main = () => {
   useEffect(() => {
     if (inSight === "Workshop") {
       setBackground(background1);
-    } 
-    if ( inSight === "Clases") {
+    }
+    if (inSight === "Clases") {
       setBackground(background2);
     }
   }, [inSight]);
@@ -75,17 +72,16 @@ const Main = () => {
       exit={{ opacity: 0, transition: { duration: 0.8 } }}
       style={{ backgroundImage: `url(${background})` }}
     >
-      {/* <FixBox>{inSight}</FixBox> */}
+      <FixBox>{inSight}</FixBox>
       <Header />
       <NavBar inSight={inSight} />
-       <MainSection /> 
+      <MainSection />
       {/* <Sections /> */}
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
-      <Opinions sectionOpinion={sectionOpinion} />
-      <FirstFooter />
-      <Footer />
+      <Opinions sectionOpinion={sectionOpinion} />        <FirstFooter />
+      <Footer /> 
     </MainDiv>
   );
 };

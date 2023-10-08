@@ -3,14 +3,13 @@ import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  width: 100dvw;
   display: flex;
   flex-direction: column;
   background-color: rgba(89,89,89,0.15);
   color: black;
   align-items: center;
-  margin: 0 auto 0 auto;
-  padding: 10% 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;

@@ -12,17 +12,6 @@ import { typoFooter } from "../../utils/Fonts";
 import { useState } from "react";
 import ModalInput from "./ModalInput/ModalInput";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
-
 const FirstFooter = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -37,7 +26,6 @@ const FirstFooter = () => {
 
   return (
     <MainDiv>
-      {/* Modal  */}
       <Modal
         open={modalIsOpen}
         onClose={handleClose}

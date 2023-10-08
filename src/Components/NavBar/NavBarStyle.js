@@ -2,8 +2,6 @@ import styled from "@emotion/styled";
 import { Box, Button } from "@mui/material";
 
 export const MainDiv = styled(Box)`
-max-width: 100dvw;
-  width: 100%;
   position: sticky;
   top: 0px;
   display: flex;
