@@ -28,6 +28,7 @@ export const navBarRed = {
   };
 export const typoh5 = {
     fontFamily: 'Plus Jakarta Sans Variable',
+    fontSize: "20px"
   };
 export const typoh5bold = {
     fontFamily: 'Plus Jakarta Sans Variable',

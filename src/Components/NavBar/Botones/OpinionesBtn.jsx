@@ -10,17 +10,18 @@ const OpinionesBtn = ({ inSight }) => {
 
   return (
     <Link to="Opiniones" spy={true} smooth={true} offset={50} duration={1000}>
-    <NavBarBtn className={inSight === "Opinion" ? "inSight" : ""} variant="contained"component={motion.div} whileHover={{scale: 1.1,transition: { duration: 0.3 }}} whileTap={{scale: 0.9}}>
-        <motion.div
-          initial="initial"
-          animate={isHovered ? "hover" : "initial"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {isHovered ? (
-            <의견 />
-          ) : <Opiniones/>}
-        </motion.div>
+      <NavBarBtn
+        className={inSight === "Opinion" ? "inSight" : ""}
+        variant="contained"
+        component={motion.div}
+        whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+        whileTap={{ scale: 0.9 }}
+        initial="initial"
+        animate={isHovered ? "hover" : "initial"}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+          {isHovered ? <의견 /> : <Opiniones />}
       </NavBarBtn>
     </Link>
   );

@@ -72,7 +72,7 @@ const Main = () => {
       exit={{ opacity: 0, transition: { duration: 0.8 } }}
       style={{ backgroundImage: `url(${background})` }}
     >
-      <FixBox>{inSight}</FixBox>
+      {/* <FixBox>{inSight}</FixBox> */}
       <Header />
       <NavBar inSight={inSight} />
       <MainSection />

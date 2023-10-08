@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
 import { Typography } from "@mui/material";
-import { navBarBlack, typoh5, typoh5bold } from "../../../utils/Fonts";
+import { typoh5, typoh5bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -16,15 +16,12 @@ const ActividadesBtn = ({ inSight }) => {
         component={motion.div}
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
+        initial="initial"
+        animate={isHovered ? "hover" : "initial"}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <motion.div
-          initial="initial"
-          animate={isHovered ? "hover" : "initial"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
           {isHovered ? <활동 /> : <Actividades />}
-        </motion.div>
       </NavBarBtn>
     </Link>
   );

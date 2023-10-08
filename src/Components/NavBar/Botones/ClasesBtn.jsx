@@ -14,28 +14,21 @@ const ClasesBtn = ({ inSight }) => {
         className={inSight === "Clases" ? "inSight" : ""}
         variant="contained"
         component={motion.div}
+        initial="initial"
+        animate={isHovered ? "hover" : "initial"}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
       >
-        <motion.div
-          initial="initial"
-          animate={isHovered ? "hover" : "initial"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {isHovered ? (
-            <클래스 />
-          ) : (
-            <Clases/>
-          )}
-        </motion.div>
+        {isHovered ? <클래스 /> : <Clases />}
       </NavBarBtn>
     </Link>
   );
 };
 
 const text = "클래스";
-const tradText = "Clases"
+const tradText = "Clases";
 
 const wordVariants = {
   hidden: { opacity: 0 },

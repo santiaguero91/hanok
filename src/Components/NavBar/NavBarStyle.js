@@ -12,6 +12,8 @@ export const MainDiv = styled(Box)`
   align-items: center;
   padding: 1% 0 1% 0;
   z-index: 5;
+  transition: 1s;
+  height: 40px;
   .inSight {
     background-color: rgb(112,121,85);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,

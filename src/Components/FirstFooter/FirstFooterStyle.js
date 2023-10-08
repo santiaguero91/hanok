@@ -8,8 +8,8 @@ export const MainDiv = styled(Box)`
   background-color: rgba(89,89,89,0.15);
   color: black;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 12%;
+  padding-bottom: 12%;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;

@@ -11,18 +11,23 @@ import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import { typoFooter } from "../../utils/Fonts";
 import { useState } from "react";
 import ModalInput from "./ModalInput/ModalInput";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const FirstFooter = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
-
   function openModal() {
     console.log("ouch!");
     setIsOpen(true);
   }
-
   function handleClose() {
     setIsOpen(false);
   }
+
+  const [refanim, inView] = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,
+  });
 
   return (
     <MainDiv>
@@ -37,7 +42,13 @@ const FirstFooter = () => {
 
       {/* NOT Modal  */}
       <RowDiv>
-        <ContactMeDiv>
+        <ContactMeDiv
+        component={motion.div}
+        ref={refanim}
+        initial={{ opacity: 0 , y: 100, x: -150}}
+        animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 100, x : inView ? 0 : -150 }}
+        transition={{ duration: 1.5 }}
+        >
           <ContactRowDiv>
             <div onClick={openModal}>
               <AiOutlineMail size={"2rem"} className="footerIcon" />

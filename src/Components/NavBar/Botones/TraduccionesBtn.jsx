@@ -22,19 +22,16 @@ const TraduccionesBtn = ({ inSight }) => {
         component={motion.div}
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
+        initial="initial"
+        animate={isHovered ? "hover" : "initial"}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <motion.div
-          initial="initial"
-          animate={isHovered ? "hover" : "initial"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
           {isHovered ? (
             <번역 />
           ) : (
             <Traducciones/>
           )}
-        </motion.div>
       </NavBarBtn>
     </Link>
   );
