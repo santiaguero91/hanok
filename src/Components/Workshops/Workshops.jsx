@@ -20,24 +20,23 @@ const Workshops = ({ sectionWorkshop }) => {
 
   return (
     <MainDiv id="Workshops" ref={sectionWorkshop}>
-      <ColumnDiv
-        component={motion.div}
-        ref={refanim}
-        initial={{ opacity: 0, y: 100, x: 150 }}
-        animate={{
-          opacity: inView ? 1 : 0,
-          y: inView ? 0 : 100,
-          x: inView ? 0 : 150,
-        }}
-        transition={{ duration: 1.5 }}
-      >
+      <ColumnDiv>
         <Typography variant="h3" style={typoh3bold}>
           Talleres
         </Typography>
-        <RowDiv>
+        <RowDiv
+          component={motion.div}
+          ref={refanim}
+          initial={{ opacity: 0, y: 100, x: 150,  }}
+          animate={{
+            opacity: inView ? 1 : 0,
+            y: inView ? 0 : 100,
+            x: inView ? 0 : 150,
+          }}
+          transition={{ duration: 1.5 }}
+        >
           <ImgDiv>
             <WsSwipper />
-
           </ImgDiv>
           <TextDiv>
             <Typography variant="h5" style={typoh5}>

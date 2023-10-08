@@ -3,7 +3,6 @@ import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-
   display: flex;
   flex-direction: row;
   background-color: ${Colors.sectionsBackground};
@@ -19,12 +18,10 @@ export const RowDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 3% 15%;
-
   background-color: ${Colors.sectionsBackground};
 `;
 export const ColumnDiv = styled(Box)`
   padding: 3% 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;

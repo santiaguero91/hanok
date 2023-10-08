@@ -3,34 +3,33 @@ import { Box } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-
   display: flex;
   flex-direction: column;
   color: black;
   align-items: center;
   margin: 0 auto;
+
   .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 `;
 export const ColumnDiv = styled(Box)`
-padding-top: 3%;
-padding-bottom: 3%;
-  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -43,7 +42,7 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 10%;
+  margin: 3% 0;
   border-radius: 10px;
   gap: 5%;
 

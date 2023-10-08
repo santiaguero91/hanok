@@ -3,8 +3,6 @@ import { Box } from "@mui/material";
 import { Colors } from "../../../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  max-width: 100dvw;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,7 +18,7 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 10%;
+  margin: 3% 10% ;
   border-radius: 10px;
   background-color: ${Colors.sectionsBackground};
   gap: 5%;
