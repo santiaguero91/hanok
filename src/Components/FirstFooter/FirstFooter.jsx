@@ -24,8 +24,20 @@ const FirstFooter = () => {
     setIsOpen(false);
   }
 
-  const [refanim, inView] = useInView({
-    triggerOnce: true, 
+  const [refanimmail, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const [refInstag, inViewInstag] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const [refWhatsapp, inViewWhatsapp] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const [refFacebook, inViewFacebook] = useInView({
+    triggerOnce: true,
     threshold: 0.1,
   });
 
@@ -42,30 +54,60 @@ const FirstFooter = () => {
 
       {/* NOT Modal  */}
       <RowDiv>
-        <ContactMeDiv
-        component={motion.div}
-        ref={refanim}
-        initial={{ opacity: 0 , y: 100, x: -150}}
-        animate={{ opacity: inView ? 1 : 0 , y: inView ? 0 : 100, x : inView ? 0 : -150 }}
-        transition={{ duration: 1.5 }}
+        <ContactMeDiv 
+          component={motion.div}
+          ref={refanimmail}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+          transition={{ duration: 1.5 }}
         >
-          <ContactRowDiv>
-            <div onClick={openModal}>
-              <AiOutlineMail size={"2rem"} className="footerIcon" />
-            </div>
-            <Typography variant="h3" style={typoFooter}>
+            <div onClick={openModal} className="footerIcon">
+          <ContactRowDiv >
+              <AiOutlineMail size={"2rem"}  />
+            <Typography variant="h3" style={typoFooter} >
               Contact Me
             </Typography>
           </ContactRowDiv>
+        </div>
           <Typography variant="h3" style={typoFooter}>
             hanockclub@gmail.com
           </Typography>
         </ContactMeDiv>
 
         <FooterIcons>
-          <BsInstagram size={"2rem"} className="footerIcon" />{" "}
-          <BsWhatsapp size={"2rem"} className="footerIcon" />{" "}
+          <motion.div
+            ref={refInstag}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{
+              opacity: inViewInstag ? 1 : 0,
+              y: inViewInstag ? 0 : 100,
+            }}
+            transition={{ duration: 1.5, delay: 1 }}
+          >
+            <BsInstagram size={"2rem"} className="footerIcon" />
+          </motion.div>
+          <motion.div
+            ref={refWhatsapp}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{
+              opacity: inViewWhatsapp ? 1 : 0,
+              y: inViewWhatsapp ? 0 : 100,
+            }}
+            transition={{ duration: 1.5, delay: 2 }}
+          >
+            <BsWhatsapp size={"2rem"} className="footerIcon" />
+          </motion.div>
+          <motion.div
+            ref={refFacebook}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{
+              opacity: inViewFacebook ? 1 : 0,
+              y: inViewFacebook ? 0 : 100,
+            }}
+            transition={{ duration: 1.5, delay: 3 }}
+          >
           <BsFacebook size={"2rem"} className="footerIcon" />
+          </motion.div>
         </FooterIcons>
       </RowDiv>
     </MainDiv>

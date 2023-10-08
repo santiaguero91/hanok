@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
-import { Colors } from "../../utils/Colors";
+import { Box } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   display: flex;
