@@ -5,13 +5,13 @@ import { navBarBlack, typoh5, typoh5bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const OpinionesBtn = ({ inSight }) => {
+const ContactoBtn = ({ inSight }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Link to="Opiniones" spy={true} smooth={true} offset={50} duration={1000}>
+    <Link to="Footer" spy={true} smooth={true} offset={50} duration={1000}>
       <NavBarBtn
-        className={inSight === "Opinion" ? "inSight" : ""}
+        className={inSight === "Footer" ? "inSight" : ""}
         variant="contained"
         component={motion.div}
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
@@ -21,20 +21,20 @@ const OpinionesBtn = ({ inSight }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-          {isHovered ? <의견 /> : <Opiniones />}
+          {isHovered ? <연락하다 /> : <Contacto />}
       </NavBarBtn>
     </Link>
   );
 };
 
-const text = "의견";
-const tradText = "Opiniones";
+const text = "연락하다";
+const tradText = "Contacto";
 
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 };
-const 의견 = () => {
+const 연락하다 = () => {
   return (
     <TypeDiv>
       <Typography variant="h6" style={typoh5}>
@@ -53,7 +53,7 @@ const 의견 = () => {
     </TypeDiv>
   );
 };
-const Opiniones = () => {
+const Contacto = () => {
   return (
     <TypeDiv>
       <Typography variant="h2" style={typoh5bold}>
@@ -72,4 +72,4 @@ const Opiniones = () => {
     </TypeDiv>
   );
 };
-export default OpinionesBtn;
+export default ContactoBtn;

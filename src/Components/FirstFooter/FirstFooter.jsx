@@ -14,7 +14,7 @@ import ModalInput from "./ModalInput/ModalInput";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
-const FirstFooter = () => {
+const FirstFooter = ({sectionFooter}) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
     console.log("ouch!");
@@ -42,7 +42,7 @@ const FirstFooter = () => {
   });
 
   return (
-    <MainDiv>
+    <MainDiv id="Footer" ref={sectionFooter}>
       <Modal
         open={modalIsOpen}
         onClose={handleClose}

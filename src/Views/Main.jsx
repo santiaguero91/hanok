@@ -30,6 +30,7 @@ const Main = () => {
     threshold: 0.5,
   });
   const [sectionOpinion, sectionOpinionInView] = useInView({ threshold: 0.5 });
+  const [sectionFooter, sectionFooterInView] = useInView({ threshold: 0.5 });
   useEffect(() => {
     if (sectionWorkshopInView) {
       setInSight("Workshop");
@@ -39,11 +40,14 @@ const Main = () => {
       setInSight("Translates");
     } else if (sectionOpinionInView) {
       setInSight("Opinion");
+    } else if (sectionFooterInView) {
+      setInSight("Footer");
     } else if (
       !sectionWorkshopInView &&
       !sectionClasesInView &&
       !sectionTranslatesInView &&
-      !sectionOpinionInView
+      !sectionOpinionInView &&
+      !sectionFooterInView
     ) {
       setInSight("");
     }
@@ -52,6 +56,7 @@ const Main = () => {
     sectionClasesInView,
     sectionTranslatesInView,
     sectionOpinionInView,
+    sectionFooterInView
   ]);
 
   useEffect(() => {
@@ -80,7 +85,8 @@ const Main = () => {
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
-      <Opinions sectionOpinion={sectionOpinion} />        <FirstFooter />
+      <Opinions sectionOpinion={sectionOpinion} />        
+      <FirstFooter sectionFooter={sectionFooter}/>
       <Footer /> 
     </MainDiv>
   );
