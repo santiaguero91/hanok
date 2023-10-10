@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { TextField, FormControl, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { MainDiv, StyldTextField } from "./ModalInputStyle";
+import { CoverDiv, MainDiv, StyldTextField } from "./ModalInputStyle";
 import { typoh3bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
+
+import toast, { Toaster, ToastBar } from "react-hot-toast";
 
 const ModalInput = () => {
   const [email, setEmail] = useState("");
@@ -13,9 +15,35 @@ const ModalInput = () => {
   const [nameError, setNameError] = useState(false);
   const [descriptionError, setDescriptionError] = useState(false);
 
+  //toast
+  const notify = () => toast('Gracias por tu mensaje, te escribire aprenas lo vea!'+'👏', {
+    duration: 4000,
+    position: 'top-center',
+  
+    // Styling
+    style: {
+      width: "20vw"
+    },
+    className: '',
+  
+    // Custom Icon
+    icon: '👏',
+  
+    // Change colors of success/error/loading icon
+    iconTheme: {
+      primary: '#000',
+      secondary: '#fff',
+    },
+  
+    // Aria
+    ariaProps: {
+      role: 'status',
+      'aria-live': 'polite',
+    },
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     setEmailError(false);
     setNameError(false);
     setDescriptionError(false);
@@ -32,22 +60,27 @@ const ModalInput = () => {
 
     if (email && name && description) {
       console.log(email, name, description);
+      setDescription("")
+      setName("")
+      setEmail("")
+      notify();
     }
   };
 
   return (
     <MainDiv
-    component={motion.div}
-    initial={{ opacity: 0, y: -50 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y:-50, transition: { duration: 0.2 } }}
-    transition={{ duration: 1 }}
+      component={motion.div}
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -50, transition: { duration: 0.2 } }}
+      transition={{ duration: 1 }}
     >
+      <CoverDiv>
       <form autoComplete="off">
         <Typography variant="h5" style={typoh3bold}>
           Form
         </Typography>
-        <TextField
+        <StyldTextField
           label="Your Email"
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -59,7 +92,7 @@ const ModalInput = () => {
           value={email}
           error={emailError}
         />
-        <TextField
+        <StyldTextField
           label="Your Name"
           onChange={(e) => setName(e.target.value)}
           required
@@ -74,6 +107,7 @@ const ModalInput = () => {
         <StyldTextField
           label="Message"
           id="inputname"
+          onChange={(e) => setDescription(e.target.value)}
           type="text"
           required
           variant="outlined"
@@ -81,7 +115,6 @@ const ModalInput = () => {
           value={description}
           error={descriptionError}
           name="description"
-          onChange={(e) => setDescription(e.target.value)}
           multiline
           fullWidth
           rows={8}
@@ -106,6 +139,32 @@ const ModalInput = () => {
       >
         Send
       </Button>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 5000,
+          style: {
+            background: "#363636",
+            color: "#fff",
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            theme: {
+              primary: "green",
+              secondary: "black",
+            },
+          },
+        }}
+      />
+      </CoverDiv>
     </MainDiv>
   );
 };
