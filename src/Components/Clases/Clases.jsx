@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import onlineClases from "../../assets/OnlineClases.jpg";
-import { ColumnDiv, 클래스Bkgd, MainDiv, RowDiv, TextDiv, ClothesBkgd, DdctBkgd } from "./ClasesStyle";
+import { ColumnDiv, 클래스Bkgd, MainDiv, RowDiv, TextDiv, ClothesBkgd, DdctBkgd, ClasesBtn } from "./ClasesStyle";
 import { typoh3bold, typoh5 } from "../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -31,7 +31,7 @@ const Clases = ({ sectionClases }) => {
             <Typography variant="h5" style={typoh5}>
               Disfuta las mejores clases online personalizadas con grupos acorde al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typography>
-            {/* <ClasesBtn>Averiguar horarios</ClasesBtn> */}
+             <ClasesBtn>Averiguar horarios</ClasesBtn>
           </TextDiv>
         </RowDiv>
 
