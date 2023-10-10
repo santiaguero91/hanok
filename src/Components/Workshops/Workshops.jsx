@@ -46,7 +46,7 @@ const Workshops = ({ sectionWorkshop }) => {
               cada uno puede traer un libro para presentar y recomendar. ¡¡Todos
               están invitados !!{" "}
             </Typography>
-            {/* <WorkshopBtn>Saber Mas</WorkshopBtn> */}
+            {/* <WorkshopBtn>Me Interesa</WorkshopBtn> */}
           </TextDiv>
         </RowDiv>
       </ColumnDiv>
