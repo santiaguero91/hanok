@@ -3,13 +3,14 @@ import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
-  margin:  0 auto 0 auto;
+  margin: 0 auto 0 auto;
+  z-index: 1;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;
@@ -18,9 +19,11 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   background-color: ${Colors.sectionsBackground};
   padding-top: 3%;
-  padding: 3%;
-
+  padding: 3%
 `;
+
+
+
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
@@ -30,7 +33,7 @@ export const RowDiv = styled(Box)`
   margin: 5% 15% 0% 15%;
   border-radius: 10px;
   background-color: ${Colors.sectionsBackground};
-  img{
+  img {
     border-radius: 10px;
   }
 `;
@@ -41,7 +44,7 @@ export const TextDiv = styled(Box)`
 `;
 
 export const ClasesBtn = styled(Button)`
-  background-color: rgba(156,137,184);
+  background-color: rgba(156, 137, 184);
   color: black;
   transition: 1s;
   border-radius: 10px;
@@ -56,3 +59,35 @@ export const ClasesBtn = styled(Button)`
     border: none;
   }
 `;
+
+export const 클래스Bkgd = styled(Box)`
+  position: absolute; 
+  left: 5%;
+  margin-top: 10%;
+  transform: rotate(25deg);
+  color: rgba(200,200,200,1);
+  z-index: 2;
+`;
+export const ClothesBkgd = styled(Box)`
+  position: absolute; 
+  right: 15%;
+  margin-top: 30%;
+  transform: rotate(-5deg);
+  color: rgba(200,200,200,1);
+  opacity: 0.5;
+  z-index: 2;
+`;
+
+
+
+export const DdctBkgd = styled(Box)`
+  position: absolute; 
+  right: 15%;
+  margin-top: 10%;
+  transform: rotate(-5deg);
+  color: rgba(200,200,200,1);
+  opacity: 0.5;
+  z-index: 2;
+`;
+
+

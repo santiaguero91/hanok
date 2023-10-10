@@ -1,8 +1,7 @@
 import { Typography } from "@mui/material";
 import onlineClases from "../../assets/OnlineClases.jpg";
-import { ClasesBtn, ColumnDiv, MainDiv, RowDiv, TextDiv } from "./ClasesStyle";
+import { ColumnDiv, 클래스Bkgd, MainDiv, RowDiv, TextDiv, ClothesBkgd, DdctBkgd } from "./ClasesStyle";
 import { typoh3bold, typoh5 } from "../../utils/Fonts";
-import TimeTable from "./TimeTable/TimeTable";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Opinions from "../Opinions/Opinions";
@@ -38,6 +37,9 @@ const Clases = ({ sectionClases }) => {
 
           <Opinions />
       </ColumnDiv>
+      <클래스Bkgd><h1>클래스</h1></클래스Bkgd>
+      <ClothesBkgd><img width={"200px"} src="https://static.vecteezy.com/system/resources/previews/016/010/488/original/men-and-women-in-beautiful-korean-traditional-clothes-hanbok-traditional-korean-outfits-korean-folk-clothing-illustration-in-a-flat-design-style-design-with-shadow-vector.jpg"/></ClothesBkgd>
+      <DdctBkgd><h1>봉납</h1></DdctBkgd>
     </MainDiv>
   );
 };
