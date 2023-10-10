@@ -61,3 +61,14 @@ export const WorkshopBtn = styled(Button)`
     border: none;
   }
 `;
+
+
+export const FlagBkgd = styled(Box)`
+  position: absolute; 
+  right: 15%;
+  margin-top: -30%;
+  transform: rotate(-5deg);
+  color: rgba(200,200,200,1);
+  opacity: 0.5;
+  z-index: 2;
+`;

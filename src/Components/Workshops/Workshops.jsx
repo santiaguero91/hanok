@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material";
 import {
   ColumnDiv,
+  FlagBkgd,
   ImgDiv,
   MainDiv,
   RowDiv,
   TextDiv,
-  WorkshopBtn,
 } from "./WorkshopsStyle";
 import { typoh3bold, typoh5 } from "../../utils/Fonts";
 import { useInView } from "react-intersection-observer";
@@ -49,6 +49,8 @@ const Workshops = ({ sectionWorkshop }) => {
           </TextDiv>
         </RowDiv>
       </ColumnDiv>
+
+      <FlagBkgd><img width={"200px"} alt="" src="https://cdn.britannica.com/49/1949-050-39ED83BA/Flag-South-Korea.jpg" /></FlagBkgd>
     </MainDiv>
   );
 };
