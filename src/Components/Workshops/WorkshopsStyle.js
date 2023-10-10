@@ -72,3 +72,12 @@ export const FlagBkgd = styled(Box)`
   opacity: 0.5;
   z-index: 2;
 `;
+export const FlowerBkgd = styled(Box)`
+  position: absolute; 
+  left: 15%;
+  margin-top: -40%;
+  transform: rotate(-5deg);
+  color: rgba(200,200,200,1);
+  opacity: 0.5;
+  z-index: 2;
+`;
