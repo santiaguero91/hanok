@@ -5,6 +5,7 @@ import { typoh3bold, typoh5 } from "../../utils/Fonts";
 import TimeTable from "./TimeTable/TimeTable";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Opinions from "../Opinions/Opinions";
 
 const Clases = ({ sectionClases }) => {
 
@@ -35,7 +36,7 @@ const Clases = ({ sectionClases }) => {
           </TextDiv>
         </RowDiv>
 
-          <TimeTable />
+          <Opinions />
       </ColumnDiv>
     </MainDiv>
   );

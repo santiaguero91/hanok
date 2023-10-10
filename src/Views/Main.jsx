@@ -78,14 +78,14 @@ const Main = () => {
       style={{ backgroundImage: `url(${background})` }}
     >
       {/* <FixBox>{inSight}</FixBox> */}
-      <Header />
+      {/* <Header /> */}
       <NavBar inSight={inSight} />
       <MainSection />
       {/* <Sections /> */}
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
-      <Opinions sectionOpinion={sectionOpinion} />        
+      {/* <Opinions sectionOpinion={sectionOpinion} /> */}        
       <FirstFooter sectionFooter={sectionFooter}/>
       <Footer /> 
     </MainDiv>
