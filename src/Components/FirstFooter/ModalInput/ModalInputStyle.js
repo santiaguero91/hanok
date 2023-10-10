@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, TextField } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   width: 70dvw;
@@ -30,3 +30,18 @@ background-color: rgba(200, 200, 200, 0.8);
 export const StyldTextField = styled(TextField)`
   width: 70%;
 `;
+
+
+export const ModalBtn = styled(Button)`
+  width: 25%;
+  color:black;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  :hover{
+    border: none;
+  }
+`;
+
+

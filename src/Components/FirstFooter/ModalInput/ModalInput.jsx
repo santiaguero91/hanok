@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextField, FormControl, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { CoverDiv, MainDiv, StyldTextField } from "./ModalInputStyle";
+import { CoverDiv, MainDiv, ModalBtn, StyldTextField } from "./ModalInputStyle";
 import { typoh3bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 
@@ -14,6 +14,10 @@ const ModalInput = () => {
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [descriptionError, setDescriptionError] = useState(false);
+
+
+  const [isHovered, setIsHovered] = useState(false);
+
 
   //toast
   const notify = () => toast('Gracias por tu mensaje, te escribire aprenas lo vea!'+'👏', {
@@ -131,14 +135,21 @@ const ModalInput = () => {
       <Typography variant="subtitle1" style={typoh3bold}>
         Los siguientes datos seran enviados a : hanockclub@gmail.com
       </Typography>
-      <Button
+      <ModalBtn
         variant="outlined"
         color="secondary"
         type="submit"
         onClick={handleSubmit}
+        component={motion.div}
+        whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        whileTap={{ scale: 0.9 }}
+        initial="initial"
+        animate={isHovered ? "hover" : "initial"}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         Send
-      </Button>
+      </ModalBtn>
       <Toaster
         position="top-center"
         reverseOrder={false}

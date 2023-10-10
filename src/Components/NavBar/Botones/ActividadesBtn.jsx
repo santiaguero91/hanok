@@ -14,7 +14,7 @@ const ActividadesBtn = ({ inSight }) => {
         className={inSight === "Workshop" ? "inSight" : ""}
         variant="contained"
         component={motion.div}
-        whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+        whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
         initial="initial"
         animate={isHovered ? "hover" : "initial"}

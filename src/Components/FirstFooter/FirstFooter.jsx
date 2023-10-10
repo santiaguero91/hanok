@@ -52,7 +52,6 @@ const FirstFooter = ({sectionFooter}) => {
         <ModalInput />
       </Modal>
 
-      {/* NOT Modal  */}
       <RowDiv>
         <ContactMeDiv 
           component={motion.div}
