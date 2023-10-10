@@ -74,6 +74,7 @@ const FirstFooter = ({sectionFooter}) => {
         </ContactMeDiv>
 
         <FooterIcons>
+        <a href="https://www.instagram.com/thehanokclub/" target="_blank">
           <motion.div
             ref={refInstag}
             initial={{ opacity: 0, y: 100 }}
@@ -82,9 +83,11 @@ const FirstFooter = ({sectionFooter}) => {
               y: inViewInstag ? 0 : 100,
             }}
             transition={{ duration: 1.5, delay: 1 }}
-          >
+          > 
+          {/* https://www.instagram.com/thehanokclub/ */}
             <BsInstagram size={"2rem"} className="footerIcon" />
           </motion.div>
+          </a>
           <motion.div
             ref={refWhatsapp}
             initial={{ opacity: 0, y: 100 }}
@@ -96,7 +99,7 @@ const FirstFooter = ({sectionFooter}) => {
           >
             <BsWhatsapp size={"2rem"} className="footerIcon" />
           </motion.div>
-          <motion.div
+          {/* <motion.div
             ref={refFacebook}
             initial={{ opacity: 0, y: 100 }}
             animate={{
@@ -106,7 +109,7 @@ const FirstFooter = ({sectionFooter}) => {
             transition={{ duration: 1.5, delay: 3 }}
           >
           <BsFacebook size={"2rem"} className="footerIcon" />
-          </motion.div>
+          </motion.div> */}
         </FooterIcons>
       </RowDiv>
     </MainDiv>
