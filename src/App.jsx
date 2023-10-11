@@ -10,7 +10,6 @@ function App() {
     <MainDiv>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/traducciones" element={<Traducciones />} />
         <Route path="/test" element={<Test/>} />
       </Routes>
     </MainDiv>

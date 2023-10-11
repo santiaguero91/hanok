@@ -1,27 +1,17 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
-import { Colors } from "../../utils/Colors";
+import { Box, Button } from "@mui/material";
 
 export const MainDiv = styled(Box)`
-
   display: flex;
   flex-direction: column;
-  background-color: ${Colors.sectionsBackground};
   color: black;
-  align-items: center;
-  margin:  0 auto 0 auto;
-  padding-bottom: 5%;
+  margin: 3% auto 0 auto;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  //margin: 3% 10%;
-  //padding: 1% 0 0 0;
-  //border-radius: 25px;
-
-  background-color: ${Colors.sectionsBackground};
 `;
 export const TitleDiv = styled(Box)`
   margin: 3% auto 0 auto;
@@ -36,10 +26,11 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 10%;
   border-radius: 10px;
-  background-color: rgba(112, 121, 85);
 
   img{
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
 
@@ -69,8 +60,3 @@ export const TranslateBtn = styled(Button)`
     border: none;
   }
 `;
-
-
-
-
-

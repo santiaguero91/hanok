@@ -1,10 +1,10 @@
-import { Opinions } from "../../Components";
-import FirstFooter from "../../Components/FirstFooter/FirstFooter";
+import { Translates } from "../../Components";
+
 
 const Test = () => {
   return (
     <div>
-      <FirstFooter />
+    <Translates />
     </div>
   );
 };

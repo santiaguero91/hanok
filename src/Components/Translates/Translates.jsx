@@ -11,6 +11,7 @@ import { typoh3bold, typoh6 } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import Experience from "./Experience/Experience";
 
 
 const handleClick = () => {
@@ -59,6 +60,7 @@ const Translates = ({sectionTranslates}) => {
         />
       </RowDiv>
       </ColumnDiv>
+      <Experience />
     </MainDiv>
   );
 };

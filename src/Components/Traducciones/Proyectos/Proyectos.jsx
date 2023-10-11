@@ -22,7 +22,11 @@ const Proyectos = () => {
             translate: ["100%", 0, 0],
           },
         }}
-        modules={[EffectCreative]}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectCreative,Autoplay]}
         className="mySwiper"
       >
         {/* First Img */}
