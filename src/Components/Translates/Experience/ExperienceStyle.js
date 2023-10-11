@@ -23,9 +23,9 @@ export const RowDiv = styled(Box)`
   flex-direction: row;
   justify-content: space-around;
   color: black;
-  align-items: center;
-  margin: 3% 10%;
+  margin: 3% 0;
   border-radius: 10px;
+  width: 100%;
 
   img{
     border-radius: 15px ;
@@ -57,12 +57,17 @@ export const TranslateBtn = styled(Button)`
 
 export const WbTnMainDiv = styled(Box)`
 display: flex;
-align-items: center;
-justify-content: center;
 background-color: white;
 z-index: 5;
-position: relative;
-width: fit-content;
+background-color: transparent;
+`;
+
+export const BooksMainDiv = styled(Box)`
+
+display: flex;
+flex-direction: column;
+background-color: white;
+z-index: 5;
 background-color: transparent;
 `;
 
