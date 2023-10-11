@@ -3,23 +3,13 @@ import film from "../../../assets/films.png";
 import books from "../../../assets/books.png";
 import { typoh3bold } from "../../../utils/Fonts";
 import { Typography } from "@mui/material";
-import { MainDiv, RowDiv } from "./ExperienceStyle";
-import React, { useState, useEffect } from 'react';
+import { ImgDiv, MainDiv, RowDiv } from "./ExperienceStyle";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import WebToonsDiv from "./WebtoonsDiv";
 
 const Experience = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setPosition({ x: event.clientX, y: event.clientY });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  const [isHovered, setIsHovered] = useState("");
 
   return (
     <MainDiv>
@@ -27,26 +17,48 @@ const Experience = () => {
         Contamos con amplia experiencia en la traduccion de :
       </Typography>
       <RowDiv>
-        <img
-          width="100px"
-          height="100px"
-          alt=""
-          src={webtoon}
-          title="Webtoons"
-        />
-        <img width="100px" height="100px" alt="" src={film} title="Film" />
-        <img width="100px" height="100px" alt="" src={books} title="Books" />
+        <div>
+          <ImgDiv
+            component={motion.div}
+            onMouseEnter={() => setIsHovered("Webtoons")}
+            onMouseLeave={() => setIsHovered("")}
+          >
+            <img
+              width="100px"
+              height="100px"
+              alt=""
+              src={webtoon}
+              title="Webtoons"
+            />
+          </ImgDiv>
+          <motion.div
+            style={{ position: "relative", zIndex: 1 }}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{
+              opacity: isHovered === "Webtoons" ? 1 : 0,
+              y: isHovered === "Webtoons" ? 0 : -10,
+            }}
+            transition={{ duration: 0.5 }}
+          >
+            <WebToonsDiv />
+          </motion.div>
+        </div>
+
+        <ImgDiv
+          component={motion.div}
+          onMouseEnter={() => setIsHovered("Film")}
+          onMouseLeave={() => setIsHovered("")}
+        >
+          <img width="100px" height="100px" alt="" src={film} title="Film" />
+        </ImgDiv>
+        <ImgDiv
+          component={motion.div}
+          onMouseEnter={() => setIsHovered("Books")}
+          onMouseLeave={() => setIsHovered("")}
+        >
+          <img width="100px" height="100px" alt="" src={books} title="Books" />
+        </ImgDiv>
       </RowDiv>
-      
-      <div
-      style={{
-        position: 'absolute',
-        top: position.y,
-        left: position.x,
-      }}
-    >
-      This div follows your mouse!
-    </div>
     </MainDiv>
   );
 };

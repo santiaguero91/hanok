@@ -1,10 +1,9 @@
-import { Translates } from "../../Components";
-
+import Experience from "../../Components/Translates/Experience/Experience";
 
 const Test = () => {
   return (
     <div>
-    <Translates />
+      <Experience/>
     </div>
   );
 };

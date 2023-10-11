@@ -28,20 +28,14 @@ export const RowDiv = styled(Box)`
   border-radius: 10px;
 
   img{
-    border-radius: 0 10px 10px 0;
+    border-radius: 15px ;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
 
-export const LeftDiv = styled(Box)`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: black;
-  align-items: center;
-  padding: 2% 0 0.5% 0;
-  margin: 0 10%;
+export const ImgDiv = styled(Box)`
+z-index: 6;
 `;
 
 export const TranslateBtn = styled(Button)`
@@ -60,3 +54,15 @@ export const TranslateBtn = styled(Button)`
     border: none;
   }
 `;
+
+export const WbTnMainDiv = styled(Box)`
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+z-index: 5;
+position: relative;
+width: fit-content;
+background-color: transparent;
+`;
+
