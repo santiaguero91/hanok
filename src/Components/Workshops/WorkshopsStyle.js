@@ -18,7 +18,6 @@ export const RowDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 3% 15%;
-  background-color: ${Colors.sectionsBackground};
 `;
 export const ColumnDiv = styled(Box)`
   padding: 3% 0;
@@ -63,17 +62,17 @@ export const WorkshopBtn = styled(Button)`
 export const FlagBkgd = styled(Box)`
   position: absolute;
   right: 15%;
-  margin-top: -50%;
+  margin-top: -40%;
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 `;
 export const FlowerBkgd = styled(Box)`
   position: absolute;
   left: 15%;
-  margin-top: -40%;
+  margin-top: -35%;
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;

@@ -9,6 +9,7 @@ export const MainDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 0 auto;
+  z-index: 1;
   .swiper-slide {
     text-align: center;
     font-size: 18px;
