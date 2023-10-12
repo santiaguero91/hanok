@@ -7,7 +7,6 @@ const OpinionCardTwo = () => {
   return (
     <RowDiv>
         <img
-
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggeV5CJ1UgQA5cGAe2RIl6ike7JMAvtevGg&usqp=CAU"
         />
         <Typography variant="h6" style={typoh6}>

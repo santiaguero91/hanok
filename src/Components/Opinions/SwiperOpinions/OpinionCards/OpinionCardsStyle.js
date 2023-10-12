@@ -23,6 +23,7 @@ export const RowDiv = styled(Box)`
   gap: 5%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 4;
+  padding-right: 5%;
   img {
     max-width: 50%;
     width: 25%;
