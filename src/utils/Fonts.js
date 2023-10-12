@@ -29,9 +29,9 @@ export const navBarRed = {
     cursor: "pointer",
     color:"rgb(112,121,85)",
   };
-export const typoh5 = {
+  export const typoh5 = {
     fontFamily: 'Plus Jakarta Sans Variable',
-    fontSize: "24px"
+    fontSize: "24px",
   };
 export const typoh5bold = {
     fontFamily: 'Plus Jakarta Sans Variable',

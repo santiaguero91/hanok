@@ -59,7 +59,6 @@ export const TranslateBtn = styled(Button)`
   color: white;
   transition: 1s;
   margin: 6% auto 0 auto;
-  width: 45%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 5;

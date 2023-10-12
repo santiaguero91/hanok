@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
-import { Box} from "@mui/material";
-
+import { Box,Typography } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   display: flex;
@@ -9,6 +8,9 @@ export const MainDiv = styled(Box)`
   align-items: center;
   background-color: transparent;
   max-width: 100%;
+  @media (max-width: 450px) {
+  margin: 25% 0;
+  }
 `;
 
 export const RowDiv = styled(Box)`
@@ -17,8 +19,7 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   align-items: center;
   background-color: transparent;
-  margin:  5% 5% ;
-
+  margin: 5% 5%;
 `;
 
 export const TypeDiv = styled(Box)`
@@ -30,11 +31,19 @@ export const TypeDiv = styled(Box)`
 `;
 
 export const TextDiv = styled(Box)`
- margin: 5%;
- padding: 1%;
+  margin: 5%;
+  padding: 1%;
 `;
 
 export const ImgDiv = styled(Box)`
- margin: 5%;
+  margin: 5%;
+  img {
+    width: 300px;
+    @media (max-width: 450px) {
+      width: 25vw;
+    }
+    @media (max-width: 400px) {
+      /* width: 100% ; */
+    }
+  }
 `;
-

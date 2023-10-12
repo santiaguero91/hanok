@@ -24,6 +24,9 @@ const FirstFooter = ({sectionFooter}) => {
     setIsOpen(false);
   }
 
+    const whsatappClick = () => {
+      window.open('https://wa.me/1137994696', '_blank');
+    }
   const [refanimmail, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -84,7 +87,6 @@ const FirstFooter = ({sectionFooter}) => {
             }}
             transition={{ duration: 1.5, delay: 1 }}
           > 
-          {/* https://www.instagram.com/thehanokclub/ */}
             <BsInstagram size={"2rem"} className="footerIcon" />
           </motion.div>
           </a>
@@ -96,20 +98,10 @@ const FirstFooter = ({sectionFooter}) => {
               y: inViewWhatsapp ? 0 : 100,
             }}
             transition={{ duration: 1.5, delay: 2 }}
+            onClick={()=>whsatappClick()}
           >
             <BsWhatsapp size={"2rem"} className="footerIcon" />
           </motion.div>
-          {/* <motion.div
-            ref={refFacebook}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{
-              opacity: inViewFacebook ? 1 : 0,
-              y: inViewFacebook ? 0 : 100,
-            }}
-            transition={{ duration: 1.5, delay: 3 }}
-          >
-          <BsFacebook size={"2rem"} className="footerIcon" />
-          </motion.div> */}
         </FooterIcons>
       </RowDiv>
     </MainDiv>

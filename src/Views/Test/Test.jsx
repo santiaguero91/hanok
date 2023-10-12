@@ -1,9 +1,11 @@
-import Experience from "../../Components/Translates/Experience/Experience";
+import { MainSection, NavBar,Clases } from "../../Components";
 
 const Test = () => {
   return (
     <div>
-      <Experience/>
+      <NavBar/>
+      <MainSection />
+      <Clases />
     </div>
   );
 };

@@ -25,7 +25,6 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: ${Colors.sectionsBackground};
 `;
 
 export const TextDiv = styled(Box)`

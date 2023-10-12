@@ -37,7 +37,7 @@ const Translates = ({ sectionTranslates }) => {
           </Typography>
         </TitleDiv>
         <RowDiv
-          component={motion.div}
+          /* component={motion.div}
           ref={refanim}
           initial={{ opacity: 0, y: 100, x: -150 }}
           animate={{
@@ -45,7 +45,7 @@ const Translates = ({ sectionTranslates }) => {
             y: inView ? 0 : 100,
             x: inView ? 0 : -150,
           }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.5 }} */
         >
           <LeftDiv>
             <Typography variant="h6" style={typoh6}>

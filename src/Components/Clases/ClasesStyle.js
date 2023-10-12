@@ -32,6 +32,12 @@ export const RowDiv = styled(Box)`
   border-radius: 10px;
   img {
     border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    @media (max-width: 770px) {
+    width: 250px;
+    height: 250px;
+  }
   }
   z-index: 4;
 `;

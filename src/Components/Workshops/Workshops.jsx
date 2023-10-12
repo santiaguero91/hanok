@@ -22,17 +22,18 @@ const Workshops = ({ sectionWorkshop }) => {
   return (
     <MainDiv id="Workshops" ref={sectionWorkshop}>
       <ColumnDiv>
-        <Typography variant="h3" style={typoh3bold}>
+        <Typography variant="h3" style={typoh3bold} ref={refanim}>
           Talleres
         </Typography>
         <RowDiv
           component={motion.div}
-          ref={refanim}
-          initial={{ opacity: 0, y: 100, x: 150,  }}
+          initial={{ opacity: 0, y: 100, x: 150, scale: 0 }}
           animate={{
             opacity: inView ? 1 : 0,
             y: inView ? 0 : 100,
             x: inView ? 0 : 150,
+            scale: inView ? 1 : 0,
+            
           }}
           transition={{ duration: 1.5 }}
         >

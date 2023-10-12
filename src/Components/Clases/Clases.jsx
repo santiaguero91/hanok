@@ -37,7 +37,7 @@ const Clases = ({ sectionClases }) => {
           Clases
         </Typography>
         <RowDiv>
-          <img width={"400px"} height={"350px"} src={onlineClases} />
+          <img src={onlineClases} />
           <TextDiv>
             <Typography variant="h5" style={typoh5}>
               Disfuta las mejores clases online personalizadas con grupos acorde
