@@ -30,16 +30,21 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 5% 15% 0% 15%;
   border-radius: 10px;
+
   img {
     border-radius: 10px;
     width: 400px;
     height: 350px;
     @media (max-width: 770px) {
-    width: 250px;
-    height: 250px;
-  }
+      width: 250px;
+      height: 250px;
+    }
+
   }
   z-index: 4;
+  @media (max-width: 430px) {
+    flex-direction: column;
+  }
 `;
 
 export const TextDiv = styled(Box)`
@@ -71,7 +76,7 @@ export const ClasesBtn = styled(Button)`
   }
 
   @media (max-width: 1200px) {
-    width: 100% ;
+    width: 100%;
   }
   @media (max-width: 770px) {
     /* width: 100% ; */
@@ -118,4 +123,3 @@ export const TypeDiv = styled(Box)`
   justify-content: space-around;
   margin: 0 0 0 0;
 `;
-

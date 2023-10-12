@@ -20,6 +20,9 @@ export const RowDiv = styled(Box)`
   align-items: center;
   background-color: transparent;
   margin: 5% 5%;
+  @media (max-width: 430px) {
+      flex-direction: column;
+    }
 `;
 
 export const TypeDiv = styled(Box)`
@@ -39,11 +42,9 @@ export const ImgDiv = styled(Box)`
   margin: 5%;
   img {
     width: 300px;
-    @media (max-width: 450px) {
-      width: 25vw;
+    @media (max-width: 430px) {
+      width: 50vw;
     }
-    @media (max-width: 400px) {
-      /* width: 100% ; */
-    }
+
   }
 `;
