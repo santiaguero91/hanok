@@ -55,7 +55,6 @@ const Translates = ({sectionTranslates}) => {
 
         </LeftDiv>
         <img
-          width="600px"
           src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366"
         />
       </RowDiv>

@@ -10,16 +10,16 @@ export const MainDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 0 auto 0 auto;
-  z-index: 1;
+  z-index: 0;
 `;
 export const ColumnDiv = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: ${Colors.sectionsBackground};
   padding-top: 3%;
   padding: 3%;
+  z-index: 1;
 `;
 
 export const RowDiv = styled(Box)`
@@ -30,15 +30,16 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 5% 15% 0% 15%;
   border-radius: 10px;
-  background-color: ${Colors.sectionsBackground};
   img {
     border-radius: 10px;
   }
+  z-index: 4;
 `;
 
 export const TextDiv = styled(Box)`
   margin: 1.5% 5%;
   flex-direction: column;
+  z-index: 5;
 `;
 
 export const ClasesBtn = styled(Button)`
@@ -46,7 +47,7 @@ export const ClasesBtn = styled(Button)`
   color: white;
   transition: 1s;
   margin: 6% auto 0 auto;
-  width: 10vw;
+  width: 45%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 5;
@@ -62,6 +63,13 @@ export const ClasesBtn = styled(Button)`
     outline: none;
     border: none;
   }
+
+  @media (max-width: 1200px) {
+    width: 100% ;
+  }
+  @media (max-width: 770px) {
+    /* width: 100% ; */
+  }
 `;
 
 export const 클래스Bkgd = styled(Box)`
@@ -70,7 +78,7 @@ export const 클래스Bkgd = styled(Box)`
   margin-top: 10%;
   transform: rotate(25deg);
   color: rgba(200, 200, 200, 1);
-  z-index: 2;
+  z-index: 0;
   pointer-events: none;
 `;
 export const ClothesBkgd = styled(Box)`
@@ -78,9 +86,12 @@ export const ClothesBkgd = styled(Box)`
   right: 10%;
   margin-top: 30%;
   transform: rotate(-5deg);
-  opacity: 0.5;
-  z-index: 2;
+  opacity: 0.3;
+  z-index: 0;
   pointer-events: none;
+  img {
+    width: 200px;
+  }
 `;
 
 export const DdctBkgd = styled(Box)`
@@ -90,9 +101,8 @@ export const DdctBkgd = styled(Box)`
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
-  z-index: 2;
+  z-index: 0;
   pointer-events: none;
-
 `;
 
 export const TypeDiv = styled(Box)`

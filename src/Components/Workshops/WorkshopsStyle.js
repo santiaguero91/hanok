@@ -26,20 +26,18 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  //margin: 3% 10%;
-  //padding: 1% 0 0 0;
-  //border-radius: 25px;
-
   background-color: ${Colors.sectionsBackground};
 `;
 
 export const TextDiv = styled(Box)`
   margin: 1.5% 5%;
   flex-direction: column;
+  z-index: 5;
 `;
 export const ImgDiv = styled(Box)`
-width: 50%;
+  width: 50%;
   margin: 1.5% 0%;
+  z-index: 5;
   img {
     border-radius: 15px;
   }
@@ -62,26 +60,23 @@ export const WorkshopBtn = styled(Button)`
   }
 `;
 
-
 export const FlagBkgd = styled(Box)`
-  position: absolute; 
+  position: absolute;
   right: 15%;
-  margin-top: -30%;
+  margin-top: -50%;
   transform: rotate(-5deg);
-  color: rgba(200,200,200,1);
+  color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   z-index: 2;
   pointer-events: none;
-
 `;
 export const FlowerBkgd = styled(Box)`
-  position: absolute; 
+  position: absolute;
   left: 15%;
   margin-top: -40%;
   transform: rotate(-5deg);
-  color: rgba(200,200,200,1);
+  color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   z-index: 2;
   pointer-events: none;
-
 `;
