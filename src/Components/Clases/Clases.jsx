@@ -1,13 +1,14 @@
 import { Typography } from "@mui/material";
 import onlineClases from "../../assets/OnlineClases.jpg";
-import { ColumnDiv, 클래스Bkgd, MainDiv, RowDiv, TextDiv, ClothesBkgd, DdctBkgd, ClasesBtn } from "./ClasesStyle";
-import { typoh3bold, typoh5 } from "../../utils/Fonts";
+import { ColumnDiv, 클래스Bkgd, MainDiv, RowDiv, TextDiv, ClothesBkgd, DdctBkgd, ClasesBtn, TypeDiv } from "./ClasesStyle";
+import { typoh3, typoh3bold, typoh5, typoh5bold } from "../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Opinions from "../Opinions/Opinions";
+import { useState } from "react";
 
 const Clases = ({ sectionClases }) => {
-
+  const [isHovered, setIsHovered] = useState(false);
   const [refanim, inView] = useInView({
     triggerOnce: true, 
     threshold: 0.1,
@@ -31,7 +32,20 @@ const Clases = ({ sectionClases }) => {
             <Typography variant="h5" style={typoh5}>
               Disfuta las mejores clases online personalizadas con grupos acorde al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typography>
-             <ClasesBtn>Averiguar horarios</ClasesBtn>
+             <ClasesBtn
+             component={motion.div}
+             initial="initial"
+             animate={isHovered ? "hover" : "initial"}
+             onMouseEnter={() => setIsHovered(true)}
+             onMouseLeave={() => setIsHovered(false)}
+             whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+             whileTap={{ scale: 0.9 }}
+             >
+              
+              {isHovered ? <내가관심 /> : <Empezar />}
+             
+             </ClasesBtn>
+
           </TextDiv>
         </RowDiv>
 
@@ -43,5 +57,52 @@ const Clases = ({ sectionClases }) => {
     </MainDiv>
   );
 };
+
+
+const text = "내가 관심";
+const tradText = "Empezar";
+const wordVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+const 내가관심 = () => {
+  return (
+    <TypeDiv>
+      <Typography variant="subtitle1" style={typoh3}>
+        {text.split("").map((word, index) => (
+          <motion.span
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={wordVariants}
+            transition={{ delay: index * 0.1 }}
+          >
+            {word}
+          </motion.span>
+        ))}
+      </Typography>
+    </TypeDiv>
+  );
+};
+const Empezar = () => {
+  return (
+    <TypeDiv>
+      <Typography variant="subtitle" style={typoh3bold}>
+        {tradText.split("").map((word, index) => (
+          <motion.span
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={wordVariants}
+            transition={{ delay: index * 0.1 }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </Typography>
+    </TypeDiv>
+  );
+};
+
 
 export default Clases;

@@ -71,6 +71,8 @@ export const FlagBkgd = styled(Box)`
   color: rgba(200,200,200,1);
   opacity: 0.5;
   z-index: 2;
+  pointer-events: none;
+
 `;
 export const FlowerBkgd = styled(Box)`
   position: absolute; 
@@ -80,4 +82,6 @@ export const FlowerBkgd = styled(Box)`
   color: rgba(200,200,200,1);
   opacity: 0.5;
   z-index: 2;
+  pointer-events: none;
+
 `;

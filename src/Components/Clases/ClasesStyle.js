@@ -19,9 +19,8 @@ export const ColumnDiv = styled(Box)`
   align-items: center;
   background-color: ${Colors.sectionsBackground};
   padding-top: 3%;
-  padding: 3%
+  padding: 3%;
 `;
-
 
 export const RowDiv = styled(Box)`
   display: flex;
@@ -44,7 +43,7 @@ export const TextDiv = styled(Box)`
 
 export const ClasesBtn = styled(Button)`
   background-color: ${Colors.navBarBtn};
-  color: black;
+  color: white;
   transition: 1s;
   margin: 6% auto 0 auto;
   width: 10vw;
@@ -52,7 +51,7 @@ export const ClasesBtn = styled(Button)`
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 5;
   :hover {
-    background-color:${Colors.navBarBtnHover};
+    background-color: ${Colors.navBarBtnHover};
     scale: 1.05;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -66,32 +65,40 @@ export const ClasesBtn = styled(Button)`
 `;
 
 export const 클래스Bkgd = styled(Box)`
-  position: absolute; 
+  position: absolute;
   left: 5%;
   margin-top: 10%;
   transform: rotate(25deg);
-  color: rgba(200,200,200,1);
+  color: rgba(200, 200, 200, 1);
   z-index: 2;
+  pointer-events: none;
 `;
 export const ClothesBkgd = styled(Box)`
-  position: absolute; 
-  right: 15%;
+  position: absolute;
+  right: 10%;
   margin-top: 30%;
   transform: rotate(-5deg);
   opacity: 0.5;
   z-index: 2;
+  pointer-events: none;
 `;
 
-
-
 export const DdctBkgd = styled(Box)`
-  position: absolute; 
+  position: absolute;
   right: 15%;
   margin-top: 10%;
   transform: rotate(-5deg);
-  color: rgba(200,200,200,1);
+  color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   z-index: 2;
+  pointer-events: none;
+
 `;
 
-
+export const TypeDiv = styled(Box)`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 0 0;
+`;

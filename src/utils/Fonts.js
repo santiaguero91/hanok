@@ -1,6 +1,9 @@
 
 
 
+export const typoh3 = {
+    fontFamily: 'Plus Jakarta Sans Variable',
+  };
 export const typoh3bold = {
     fontFamily: 'Plus Jakarta Sans Variable',
     fontWeight: "bold",
