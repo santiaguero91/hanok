@@ -7,4 +7,7 @@ export const Colors = {
   lightGreenBackground: "rgb(112,121,85)",
   blanchedalmond: "rgb(255,235,205)",
   purpleBtns: "rgb(156,137,184)",
+
+  navBarBtn: "rgb(78,65,96);",
+  navBarBtnHover: "rgb(143,102,71)",
 };

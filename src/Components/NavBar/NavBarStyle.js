@@ -3,12 +3,12 @@ import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  position: sticky;
+  position: relative;
   top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(40,33,37);
+  background-color: ${Colors.navBarBkg};
   color: black;
   align-items: center;
   padding: 1% 0 1% 0;
@@ -16,7 +16,7 @@ export const MainDiv = styled(Box)`
   transition: 1s;
   height: 40px;
   .inSight {
-    background-color: rgb(143,102,71);
+    background-color: ${Colors.navBarBtnHover};
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -24,14 +24,14 @@ export const MainDiv = styled(Box)`
 `;
 
 export const NavBarBtn = styled(Button)`
-  background-color: rgb(78,65,96);
+  background-color: ${Colors.navBarBtn};
   color: ${Colors.sectionsBackground};
   transition: 1s;
   border-radius: 0;
   margin: 0 auto 0 auto;
   width: 20vw;
   :hover {
-    background-color: rgb(65,44,77);
+    background-color: ${Colors.navBarBtnHover};
   }
 `;
 

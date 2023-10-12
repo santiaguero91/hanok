@@ -23,7 +23,6 @@ export const ColumnDiv = styled(Box)`
 `;
 
 
-
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
@@ -44,15 +43,16 @@ export const TextDiv = styled(Box)`
 `;
 
 export const ClasesBtn = styled(Button)`
-  background-color: rgba(156, 137, 184);
+  background-color: ${Colors.navBarBtn};
   color: black;
   transition: 1s;
   margin: 6% auto 0 auto;
   width: 10vw;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 5;
   :hover {
-    background-color: rgba(126, 127, 184);
+    background-color:${Colors.navBarBtnHover};
     scale: 1.05;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -78,7 +78,6 @@ export const ClothesBkgd = styled(Box)`
   right: 15%;
   margin-top: 30%;
   transform: rotate(-5deg);
-  color: rgba(200,200,200,1);
   opacity: 0.5;
   z-index: 2;
 `;
