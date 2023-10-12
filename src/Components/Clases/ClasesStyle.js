@@ -49,8 +49,8 @@ export const ClasesBtn = styled(Button)`
   margin: 6% auto 0 auto;
   width: 45%;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   :hover {
     background-color: ${Colors.navBarBtnHover};
     scale: 1.05;
@@ -112,3 +112,4 @@ export const TypeDiv = styled(Box)`
   justify-content: space-around;
   margin: 0 0 0 0;
 `;
+

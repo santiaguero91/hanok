@@ -7,7 +7,7 @@ export const MainDiv = styled(Box)`
   flex-direction: column;
   color: black;
   align-items: center;
-  background-color: ${Colors.sectionsBackground};
+  z-index: -1;
   .swiper {
     width: 100%;
     padding-top: 50px;
@@ -33,7 +33,8 @@ export const ColumnDiv = styled(Box)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: ${Colors.sectionsBackground};
+  z-index: 1;
+
 `;
 export const RowDiv = styled(Box)`
   display: flex;
@@ -44,6 +45,7 @@ export const RowDiv = styled(Box)`
   margin: 3% 0;
   border-radius: 10px;
   gap: 5%;
+  z-index: 4;
 
   img {
     border-radius: 999px;

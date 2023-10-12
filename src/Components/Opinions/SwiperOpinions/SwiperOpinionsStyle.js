@@ -6,11 +6,9 @@ export const MainDiv = styled(Box)`
   max-width: 80vw;
   display: flex;
   flex-direction: column;
-  background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
   margin: 0 auto;
-
   .swiper-slide {
     text-align: center;
     font-size: 18px;
