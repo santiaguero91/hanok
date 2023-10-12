@@ -32,20 +32,20 @@ const Translates = ({ sectionTranslates }) => {
     <MainDiv id="Translates" ref={sectionTranslates}>
       <ColumnDiv>
         <TitleDiv>
-          <Typography variant="h3" style={typoh3bold}>
+          <Typography variant="h3" style={typoh3bold} ref={refanim}>
             Traducciones
           </Typography>
         </TitleDiv>
         <RowDiv
-          /* component={motion.div}
-          ref={refanim}
+          component={motion.div}
           initial={{ opacity: 0, y: 100, x: -150 }}
           animate={{
             opacity: inView ? 1 : 0,
             y: inView ? 0 : 100,
             x: inView ? 0 : -150,
+            scale: inView ? 1 : 0,
           }}
-          transition={{ duration: 1.5 }} */
+          transition={{ duration: 1.5 }}
         >
           <LeftDiv>
             <Typography variant="h6" style={typoh6}>
@@ -65,7 +65,6 @@ const Translates = ({ sectionTranslates }) => {
               >
                 {isHovered ? <연락하다 /> : <Contactar />}
               </TranslateBtn>
-
             </NavLink>
           </LeftDiv>
           <img src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366" />

@@ -1,4 +1,4 @@
-import { MainSection, NavBar,Clases } from "../../Components";
+import { MainSection, NavBar,Clases, Workshops, Translates } from "../../Components";
 
 const Test = () => {
   return (
@@ -6,6 +6,8 @@ const Test = () => {
       <NavBar/>
       <MainSection />
       <Clases />
+      <Workshops />
+      <Translates />
     </div>
   );
 };
