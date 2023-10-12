@@ -9,7 +9,6 @@ export const MainDiv = styled(Box)`
   align-items: center;
   background-color: ${Colors.sectionsBackground};
   margin: 0 0 0 0;
-
 `;
 
 export const RowDiv = styled(Box)`
@@ -18,11 +17,15 @@ export const RowDiv = styled(Box)`
   justify-content: space-around;
   color: black;
   align-items: center;
-  margin: 3% 10% ;
+  margin: 3% 10%;
   border-radius: 10px;
   background-color: ${Colors.sectionsBackground};
   gap: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   img {
+    max-width: 50%;
+    width: 25%;
+    height: 25%;
     border-radius: 999px;
     border: 2px solid black;
     margin: auto;
@@ -72,5 +75,6 @@ export const RowDiv = styled(Box)`
         border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
       }
     }
+
   }
 `;
