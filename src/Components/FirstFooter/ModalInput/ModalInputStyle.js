@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import { Box, Button, TextField } from "@mui/material";
 
 export const MainDiv = styled(Box)`
-  width: 70dvw;
+  width: 50dvw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   color: black;
@@ -10,7 +11,6 @@ export const MainDiv = styled(Box)`
   padding: 5% 0;
   background-color: rgba(200, 200, 200, 1);
   border-radius: 25px;
-
 
   background-image: url("https://qph.cf2.quoracdn.net/main-qimg-63d5a053005d9f1ed3995740d1fe5d50");
   background-position: center;

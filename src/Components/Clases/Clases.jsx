@@ -11,7 +11,7 @@ import {
   ClasesBtn,
   TypeDiv,
 } from "./ClasesStyle";
-import { typoh3, typoh3bold, typoh5, typoh5bold } from "../../utils/Fonts";
+import { Typh3bold, Typh5, typoh3, typoh3bold, } from "../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Opinions from "../Opinions/Opinions";
@@ -33,16 +33,16 @@ const Clases = ({ sectionClases }) => {
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
         transition={{ duration: 1.5 }}
       >
-        <Typography variant="h3" style={typoh3bold}>
+        <Typh3bold variant="h3">
           Clases
-        </Typography>
+        </Typh3bold>
         <RowDiv>
           <img src={onlineClases} />
           <TextDiv>
-            <Typography variant="h5" style={typoh5}>
+            <Typh5 variant="h5" >
               Disfuta las mejores clases online personalizadas con grupos acorde
               al nivel. Bajo la tutela de profesores de alta trayectoria.
-            </Typography>
+            </Typh5>
             <ClasesBtn
               component={motion.div}
               initial="initial"

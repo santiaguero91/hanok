@@ -123,3 +123,4 @@ export const TypeDiv = styled(Box)`
   justify-content: space-around;
   margin: 0 0 0 0;
 `;
+
