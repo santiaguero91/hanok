@@ -8,7 +8,7 @@ import {
   TranslateBtn,
   TypeDiv,
 } from "./TranslatesStyles";
-import { typoh3, typoh3bold, typoh6 } from "../../utils/Fonts";
+import { Typh3bold, Typh5, typoh3, typoh3bold, typoh6 } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -32,9 +32,9 @@ const Translates = ({ sectionTranslates }) => {
     <MainDiv id="Translates" ref={sectionTranslates}>
       <ColumnDiv>
         <TitleDiv>
-          <Typography variant="h3" style={typoh3bold} ref={refanim}>
+          <Typh3bold variant="h3" ref={refanim}>
             Traducciones
-          </Typography>
+          </Typh3bold>
         </TitleDiv>
         <RowDiv
           component={motion.div}
@@ -48,11 +48,11 @@ const Translates = ({ sectionTranslates }) => {
           transition={{ duration: 1.5 }}
         >
           <LeftDiv>
-            <Typography variant="h6" style={typoh6}>
+            <Typh5 variant="h5">
               El equipo de Hanok desea ser tu mejor aliado para afrontar con
               éxito los nuevos retos que afrontamos en este cambiante entorno
               internacional.
-            </Typography>
+            </Typh5>
             <NavLink to="/traducciones" onClick={handleClick}>
               <TranslateBtn
                 component={motion.div}

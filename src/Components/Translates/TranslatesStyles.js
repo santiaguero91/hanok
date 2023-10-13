@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography, TextField, Button, FormLabel } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
@@ -30,9 +30,15 @@ export const RowDiv = styled(Box)`
   margin: 3% 10%;
   border-radius: 10px;
   background-color: rgba(112, 121, 85);
+  @media (max-width: 770px) {
+    flex-direction: column-reverse;
+  }
   img {
     border-radius: 10px;
     width: 50%;
+    @media (max-width: 770px) {
+      width: 100%;
+  }
   }
 `;
 export const LeftDiv = styled(Box)`
@@ -52,7 +58,6 @@ export const TypeDiv = styled(Box)`
   justify-content: space-around;
   margin: 0 0 0 0;
 `;
-
 
 export const TranslateBtn = styled(Button)`
   background-color: ${Colors.navBarBtn};
@@ -76,7 +81,7 @@ export const TranslateBtn = styled(Button)`
   }
 
   @media (max-width: 1200px) {
-    width: 100% ;
+    width: 100%;
   }
   @media (max-width: 770px) {
     /* width: 100% ; */

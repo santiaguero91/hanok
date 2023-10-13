@@ -1,7 +1,7 @@
 import webtoon from "../../../assets/webtoon.png";
 import film from "../../../assets/films.png";
 import books from "../../../assets/books.png";
-import { typoh3bold } from "../../../utils/Fonts";
+import { Typh4bold, Typh5, typoh3bold } from "../../../utils/Fonts";
 import { Typography } from "@mui/material";
 import { ImgDiv, MainDiv, RowDiv } from "./ExperienceStyle";
 import React, { useState } from "react";
@@ -15,9 +15,9 @@ const Experience = () => {
 
   return (
     <MainDiv>
-      <Typography variant="h4" style={typoh3bold}>
+      <Typh4bold variant="h5">
         Contamos con amplia experiencia en la traduccion de :
-      </Typography>
+      </Typh4bold>
       <RowDiv>
         <div>
           <ImgDiv

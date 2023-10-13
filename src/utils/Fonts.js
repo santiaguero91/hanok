@@ -80,3 +80,12 @@ export const Typh5 = styled(Typography)`
     font-size: 18px;
   }
 `;
+export const Typh4bold = styled(Typography)`
+  font-family: "Plus Jakarta Sans Variable";
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 5;
+  @media (max-width: 450px) {
+    font-size: 22px;
+  }
+`;
