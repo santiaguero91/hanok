@@ -8,7 +8,7 @@ import {
   RowDiv,
   TextDiv,
 } from "./WorkshopsStyle";
-import { typoh3bold, typoh5 } from "../../utils/Fonts";
+import { Typh3, Typh3bold, Typh5, typoh5 } from "../../utils/Fonts";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import WsSwipper from "./WsSwipper/WsSwipper";
@@ -22,9 +22,9 @@ const Workshops = ({ sectionWorkshop }) => {
   return (
     <MainDiv id="Workshops" ref={sectionWorkshop}>
       <ColumnDiv>
-        <Typography variant="h3" style={typoh3bold} ref={refanim}>
+        <Typh3bold variant="h3" ref={refanim}>
           Talleres
-        </Typography>
+        </Typh3bold>
         <RowDiv
           component={motion.div}
           initial={{ opacity: 0, y: 100, x: 150, scale: 0 }}
@@ -41,13 +41,12 @@ const Workshops = ({ sectionWorkshop }) => {
             <WsSwipper />
           </ImgDiv>
           <TextDiv>
-            <Typography variant="h5" style={typoh5}>
+            <Typh5 variant="h5">
               Un fin de semana al mes los miembros del club nos encontramos en
               algún café de Buenos Aires en este maravilloso encuentro donde
               cada uno puede traer un libro para presentar y recomendar. ¡¡Todos
-              están invitados !!{" "}
-            </Typography>
-            {/* <WorkshopBtn>Me Interesa</WorkshopBtn> */}
+              están invitados !!
+            </Typh5>
           </TextDiv>
         </RowDiv>
       </ColumnDiv>

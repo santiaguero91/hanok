@@ -62,6 +62,7 @@ export const Typh3bold = styled(Typography)`
   font-family: "Plus Jakarta Sans Variable";
   font-size: 40px;
   font-weight: bold;
+  z-index: 5;
   @media (max-width: 450px) {
     font-size: 30px;
   }

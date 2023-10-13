@@ -18,6 +18,9 @@ export const RowDiv = styled(Box)`
   color: black;
   align-items: center;
   margin: 3% 15%;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    }
 `;
 export const ColumnDiv = styled(Box)`
   padding: 3% 0;
@@ -33,8 +36,6 @@ export const TextDiv = styled(Box)`
   z-index: 5;
 `;
 export const ImgDiv = styled(Box)`
-  width: 50%;
-  margin: 1.5% 0%;
   z-index: 5;
   img {
     border-radius: 15px;
@@ -65,8 +66,12 @@ export const FlagBkgd = styled(Box)`
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
-  z-index: 1;
   pointer-events: none;
+  @media (max-width: 450px) {
+    margin-top: -115%;
+    left: 45%;
+    z-index: 3;
+    }
 `;
 export const FlowerBkgd = styled(Box)`
   position: absolute;
@@ -75,6 +80,8 @@ export const FlowerBkgd = styled(Box)`
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
-  z-index: 2;
   pointer-events: none;
+  @media (max-width: 450px) {
+    display: none;
+    }
 `;

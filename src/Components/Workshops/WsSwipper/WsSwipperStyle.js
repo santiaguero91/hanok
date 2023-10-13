@@ -4,8 +4,6 @@ import { Box } from "@mui/material";
 export const MainDiv = styled(Box)`
   max-width: 100vw;
   width: 35vw;
-  /* width: 450px;
-  height: 450px; */
   display: flex;
   flex-direction: row;
   background-color: rgba(255, 255, 255);
@@ -13,10 +11,13 @@ export const MainDiv = styled(Box)`
   align-items: center;
   justify-content: center;
   margin: 0 auto 0 auto;
-
+  @media (max-width: 450px) {
+    width: 60vw;
+    }
   .swiper {
   width: 100%;
   height: 100%;
+
 }
 
 .swiper-slide {
