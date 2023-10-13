@@ -3,7 +3,8 @@ import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
-  position: relative;
+  position: fixed;
+  width: 100%;
   top: 0px;
   display: flex;
   flex-direction: row;
@@ -15,6 +16,8 @@ export const MainDiv = styled(Box)`
   z-index: 5;
   transition: 1s;
   height: 40px;
+  z-index: 10;
+  backdrop-filter: blur(2px);
   .inSight {
     background-color: ${Colors.navBarBtnHover};
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,

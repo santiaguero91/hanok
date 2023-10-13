@@ -1,27 +1,25 @@
 import { useInView } from "react-intersection-observer";
 import {
   MainSection,
-  Header,
   NavBar,
   Translates,
   Workshops,
   Clases,
-  Opinions,
   Footer,
 } from "../Components/index";
-import { FixBox, MainDiv } from "./MainStyle";
+import { MainDiv } from "./MainStyle";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import seoulNightView from "../assets/seoulNightView.jpg";
 import FirstFooter from "../Components/FirstFooter/FirstFooter";
 
 const Main = () => {
-  //let background1 = jejuisland;
   let background2 = seoulNightView;
   let background1 = seoulNightView;
-  const [inSight, setInSight] = useState("");
   const [background, setBackground] = useState(background2);
 
+
+  const [inSight, setInSight] = useState("");
   const [sectionWorkshop, sectionWorkshopInView] = useInView({
     threshold: 0.5,
   });
@@ -56,7 +54,7 @@ const Main = () => {
     sectionClasesInView,
     sectionTranslatesInView,
     sectionOpinionInView,
-    sectionFooterInView
+    sectionFooterInView,
   ]);
 
   useEffect(() => {
@@ -77,17 +75,13 @@ const Main = () => {
       exit={{ opacity: 0, transition: { duration: 0.8 } }}
       style={{ backgroundImage: `url(${background})` }}
     >
-      {/* <FixBox>{inSight}</FixBox> */}
-      {/* <Header /> */}
-      <NavBar inSight={inSight} />
+            <NavBar inSight={inSight} />
       <MainSection />
-      {/* <Sections /> */}
       <Clases sectionClases={sectionClases} />
       <Workshops sectionWorkshop={sectionWorkshop} />
       <Translates sectionTranslates={sectionTranslates} />
-      {/* <Opinions sectionOpinion={sectionOpinion} /> */}        
-      <FirstFooter sectionFooter={sectionFooter}/>
-      <Footer /> 
+      <FirstFooter sectionFooter={sectionFooter} />
+      <Footer />
     </MainDiv>
   );
 };
