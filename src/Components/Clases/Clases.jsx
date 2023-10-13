@@ -39,7 +39,7 @@ const Clases = ({ sectionClases }) => {
         <RowDiv>
           <img src={onlineClases} />
           <TextDiv>
-            <Typh5 variant="h5" >
+            <Typh5 variant="h6" >
               Disfuta las mejores clases online personalizadas con grupos acorde
               al nivel. Bajo la tutela de profesores de alta trayectoria.
             </Typh5>

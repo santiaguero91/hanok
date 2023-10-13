@@ -50,13 +50,7 @@ export const typoFooter = {
 
 
 
-export const Typh5 = styled(Typography)`
-  font-family: "Plus Jakarta Sans Variable";
-  font-size: 20px;
-  @media (max-width: 450px) {
-    font-size: 16px;
-  }
-`;
+
 export const Typh3 = styled(Typography)`
   font-family: "Plus Jakarta Sans Variable";
   font-size: 24px;
@@ -70,5 +64,18 @@ export const Typh3bold = styled(Typography)`
   font-weight: bold;
   @media (max-width: 450px) {
     font-size: 30px;
+  }
+`;
+
+export const Typh6 = styled(Typography)`
+  font-family: "Plus Jakarta Sans Variable";
+  font-size: 18px;
+
+`;
+export const Typh5 = styled(Typography)`
+  font-family: "Plus Jakarta Sans Variable";
+  font-size: 20px;
+  @media (max-width: 450px) {
+    font-size: 18px;
   }
 `;
