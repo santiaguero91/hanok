@@ -1,7 +1,6 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
-import { Typography } from "@mui/material";
-import { typoh5, typoh5bold } from "../../../utils/Fonts";
+import {  Typh5bold, TyphNavBar} from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -37,7 +36,7 @@ const wordVariants = {
 const 활동 = () => {
   return (
     <TypeDiv>
-      <Typography variant="h6" style={typoh5}>
+      <TyphNavBar>
         {text.split("").map((word, index) => (
           <motion.span
             key={index}
@@ -49,14 +48,14 @@ const 활동 = () => {
             {word}{" "}
           </motion.span>
         ))}
-      </Typography>
+      </TyphNavBar>
     </TypeDiv>
   );
 };
 const Actividades = () => {
   return (
     <TypeDiv>
-      <Typography variant="h2" style={typoh5bold}>
+      <TyphNavBar >
         {tradText.split("").map((word, index) => (
           <motion.span
             key={index}
@@ -68,7 +67,7 @@ const Actividades = () => {
             {word}{" "}
           </motion.span>
         ))}
-      </Typography>
+      </TyphNavBar>
     </TypeDiv>
   );
 };

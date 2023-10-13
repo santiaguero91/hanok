@@ -3,14 +3,11 @@ import ClasesBtn from "./Botones/ClasesBtn";
 import TraduccionesBtn from "./Botones/TraduccionesBtn";
 import ActividadesBtn from "./Botones/ActividadesBtn";
 import OpinionesBtn from "./Botones/OpinionesBtn";
-import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 
 const NavBar = ({ inSight }) => {
   const [showNavbar, setShowNavbar] = useState(true);
-
-
   useEffect(() => {
     const handleMouseEnter = (event) => {
       const { clientY } = event;

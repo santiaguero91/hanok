@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { NavBarBtn, TypeDiv } from "../NavBarStyle";
 import { Typography } from "@mui/material";
-import { typoh5, typoh5bold } from "../../../utils/Fonts";
+import { typoh5, typoh5bold,TyphNavBar } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -37,7 +37,7 @@ const wordVariants = {
 const 클래스 = () => {
   return (
     <TypeDiv>
-      <Typography variant="h6" style={typoh5}>
+      <TyphNavBar variant="h6">
         {text.split("").map((word, index) => (
           <motion.span
             key={index}
@@ -49,14 +49,14 @@ const 클래스 = () => {
             {word}{" "}
           </motion.span>
         ))}
-      </Typography>
+      </TyphNavBar>
     </TypeDiv>
   );
 };
 const Clases = () => {
   return (
     <TypeDiv>
-      <Typography variant="h2" style={typoh5bold}>
+      <TyphNavBar variant="h2">
         {tradText.split("").map((word, index) => (
           <motion.span
             key={index}
@@ -68,7 +68,7 @@ const Clases = () => {
             {word}{" "}
           </motion.span>
         ))}
-      </Typography>
+      </TyphNavBar>
     </TypeDiv>
   );
 };

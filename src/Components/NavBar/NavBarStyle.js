@@ -24,6 +24,12 @@ export const MainDiv = styled(Box)`
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
+  @media (max-width: 1000px) {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10%;
+  }
 `;
 
 export const NavBarBtn = styled(Button)`
@@ -36,6 +42,10 @@ export const NavBarBtn = styled(Button)`
   :hover {
     background-color: ${Colors.navBarBtnHover};
   }
+  @media (max-width: 1000px) {
+    inline-size: auto;
+
+  }
 `;
 
 export const TypeDiv = styled(Box)`
@@ -43,5 +53,5 @@ export const TypeDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin:  0 0 0 0;
+  margin: 0 0 0 0;
 `;

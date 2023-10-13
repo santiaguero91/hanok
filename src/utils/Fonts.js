@@ -3,6 +3,7 @@ import { Typography} from "@mui/material";
 
 
 4
+
 export const typoh3 = {
   fontFamily: "Plus Jakarta Sans Variable",
 };
@@ -80,6 +81,15 @@ export const Typh5 = styled(Typography)`
     font-size: 18px;
   }
 `;
+export const Typh5bold = styled(Typography)`
+  font-family: "Plus Jakarta Sans Variable";
+  font-size: 20px;
+  font-weight: bold;
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
+`;
+
 export const Typh4bold = styled(Typography)`
   font-family: "Plus Jakarta Sans Variable";
   font-size: 35px;
@@ -87,5 +97,16 @@ export const Typh4bold = styled(Typography)`
   z-index: 5;
   @media (max-width: 450px) {
     font-size: 22px;
+  }
+`;
+export const TyphNavBar = styled(Typography)`
+  font-family: "Plus Jakarta Sans Variable";
+  font-size: 20px;
+  font-weight: bold;
+  @media (max-width: 1050px) {
+    font-size: 18px;
+  }
+  @media (max-width: 450px) {
+    font-size: 16px;
   }
 `;
