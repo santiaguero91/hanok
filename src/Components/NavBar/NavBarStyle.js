@@ -44,8 +44,8 @@ export const NavBarBtn = styled(Button)`
   }
   @media (max-width: 1000px) {
     inline-size: auto;
-
   }
+
 `;
 
 export const TypeDiv = styled(Box)`

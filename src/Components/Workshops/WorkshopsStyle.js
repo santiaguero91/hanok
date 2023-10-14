@@ -67,9 +67,20 @@ export const FlagBkgd = styled(Box)`
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
+  img{
+    width: 200px;
+    @media (max-width: 450px) {
+    width: 150px;
+    }
+  }
   @media (max-width: 450px) {
     margin-top: -115%;
-    left: 45%;
+    left: 60%;
+    z-index: 3;
+    }
+  @media (max-width: 7700px) {
+    margin-top: -68%;
+    left: 60%;
     z-index: 3;
     }
 `;
