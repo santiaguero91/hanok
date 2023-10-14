@@ -64,6 +64,7 @@ export const Typh3bold = styled(Typography)`
   font-size: 40px;
   font-weight: bold;
   z-index: 5;
+  color: rgb(110,87,125);
   @media (max-width: 450px) {
     font-size: 30px;
   }
@@ -95,6 +96,8 @@ export const Typh4bold = styled(Typography)`
   font-size: 35px;
   font-weight: bold;
   z-index: 5;
+  color: rgb(110,87,125);
+
   @media (max-width: 450px) {
     font-size: 22px;
   }

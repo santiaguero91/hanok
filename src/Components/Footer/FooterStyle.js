@@ -5,7 +5,7 @@ export const MainDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgba(89, 89, 89);
+  background-color: rgb(110,87,125);
   align-items: center;
 `;
 export const DivImg = styled(Box)`

@@ -17,7 +17,6 @@ export const TitleDiv = styled(Box)`
   margin: 3% auto 0 auto;
 `;
 
-
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
@@ -27,19 +26,20 @@ export const RowDiv = styled(Box)`
   border-radius: 10px;
   width: 100%;
 
-  img{
-    border-radius: 15px ;
+  img {
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
 
 export const ImgDiv = styled(Box)`
-z-index: 6;
+
+  z-index: 6;
 `;
 
 export const TranslateBtn = styled(Button)`
-  background-color: rgba(156,137,184);
+  background-color: rgba(156, 137, 184);
   color: black;
   transition: 1s;
   border-radius: 10px;
@@ -56,18 +56,16 @@ export const TranslateBtn = styled(Button)`
 `;
 
 export const WbTnMainDiv = styled(Box)`
-display: flex;
-background-color: white;
-z-index: 5;
-background-color: transparent;
+  display: flex;
+  background-color: white;
+  z-index: 5;
+  background-color: transparent;
 `;
 
 export const BooksMainDiv = styled(Box)`
-
-display: flex;
-flex-direction: column;
-background-color: white;
-z-index: 5;
-background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 5;
+  background-color: transparent;
 `;
-

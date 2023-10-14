@@ -9,5 +9,5 @@ export const Colors = {
   purpleBtns: "rgb(156,137,184)",
 
   navBarBtn: "rgb(78,65,96);",
-  navBarBtnHover: "rgb(143,102,71)",
+  navBarBtnHover: "rgb(110,87,125)",
 };

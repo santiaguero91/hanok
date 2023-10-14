@@ -29,7 +29,8 @@ export const RowDiv = styled(Box)`
   align-items: center;
   margin: 3% 10%;
   border-radius: 10px;
-  background-color: rgba(112, 121, 85);
+  /* background-color: rgba(112, 121, 85); */
+  background-color: rgb(110,87,125);
   @media (max-width: 770px) {
     flex-direction: column-reverse;
   }
