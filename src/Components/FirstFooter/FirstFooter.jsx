@@ -1,4 +1,4 @@
-import { Modal, Typography } from "@mui/material";
+import { Modal } from "@mui/material";
 import {
   ContactRowDiv,
   ContactMeDiv,
@@ -8,7 +8,7 @@ import {
 } from "./FirstFooterStyle";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { Typh3, Typh5, typoFooter } from "../../utils/Fonts";
+import { Typh5 } from "../../utils/Fonts";
 import { useState } from "react";
 import ModalInput from "./ModalInput/ModalInput";
 import { useInView } from "react-intersection-observer";
@@ -17,7 +17,6 @@ import { motion } from "framer-motion";
 const FirstFooter = ({ sectionFooter }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   function openModal() {
-    console.log("ouch!");
     setIsOpen(true);
   }
   function handleClose() {

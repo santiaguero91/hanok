@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Modal, Typography } from "@mui/material";
 import onlineClases from "../../assets/OnlineClases.jpg";
 import {
   ColumnDiv,
@@ -16,8 +16,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Opinions from "../Opinions/Opinions";
 import { useState } from "react";
+import ModalInput from "../FirstFooter/ModalInput/ModalInput";
 
 const Clases = ({ sectionClases }) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+  function handleClose() {
+    setIsOpen(false);
+  }
+
+
   const [isHovered, setIsHovered] = useState(false);
   const [refanim, inView] = useInView({
     triggerOnce: true,
@@ -26,6 +36,14 @@ const Clases = ({ sectionClases }) => {
 
   return (
     <MainDiv id="Clases" ref={sectionClases}>
+      <Modal
+        open={modalIsOpen}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <ModalInput />
+      </Modal>
       <ColumnDiv
         component={motion.div}
         ref={refanim}
@@ -51,6 +69,7 @@ const Clases = ({ sectionClases }) => {
               onMouseLeave={() => setIsHovered(false)}
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
               whileTap={{ scale: 0.9 }}
+              onClick={openModal}
             >
               {isHovered ? <내가관심 /> : <Empezar />}
             </ClasesBtn>
