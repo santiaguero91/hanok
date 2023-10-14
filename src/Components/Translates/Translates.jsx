@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Modal } from "@mui/material";
 import {
   ColumnDiv,
   LeftDiv,
@@ -8,12 +8,19 @@ import {
   TranslateBtn,
   TypeDiv,
 } from "./TranslatesStyles";
-import { Typh3bold, Typh5, typoh3, typoh3bold, typoh6 } from "../../utils/Fonts";
+import {
+  Typh3bold,
+  Typh5,
+  typoh3,
+  typoh3bold,
+} from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Experience from "./Experience/Experience";
 import { useState } from "react";
+
+import ModalInput from "../FirstFooter/ModalInput/ModalInput";
 
 const handleClick = () => {
   window.scrollTo({
@@ -22,6 +29,16 @@ const handleClick = () => {
 };
 
 const Translates = ({ sectionTranslates }) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+  function handleClose() {
+    setIsOpen(false);
+  }
+
+
+
   const [isHovered, setIsHovered] = useState(false);
   const [refanim, inView] = useInView({
     triggerOnce: true,
@@ -30,6 +47,15 @@ const Translates = ({ sectionTranslates }) => {
 
   return (
     <MainDiv id="Translates" ref={sectionTranslates}>
+      <Modal
+        open={modalIsOpen}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <ModalInput />
+      </Modal>
+
       <ColumnDiv>
         <TitleDiv>
           <Typh3bold variant="h3" ref={refanim}>
@@ -53,7 +79,6 @@ const Translates = ({ sectionTranslates }) => {
               éxito los nuevos retos que afrontamos en este cambiante entorno
               internacional.
             </Typh5>
-            <NavLink to="/traducciones" onClick={handleClick}>
               <TranslateBtn
                 component={motion.div}
                 initial="initial"
@@ -62,10 +87,10 @@ const Translates = ({ sectionTranslates }) => {
                 onMouseLeave={() => setIsHovered(false)}
                 whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
                 whileTap={{ scale: 0.9 }}
+                onClick={openModal}
               >
                 {isHovered ? <연락하다 /> : <Contactar />}
               </TranslateBtn>
-            </NavLink>
           </LeftDiv>
           <img src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366" />
         </RowDiv>

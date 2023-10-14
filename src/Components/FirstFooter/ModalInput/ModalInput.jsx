@@ -8,7 +8,7 @@ import {
   PicBkg,
   StyldTextField,
 } from "./ModalInputStyle";
-import { typoh3bold } from "../../../utils/Fonts";
+import { Typh3bold, typoh3bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 
 import toast, { Toaster, ToastBar } from "react-hot-toast";
@@ -86,10 +86,11 @@ const ModalInput = () => {
     >
       <CoverDiv>
         <form autoComplete="off">
-          <Typography variant="h5" style={typoh3bold}>
+          <Typh3bold variant="h5">
             Form
-          </Typography>
+          </Typh3bold>
           <StyldTextField
+            id="mail"
             label="Your Email"
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -102,6 +103,7 @@ const ModalInput = () => {
             error={emailError}
           />
           <StyldTextField
+            id="name"
             label="Your Name"
             onChange={(e) => setName(e.target.value)}
             required
@@ -115,7 +117,7 @@ const ModalInput = () => {
           />
           <StyldTextField
             label="Message"
-            id="inputname"
+            id="Message"
             onChange={(e) => setDescription(e.target.value)}
             type="text"
             required
