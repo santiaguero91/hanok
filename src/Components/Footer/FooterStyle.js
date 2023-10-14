@@ -7,11 +7,11 @@ export const MainDiv = styled(Box)`
   justify-content: center;
   background-color: rgb(110,87,125);
   align-items: center;
+  a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
 `;
-export const DivImg = styled(Box)`
-  margin-top: 1%;
-  margin-left: 2%;
-`;
-export const DivIcons = styled(Box)`
-  margin-right: 2%;
-`;
+
+

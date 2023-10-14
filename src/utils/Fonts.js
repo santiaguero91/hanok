@@ -2,8 +2,6 @@ import styled from "@emotion/styled";
 import { Typography} from "@mui/material";
 
 
-4
-
 export const typoh3 = {
   fontFamily: "Plus Jakarta Sans Variable",
 };
@@ -41,6 +39,8 @@ export const typoh5bold = {
   fontWeight: "bold",
   fontSize: "20px",
 };
+
+
 export const typoFooter = {
   fontFamily: "Plus Jakarta Sans Variable",
   fontWeight: "bold",
@@ -116,3 +116,16 @@ export const TyphNavBar = styled(Typography)`
     font-size: 16px;
   }
 `;
+
+export const TyphFooter = {
+  fontFamily: "Plus Jakarta Sans Variable",
+  fontWeight: "bold",
+  fontSize: "20px",
+  color: "white",
+};
+export const TyphFooter2 = {
+  fontFamily: "Plus Jakarta Sans Variable",
+  fontWeight: "bold",
+  fontSize: "20px",
+  color: "white",
+};
