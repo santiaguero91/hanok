@@ -55,6 +55,9 @@ export const typoFooter = {
 export const Typh3 = styled(Typography)`
   font-family: "Plus Jakarta Sans Variable";
   font-size: 24px;
+  @media (max-width: 770px) {
+    font-size: 20px;
+  }
   @media (max-width: 450px) {
     font-size: 20px;
   }

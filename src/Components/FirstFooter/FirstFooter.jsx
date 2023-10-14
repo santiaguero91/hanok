@@ -8,7 +8,7 @@ import {
 } from "./FirstFooterStyle";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { Typh3, typoFooter } from "../../utils/Fonts";
+import { Typh3, Typh5, typoFooter } from "../../utils/Fonts";
 import { useState } from "react";
 import ModalInput from "./ModalInput/ModalInput";
 import { useInView } from "react-intersection-observer";
@@ -62,14 +62,14 @@ const FirstFooter = ({ sectionFooter }) => {
           <div onClick={openModal} className="footerIcon">
             <ContactRowDiv>
               <AiOutlineMail size={"2rem"} />
-              <Typh3 variant="h3">
+              <Typh5 variant="h3">
                 Contact Me
-              </Typh3>
+              </Typh5>
             </ContactRowDiv>
           </div>
-          <Typh3 variant="h3">
+          <Typh5 variant="h3">
             hanockclub@gmail.com
-          </Typh3>
+          </Typh5>
         </ContactMeDiv>
 
         <FooterIcons>
