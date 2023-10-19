@@ -6,7 +6,7 @@ const WebToonsDiv = () => {
   return (
     <WbTnMainDiv>
       <Typography variant="h6" style={typoh6}>
-        Webtoons
+        Comics
       </Typography>
     </WbTnMainDiv>
   );

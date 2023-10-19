@@ -6,7 +6,7 @@ const FilmsDiv = () => {
   return (
     <WbTnMainDiv>
       <Typography variant="h6" style={typoh6}>
-        Movies
+        Audiovisual
       </Typography>
     </WbTnMainDiv>
   );

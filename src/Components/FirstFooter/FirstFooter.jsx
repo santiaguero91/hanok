@@ -62,7 +62,7 @@ const FirstFooter = ({ sectionFooter }) => {
             <ContactRowDiv>
               <AiOutlineMail size={"2rem"} />
               <Typh5 variant="h3">
-                Contact Me
+                Contactar
               </Typh5>
             </ContactRowDiv>
           </div>

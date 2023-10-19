@@ -6,10 +6,7 @@ const BooksDiv = () => {
   return (
     <BooksMainDiv>
       <Typography variant="h6" style={typoh6}>
-      Books &
-      </Typography>
-      <Typography variant="h6" style={typoh6}>
-     Short Stories
+      Literatura
       </Typography>
     </BooksMainDiv>
   );
