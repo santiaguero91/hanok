@@ -8,12 +8,7 @@ import {
   TranslateBtn,
   TypeDiv,
 } from "./TranslatesStyles";
-import {
-  Typh3bold,
-  Typh5,
-  typoh3,
-  typoh3bold,
-} from "../../utils/Fonts";
+import { Typh3bold, Typh5, typoh3, typoh3bold } from "../../utils/Fonts";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
@@ -36,8 +31,6 @@ const Translates = ({ sectionTranslates }) => {
   function handleClose() {
     setIsOpen(false);
   }
-
-
 
   const [isHovered, setIsHovered] = useState(false);
   const [refanim, inView] = useInView({
@@ -75,22 +68,22 @@ const Translates = ({ sectionTranslates }) => {
         >
           <LeftDiv>
             <Typh5 variant="h5">
-              El equipo de Hanok desea ser tu mejor aliado para afrontar con
-              éxito los nuevos retos que afrontamos en este cambiante entorno
-              internacional.
+              Traductora profesional recibida del IES Lenguas Vivas con
+              especialización literaria y audiovisual INGLÉS-ESPAÑOL con
+              experiencia en la traducción COREANO-ESPAÑOL.
             </Typh5>
-              <TranslateBtn
-                component={motion.div}
-                initial="initial"
-                animate={isHovered ? "hover" : "initial"}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-                whileTap={{ scale: 0.9 }}
-                onClick={openModal}
-              >
-                {isHovered ? <연락하다 /> : <Contactar />}
-              </TranslateBtn>
+            <TranslateBtn
+              component={motion.div}
+              initial="initial"
+              animate={isHovered ? "hover" : "initial"}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+              whileTap={{ scale: 0.9 }}
+              onClick={openModal}
+            >
+              {isHovered ? <연락하다 /> : <Contactar />}
+            </TranslateBtn>
           </LeftDiv>
           <img src="https://i1.wp.com/www.mondoagit.es/blog/wp-content/uploads/2016/05/escritorio.jpg?fit=550%2C366" />
         </RowDiv>

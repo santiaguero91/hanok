@@ -36,8 +36,8 @@ const MainSection = () => {
   );
 };
 
-const text = "한옥은 방법론적 발전에 관해 전국의 교사와 교수들을 내재화하고 훈련시키기 위해 개선 강좌와 세미나를 조직하고 가르치고 있습니다.";
-const tradText = "Hanok organiza e imparte cursos y seminarios de perfeccionamiento para internalizar y capacitar a docentes y profesores de todo el país sobre desarrollos metodológicos."
+const text = "한옥 클럽은 한국어 교육과 한국어에서 스페인어로의 문학 및 시청각 번역 서비스를 제공합니다.";
+const tradText = "The Hanok Club brinda servicios de instrucción del idioma coreano y de traducción literaria y audiovisual del coreano al español."
 
 const wordVariants = {
   hidden: { opacity: 0 },

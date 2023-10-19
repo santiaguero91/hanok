@@ -52,14 +52,13 @@ const Clases = ({ sectionClases }) => {
         transition={{ duration: 1.5 }}
       >
         <Typh3bold variant="h3">
-          CLASES
+        CLASES
         </Typh3bold>
         <RowDiv>
           <img src={onlineClases} />
           <TextDiv>
             <Typh5 variant="h6" >
-              Disfuta las mejores clases online personalizadas con grupos acorde
-              al nivel. Bajo la tutela de profesores de alta trayectoria.
+            Disfrutá de clases de coreano en línea y personalizadas para cada grupo de la mano de una profesora con más de siete años de experiencia.
             </Typh5>
             <ClasesBtn
               component={motion.div}

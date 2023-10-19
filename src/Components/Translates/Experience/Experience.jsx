@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <MainDiv>
       <Typh4bold variant="h5">
-        Contamos con amplia experiencia en la traduccion de :
+      Cuento con experiencia en la traducción de:
       </Typh4bold>
       <RowDiv>
         <div>
