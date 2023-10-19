@@ -2,7 +2,7 @@ import { MainDiv } from "./NavBarStyle";
 import ClasesBtn from "./Botones/ClasesBtn";
 import TraduccionesBtn from "./Botones/TraduccionesBtn";
 import ActividadesBtn from "./Botones/ActividadesBtn";
-import OpinionesBtn from "./Botones/OpinionesBtn";
+import ContactoBtn from "./Botones/ContactoBtn";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 
@@ -46,7 +46,7 @@ const NavBar = ({ inSight }) => {
           <ClasesBtn inSight={inSight} />
           <ActividadesBtn inSight={inSight} />
           <TraduccionesBtn inSight={inSight} />
-          <OpinionesBtn inSight={inSight} />
+          <ContactoBtn inSight={inSight} />
         </MainDiv>
       )}
     </AnimatePresence>

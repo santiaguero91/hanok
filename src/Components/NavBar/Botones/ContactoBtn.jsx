@@ -21,20 +21,20 @@ const ContactoBtn = ({ inSight }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-          {isHovered ? <연락하다 /> : <Contacto />}
+          {isHovered ? <연락처 /> : <Contacto />}
       </NavBarBtn>
     </Link>
   );
 };
 
-const text = "연락하다";
+const text = "연락처";
 const tradText = "Contacto";
 
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 };
-const 연락하다 = () => {
+const 연락처 = () => {
   return (
     <TypeDiv>
       <TyphNavBar variant="h6" >

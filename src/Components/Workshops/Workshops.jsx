@@ -23,7 +23,7 @@ const Workshops = ({ sectionWorkshop }) => {
     <MainDiv id="Workshops" ref={sectionWorkshop}>
       <ColumnDiv>
         <Typh3bold variant="h3" ref={refanim}>
-          Talleres
+          TALLERES
         </Typh3bold>
         <RowDiv
           component={motion.div}

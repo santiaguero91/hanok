@@ -8,7 +8,7 @@ const Opinions = ({ sectionOpinion }) => {
     <MainDiv id="Opiniones" ref={sectionOpinion}>
       <ColumnDiv>
         <Typh3bold variant="h4">
-          Opiniones de alumnos
+          OPINIONES DE ALUMNOS
         </Typh3bold>
         <SwipperOpinion />
       </ColumnDiv>

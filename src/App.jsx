@@ -1,7 +1,6 @@
 import "./App.css";
 import Main from "./Views/Main";
 import { Route, Routes } from "react-router-dom";
-import Traducciones from "./Views/Traducciones/Traducciones";
 import { MainDiv } from "./Views/MainStyle";
 import Test from "./Views/Test/Test";
 

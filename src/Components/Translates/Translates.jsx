@@ -59,7 +59,7 @@ const Translates = ({ sectionTranslates }) => {
       <ColumnDiv>
         <TitleDiv>
           <Typh3bold variant="h3" ref={refanim}>
-            Traducciones
+            TRADUCCIONES
           </Typh3bold>
         </TitleDiv>
         <RowDiv

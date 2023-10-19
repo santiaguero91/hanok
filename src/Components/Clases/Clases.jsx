@@ -52,7 +52,7 @@ const Clases = ({ sectionClases }) => {
         transition={{ duration: 1.5 }}
       >
         <Typh3bold variant="h3">
-          Clases
+          CLASES
         </Typh3bold>
         <RowDiv>
           <img src={onlineClases} />
