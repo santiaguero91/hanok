@@ -1,8 +1,7 @@
 import webtoon from "../../../assets/webtoon.png";
 import film from "../../../assets/films.png";
 import books from "../../../assets/books.png";
-import { Typh4bold, Typh5, typoh3bold } from "../../../utils/Fonts";
-import { Typography } from "@mui/material";
+import { Typh4bold } from "../../../utils/Fonts";
 import { ImgDiv, MainDiv, RowDiv } from "./ExperienceStyle";
 import React, { useState } from "react";
 import { motion } from "framer-motion";

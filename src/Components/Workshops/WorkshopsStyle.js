@@ -19,7 +19,7 @@ export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
   color: black;
-
+  margin-top: 3%;
   @media (max-width: 450px) {
     flex-direction: column;
   }

@@ -1,16 +1,12 @@
-import { Typography } from "@mui/material";
 import {
   ColumnDiv,
   FlagBkgd,
   FlowerBkgd,
-  ImgDiv,
   MainDiv,
   RowDiv,
-  TextDiv,
 } from "./WorkshopsStyle";
-import { Typh3, Typh3bold, Typh5, typoh5 } from "../../utils/Fonts";
+import {  Typh3bold} from "../../utils/Fonts";
 import { useInView } from "react-intersection-observer";
-import WsSwipper from "./WsSwipper/WsSwipper";
 import BookWs from "./WsBoxes/BookWs";
 import AvWs from "./WsBoxes/AvWs";
 
@@ -30,16 +26,6 @@ const Workshops = ({ sectionWorkshop }) => {
           <BookWs />
           <AvWs />
         </RowDiv>
-
-        {/*  <WsSwipper inView={inView} /> */}
-        {/*           <TextDiv>
-            <Typh5 variant="h5">
-              Un fin de semana al mes los miembros del club nos encontramos en
-              algún café de Buenos Aires en este maravilloso encuentro donde
-              cada uno puede traer un libro para presentar y recomendar. ¡¡Todos
-              están invitados !!
-            </Typh5>
-          </TextDiv> */}
       </ColumnDiv>
       <FlowerBkgd>
         <img
