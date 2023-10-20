@@ -23,8 +23,8 @@ const Workshops = ({ sectionWorkshop }) => {
           TALLERES
         </Typh3bold>
         <RowDiv>
-          <BookWs />
-          <AvWs />
+          <BookWs inView={inView}/>
+          <AvWs inView={inView}/>
         </RowDiv>
       </ColumnDiv>
       <FlowerBkgd>

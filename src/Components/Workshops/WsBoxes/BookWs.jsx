@@ -6,21 +6,25 @@ import { motion } from "framer-motion";
 import { TypeDiv } from "../../Clases/ClasesStyle";
 import books from "../../../assets/books.png";
 
-const BookWs = () => {
+const BookWs = ({ inView }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <BookWsMainDiv>
+    <BookWsMainDiv
+      component={motion.div}
+      initial={{ opacity: 0, y: 100, x: -150 }}
+      animate={{
+        opacity: inView ? 1 : 0,
+        y: inView ? 0 : 100,
+        x: inView ? 0 : -150,
+        scale: inView ? 1 : 0,
+      }}
+      transition={{ duration: 1.5 }}
+    >
       <Typography variant="h4" style={typoh3bold}>
         Taller de Lectura
       </Typography>
-      <img
-              width="100px"
-              height="100px"
-              alt=""
-              src={books}
-              title="books"
-            />
+      <img width="100px" height="100px" alt="" src={books} title="books" />
       <p>
         Sumate a los encuentros quincenales de lectura que se dan los días
         sábados de cada mes en un café de Buenos Aires. El taller tiene como
@@ -37,8 +41,12 @@ const BookWs = () => {
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
       >
-        <a href="https://docs.google.com/forms/d/1-c8JcjYNcrVFYKpjWKZWNBZsF0uekkCnvwGEAoWluxg/edit?" target="_blank">
-         <Empezar /></a>
+        <a
+          href="https://docs.google.com/forms/d/1-c8JcjYNcrVFYKpjWKZWNBZsF0uekkCnvwGEAoWluxg/edit?"
+          target="_blank"
+        >
+          <Empezar />
+        </a>
       </WsBtn>
     </BookWsMainDiv>
   );
