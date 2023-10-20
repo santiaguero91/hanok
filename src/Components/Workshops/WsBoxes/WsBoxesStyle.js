@@ -14,9 +14,15 @@ export const BookWsMainDiv = styled(Box)`
   justify-content: center;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 4;
+  background-color: ${Colors.sectionsBackground};
+
   // border: 1px solid red;
   @media (max-width: 770px) {
     margin: 3% 1% 3% 1%;
+  }
+  @media (max-width: 650px) {
+    width: 75vw;
   }
 `;
 export const AvMainDiv = styled(Box)`
@@ -29,10 +35,17 @@ export const AvMainDiv = styled(Box)`
   padding: 2%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: ${Colors.sectionsBackground};
+  z-index: 4;
+
   img {
     margin-top: 2%;
   }
   @media (max-width: 770px) {
+    margin: 3% 1% 3% 1%;
+  }
+  @media (max-width: 650px) {
+    width: 75vw;
     margin: 3% 1% 3% 1%;
   }
 `;

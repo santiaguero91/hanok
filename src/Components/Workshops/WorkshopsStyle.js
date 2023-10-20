@@ -12,7 +12,6 @@ export const MainDiv = styled(Box)`
   margin: 0 auto 0 auto;
   justify-content: center;
   
-  
 `;
 
 export const RowDiv = styled(Box)`
@@ -20,7 +19,7 @@ export const RowDiv = styled(Box)`
   flex-direction: row;
   color: black;
   margin-top: 3%;
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     flex-direction: column;
   }
 `;
@@ -67,9 +66,10 @@ export const FlagBkgd = styled(Box)`
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
+  z-index: 3;
+
   @media (max-width: 770px) {
     right: 10%;
-    z-index: 3;
     margin-top: -80%;
   }
   img {
@@ -80,15 +80,12 @@ export const FlagBkgd = styled(Box)`
     @media (max-width: 770px) {
       width: 150px;
     }
-    @media (max-width: 720px) {
-      display: none;
-    }
+
   }
 
   @media (max-width: 450px) {
     margin-top: -115%;
     left: 60%;
-    z-index: 3;
   }
 
 `;
@@ -100,6 +97,7 @@ export const FlowerBkgd = styled(Box)`
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
+  z-index: 1;
   @media (max-width: 770px) {
     display: none;
   }
