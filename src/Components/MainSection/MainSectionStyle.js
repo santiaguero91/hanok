@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box,Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   display: flex;
@@ -9,7 +9,7 @@ export const MainDiv = styled(Box)`
   background-color: transparent;
   max-width: 100%;
   @media (max-width: 450px) {
-  margin: 25% 0;
+    margin: 25% 0;
   }
 `;
 
@@ -20,9 +20,12 @@ export const RowDiv = styled(Box)`
   align-items: center;
   background-color: transparent;
   margin: 5% 5%;
-  @media (max-width: 430px) {
-      flex-direction: column;
-    }
+  gap: 10vw;
+  @media (max-width: 770px) {
+    flex-direction: column;
+    gap: 5vw;
+
+  }
 `;
 
 export const TypeDiv = styled(Box)`
@@ -34,8 +37,20 @@ export const TypeDiv = styled(Box)`
 `;
 
 export const TextDiv = styled(Box)`
+  width: 45vw;
+  height: 10vh;
   margin: 5%;
   padding: 1%;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 700px) {
+    width: 50vw;
+    height: 35vh;
+  }
+  @media (max-width: 450px) {
+    width: 70vw;
+    height: 35vh;
+  }
 `;
 
 export const ImgDiv = styled(Box)`
@@ -45,6 +60,5 @@ export const ImgDiv = styled(Box)`
     @media (max-width: 430px) {
       width: 50vw;
     }
-
   }
 `;

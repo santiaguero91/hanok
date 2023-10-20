@@ -68,6 +68,8 @@ export const TranslateBtn = styled(Button)`
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 5;
+  height: 40px;
+
   :hover {
     background-color: ${Colors.navBarBtnHover};
     scale: 1.05;

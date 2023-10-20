@@ -57,7 +57,7 @@ const Clases = ({ sectionClases }) => {
         <RowDiv>
           <img src={onlineClases} />
           <TextDiv>
-            <Typh5 variant="h6" >
+            <Typh5 >
             Disfrutá de clases de coreano en línea y personalizadas para cada grupo de la mano de una profesora con más de siete años de experiencia.
             </Typh5>
             <ClasesBtn

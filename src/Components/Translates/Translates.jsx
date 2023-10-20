@@ -67,7 +67,7 @@ const Translates = ({ sectionTranslates }) => {
           transition={{ duration: 1.5 }}
         >
           <LeftDiv>
-            <Typh5 variant="h5">
+            <Typh5>
               Traductora profesional recibida del IES Lenguas Vivas con
               especialización literaria y audiovisual INGLÉS-ESPAÑOL con
               experiencia en la traducción COREANO-ESPAÑOL.

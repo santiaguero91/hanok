@@ -12,7 +12,6 @@ export const MainDiv = styled(Box)`
   z-index: 1;
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
     background-color: ${Colors.sectionsBackground};
     display: flex;
     justify-content: center;
