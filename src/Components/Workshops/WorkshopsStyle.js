@@ -3,31 +3,31 @@ import { Box, Button } from "@mui/material";
 import { Colors } from "../../utils/Colors";
 
 export const MainDiv = styled(Box)`
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: ${Colors.sectionsBackground};
   color: black;
   align-items: center;
   margin: 0 auto 0 auto;
+  justify-content: center;
+  
+  
 `;
 
 export const RowDiv = styled(Box)`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   color: black;
-  align-items: center;
-  margin: 3% 15%;
+
   @media (max-width: 450px) {
     flex-direction: column;
-    }
+  }
 `;
 export const ColumnDiv = styled(Box)`
   padding: 3% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /* border: 1px solid blue; */
+
 `;
 
 export const TextDiv = styled(Box)`
@@ -67,22 +67,22 @@ export const FlagBkgd = styled(Box)`
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
-  img{
+  img {
     width: 200px;
     @media (max-width: 450px) {
-    width: 150px;
+      width: 150px;
     }
   }
   @media (max-width: 450px) {
     margin-top: -115%;
     left: 60%;
     z-index: 3;
-    }
+  }
   @media (max-width: 7700px) {
     margin-top: -68%;
     left: 60%;
     z-index: 3;
-    }
+  }
 `;
 export const FlowerBkgd = styled(Box)`
   position: absolute;
@@ -94,5 +94,5 @@ export const FlowerBkgd = styled(Box)`
   pointer-events: none;
   @media (max-width: 450px) {
     display: none;
-    }
+  }
 `;

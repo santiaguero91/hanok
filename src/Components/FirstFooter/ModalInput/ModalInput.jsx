@@ -86,12 +86,9 @@ const ModalInput = () => {
     >
       <CoverDiv>
         <form autoComplete="off">
-          <Typh3bold variant="h5">
-            Form
-          </Typh3bold>
           <StyldTextField
             id="mail"
-            label="Your Email"
+            label="Email"
             onChange={(e) => setEmail(e.target.value)}
             required
             variant="outlined"
@@ -104,7 +101,7 @@ const ModalInput = () => {
           />
           <StyldTextField
             id="name"
-            label="Your Name"
+            label="Nombre"
             onChange={(e) => setName(e.target.value)}
             required
             variant="outlined"
@@ -117,7 +114,7 @@ const ModalInput = () => {
           />
           <StyldTextField
             label="Message"
-            id="Message"
+            id="Mensaje"
             onChange={(e) => setDescription(e.target.value)}
             type="text"
             required
