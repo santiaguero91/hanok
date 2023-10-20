@@ -15,6 +15,10 @@ export const BookWsMainDiv = styled(Box)`
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // border: 1px solid red;
+  @media (max-width: 770px) {
+    width: 75vw;
+    margin: 3% 1% 3% 1%;
+    }
 `;
 export const AvMainDiv = styled(Box)`
   width: 40vw;
@@ -29,6 +33,11 @@ export const AvMainDiv = styled(Box)`
   img{
     margin-top: 2%;
   }
+  @media (max-width: 770px) {
+    width: 75vw;
+    margin: 3% 1% 3% 1%;
+
+    }
 
 `;
 export const AvBox = styled(Box)`
@@ -62,6 +71,10 @@ export const WsBtn = styled(Button)`
   :focus {
     outline: none;
     border: none;
+  }
+  a{
+    color: white;
+    text-decoration: none;
   }
 
   @media (max-width: 1200px) {

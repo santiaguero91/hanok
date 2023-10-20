@@ -62,27 +62,35 @@ export const WorkshopBtn = styled(Button)`
 export const FlagBkgd = styled(Box)`
   position: absolute;
   right: 15%;
-  margin-top: -40%;
+  margin-top: -50%;
   transform: rotate(-5deg);
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
+  @media (max-width: 770px) {
+    right: 10%;
+    z-index: 3;
+    margin-top: -80%;
+  }
   img {
     width: 200px;
     @media (max-width: 450px) {
       width: 150px;
     }
+    @media (max-width: 770px) {
+      width: 150px;
+    }
+    @media (max-width: 720px) {
+      display: none;
+    }
   }
+
   @media (max-width: 450px) {
     margin-top: -115%;
     left: 60%;
     z-index: 3;
   }
-  @media (max-width: 7700px) {
-    margin-top: -68%;
-    left: 60%;
-    z-index: 3;
-  }
+
 `;
 export const FlowerBkgd = styled(Box)`
   position: absolute;
@@ -92,7 +100,7 @@ export const FlowerBkgd = styled(Box)`
   color: rgba(200, 200, 200, 1);
   opacity: 0.5;
   pointer-events: none;
-  @media (max-width: 450px) {
+  @media (max-width: 770px) {
     display: none;
   }
 `;

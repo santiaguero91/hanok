@@ -46,10 +46,10 @@ export const LeftDiv = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: black;
+  color: rgb(225,225,255);
   align-items: center;
   padding: 2% 0 0.5% 0;
-  margin: 0 10%;
+  margin: 0 5%;
 `;
 
 export const TypeDiv = styled(Box)`

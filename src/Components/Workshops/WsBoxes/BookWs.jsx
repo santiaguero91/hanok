@@ -37,23 +37,24 @@ const BookWs = () => {
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
         whileTap={{ scale: 0.9 }}
       >
-        {isHovered ? <내가관심 /> : <Empezar />}
+        <a href="https://docs.google.com/forms/d/1-c8JcjYNcrVFYKpjWKZWNBZsF0uekkCnvwGEAoWluxg/edit?" target="_blank">
+         <Empezar /></a>
       </WsBtn>
     </BookWsMainDiv>
   );
 };
-const text = "내가 관심";
-const tradText = "Empezar";
+const text = "나는 일부가 되고 싶다";
+const tradText = "Quiero formar parte";
 const wordVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 };
 
-const 내가관심 = () => {
+const 나는일부가되고싶다 = () => {
   return (
     <TypeDiv>
       <Typography variant="subtitle1" style={typoh3}>
-        {text.split("").map((word, index) => (
+        {text.split(" ").map((word, index) => (
           <motion.span
             key={index}
             initial="hidden"
@@ -73,7 +74,7 @@ const Empezar = () => {
   return (
     <TypeDiv>
       <Typography variant="subtitle" style={typoh3bold}>
-        {tradText.split("").map((word, index) => (
+        {tradText.split(" ").map((word, index) => (
           <motion.span
             key={index}
             initial="hidden"
