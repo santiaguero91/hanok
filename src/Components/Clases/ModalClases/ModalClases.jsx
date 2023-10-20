@@ -1,37 +1,46 @@
 import React, { useState } from "react";
-import { Typography } from "@mui/material";
+import { FormControlLabel, FormLabel, Radio, Typography } from "@mui/material";
 import {
   CoverDiv,
   LettersBkg,
   MainDiv,
   ModalBtn,
   PicBkg,
+  StylRadioGroup,
   StyldTextField,
-} from "./ModalInputStyle";
-import { Typh3bold, typoh3bold } from "../../../utils/Fonts";
+} from "./ModalClasesStyle";
+import { typoh3bold } from "../../../utils/Fonts";
 import { motion } from "framer-motion";
 
-import toast, { Toaster, ToastBar } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const ModalClases = () => {
+  //inputs
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [level, setLevel] = useState("");
+
+  //errors
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [descriptionError, setDescriptionError] = useState(false);
+  const [levelError, setLevelError] = useState(false);
 
   const [isHovered, setIsHovered] = useState(false);
 
+const handleChange = (e) => {
+  setLevel(e.target.value)
+}
   //toast
   const notify = () =>
-    toast("Gracias por tu mensaje, te escribire aprenas lo vea!" + "👏", {
+    toast("Gracias por tu mensaje, te escribire lo mas pronto posible" + "👏", {
       duration: 4000,
       position: "top-center",
 
       // Styling
       style: {
-        width: "20vw",
+        width: "80%",
       },
       className: "",
 
@@ -56,6 +65,7 @@ const ModalClases = () => {
     setEmailError(false);
     setNameError(false);
     setDescriptionError(false);
+    setLevelError(false);
 
     if (email == "") {
       setEmailError(true);
@@ -64,14 +74,17 @@ const ModalClases = () => {
       setNameError(true);
     }
     if (description == "") {
-      setPasswordError(true);
+      setDescriptionError(true);
+    }
+    if (level == "") {
+      setLevelError(true);
     }
 
-    if (email && name && description) {
-      console.log(email, name, description);
+    if (email && name && description && level) {
       setDescription("");
       setName("");
       setEmail("");
+      setLevel("");
       notify();
     }
   };
@@ -112,6 +125,24 @@ const ModalClases = () => {
             fullWidth
             sx={{ mb: 3 }}
           />
+          <div>
+          <FormLabel /* className={!level ? "levelError" : "levelOk"}  */  >¿Cuál es tu nivel de coreano?</FormLabel>
+          <StylRadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            name="radio-buttons-group"
+            required
+            onChange={handleChange}
+          >
+            <FormControlLabel
+              value="Básico"
+              control={<Radio />}
+              label="Básico"
+              required
+            />
+            <FormControlLabel value="Intermedio" control={<Radio />} label="Intermedio" />
+            <FormControlLabel value="Avanzado" control={<Radio />} label="Avanzado" />
+          </StylRadioGroup>
+          </div>
           <StyldTextField
             label="Message"
             id="Mensaje"
@@ -125,15 +156,8 @@ const ModalClases = () => {
             name="description"
             multiline
             fullWidth
-            rows={8}
+            rows={6}
             sx={{ mb: 3 }}
-            // placeholder={input.link}
-            /*           InputProps={{
-            style: { color: "black" },
-          }}
-          InputLabelProps={{
-            style: { color: "black" },
-          }} */
           ></StyldTextField>
         </form>
         <Typography variant="subtitle1" style={typoh3bold}>

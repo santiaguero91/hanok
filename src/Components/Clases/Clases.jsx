@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Opinions from "../Opinions/Opinions";
 import { useState } from "react";
-import ModalInput from "../FirstFooter/ModalInput/ModalInput";
+import ModalClases from "./ModalClases/ModalClases";
 
 const Clases = ({ sectionClases }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ const Clases = ({ sectionClases }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <ModalInput />
+        <ModalClases />
       </Modal>
       <ColumnDiv
         component={motion.div}

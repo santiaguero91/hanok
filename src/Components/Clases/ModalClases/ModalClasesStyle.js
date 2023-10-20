@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, RadioGroup, TextField } from "@mui/material";
 
 export const MainDiv = styled(Box)`
   width: 50dvw;
@@ -15,6 +15,12 @@ export const MainDiv = styled(Box)`
 
   @media (max-width: 770px) {
     width: 85vw;
+    }
+    .levelError{
+      color: red;
+    }
+    .levelOk{
+      color: grey;
     }
 `;
 
@@ -81,4 +87,10 @@ export const CoverDiv = styled(Box)`
   z-index: 2;
   padding: 5% 0;
   border-radius: 25px;
+`;
+export const StylRadioGroup = styled(RadioGroup)`
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
 `;
