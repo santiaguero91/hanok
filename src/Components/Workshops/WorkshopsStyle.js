@@ -80,7 +80,9 @@ export const FlagBkgd = styled(Box)`
     @media (max-width: 770px) {
       width: 150px;
     }
-
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
 
   @media (max-width: 450px) {

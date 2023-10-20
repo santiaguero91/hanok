@@ -36,6 +36,11 @@ export const RowDiv = styled(Box)`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 450px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
   .footerIcon {
     color: white;
     transition: 1s ease-in-out;
@@ -54,4 +59,8 @@ export const FooterIcons = styled(Box)`
   width: 15%;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 450px) {
+    width: 75%;
+    justify-content: space-around;
+    }
 `;
