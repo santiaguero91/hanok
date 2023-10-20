@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box,Button } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { Colors } from "../../../utils/Colors";
 
 export const BookWsMainDiv = styled(Box)`
@@ -16,9 +16,8 @@ export const BookWsMainDiv = styled(Box)`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   // border: 1px solid red;
   @media (max-width: 770px) {
-    width: 75vw;
     margin: 3% 1% 3% 1%;
-    }
+  }
 `;
 export const AvMainDiv = styled(Box)`
   width: 40vw;
@@ -30,15 +29,12 @@ export const AvMainDiv = styled(Box)`
   padding: 2%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  img{
+  img {
     margin-top: 2%;
   }
   @media (max-width: 770px) {
-    width: 75vw;
     margin: 3% 1% 3% 1%;
-
-    }
-
+  }
 `;
 export const AvBox = styled(Box)`
   height: 40%;
@@ -51,7 +47,6 @@ export const AvBox = styled(Box)`
   padding: 2%;
 
   border-radius: 10px;
-
 `;
 
 export const WsBtn = styled(Button)`
@@ -72,7 +67,7 @@ export const WsBtn = styled(Button)`
     outline: none;
     border: none;
   }
-  a{
+  a {
     color: white;
     text-decoration: none;
   }

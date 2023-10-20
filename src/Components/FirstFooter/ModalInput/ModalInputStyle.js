@@ -9,12 +9,13 @@ export const MainDiv = styled(Box)`
   margin: 5% auto 5% auto;
   background-color: rgba(200, 200, 200, 1);
   border-radius: 25px;
-  /* background-image: url("https://qph.cf2.quoracdn.net/main-qimg-63d5a053005d9f1ed3995740d1fe5d50");
-  background-repeat: no-repeat;
-  background-size: contain; */
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 770px) {
+    width: 85vw;
+    }
 `;
 
 export const StyldTextField = styled(TextField)`

@@ -25,6 +25,9 @@ export const MainDiv = styled(Box)`
     display: block;
     width: 100%;
   }
+  @media (max-width: 450px) {
+    margin-top: 5% ;
+    }
 `;
 export const ColumnDiv = styled(Box)`
   padding-top: 3%;
